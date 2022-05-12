@@ -1,51 +1,60 @@
-# Env
+# My Dev-Env for MacOS
 
-- zsh, oh-my-zsh, zplug and lots of plugins
+## Required Dependencies
 
+- oh-my-zsh
 - agnoster theme or starship
-
-- vim (with lots of plugins)
-
-- tmux (with lots of plugins)
-
-- mcfly
-
-- k
-
-- Iterm 2
-
-- forgit
-
+- vim, tmux
+- mcfly: 명령어 히스토리 fuzzy search
+- autojump: 디렉토리 명 추론해 바로 이동
+- exa, k: 모던 ls
+- iTerm
+- forgit, git-delta
 - Nerd font file
+- ranger
 
-## How to install, configure
+## Optional Dependencies
 
-### brew
+## How to install, configure `vim`
+
+### LunarVim
+
+- Neovim, rust, node 설치 필요
+
+- [설치](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
+
+### Neovim
+
+- `VimPlug` 설치
 
 ```
-$ brew install ripgrep
-$ brew install mcfly
-$ brew install zplug
-$ brew install autojump
-$ brew install k
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-### `.zshrc`
+- Python 3 provider 설치
 
-- mcfly 설치 후 `eval "$(mcfly init zsh)"` `.zshrc`에 추가
+```
+$ python3 -m pip install --user --upgrade pynvim
+```
 
-- 아래 명령어로 zsh plugin들 모두 설치
+### Vim
+
+```
+$ brew install ripgrep && brew install mcfly && brew install zplug && brew install autojump
+&& brew install k && brew install git-delta && brew install --HEAD universal-ctags/universal-ctags/universal-ctags && brew install neovim
+```
+
+### .zshrc
 
 ```
 $ zplug install
 ```
 
-### `.vimrc`
+### .vimrc
 
 - 아래 vim 명령어로 플러그인 설치
 
 ```
-PlugInstall
+:PlugInstall
 ```
-
-## How to use

@@ -12,6 +12,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-rooter'
 Plug 'chrisbra/nrrwrgn'
 
+" Extend vim
+Plug 'wellle/targets.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'mhinz/vim-startify'
+
 " Language plugins
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -30,18 +35,20 @@ Plug 'rstacruz/sparkup'
 Plug 'mattn/emmet-vim'
 
 " Code auto suggestion, fix
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 Plug 'dense-analysis/ale'
 Plug 'sirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " Code display (format, indent, highlights)
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yggdroot/indentline'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-signify'
 Plug 'rrethy/vim-illuminate'
+Plug 'ap/vim-css-color'
 
 " Code formatter
 Plug 'chiel92/vim-autoformat'
@@ -60,7 +67,6 @@ Plug 'ojroques/vim-scrollstatus'
 
 " File, project searching, string replacing
 Plug 'kien/ctrlp.vim'
-Plug 'dyng/ctrlsf.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -72,7 +78,7 @@ Plug 'preservim/nerdtree' |
 
 " Search String
 Plug 'romainl/vim-cool'
-Plug 'mileszs/ack.vim'
+Plug 'dyng/ctrlsf.vim'
 
 " Argument inserting, order change
 Plug 'PeterRincker/vim-argumentative'
@@ -96,6 +102,7 @@ Plug 'wesq3/vim-windowswap'
 Plug 'simeji/winresizer'
 Plug 'camspiers/lens.vim'
 Plug 'preservim/vimux'
+Plug 'edkolev/tmuxline.vim'
 
 " Session Management
 Plug 'tpope/vim-obsession'
@@ -117,6 +124,8 @@ Plug 'tpope/vim-abolish'
 Plug 'preservim/tagbar' "required ctags as external dependency
 Plug 'mbbill/undotree'
 Plug 'easymotion/vim-easymotion'
+Plug 'andrewradev/splitjoin.vim'
+Plug 'wakatime/vim-wakatime'
 
 " Unix command utils
 Plug 'tpope/vim-eunuch'
@@ -187,8 +196,8 @@ set clipboard=unnamed " vim에서 복사한 내용이 클립보드에 저장
 set history=1000
 " 터미널이 아래 Split 되도록 만들고 사이즈를 작게 조절함
 set splitbelow
-set termwinsize=10x0
-set cursorline
+"set termwinsize=10x0
+set cursorlin
 " 컬럼에도 하이라이트를 표시함
 " set cursorcolumn
 " bell 소리 끄고 visual bell로 표시
@@ -197,20 +206,37 @@ set visualbell
 set noswapfile
 set titlestring=%t
 set scrolloff=3
-set cmdheight=1
+set cmdheight=2
+
+" 주석 다음 줄에 개행할 때 주석을 자동으로 다는 옵션을 끈다.
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+" 창에 포커스가 돌아올 때 항상 명령 모드로 있게 한다.
+" au FocusGained * :
 
 " Vim setting - Insert Mode Shortcut
 inoremap jj <Esc>
 
 " Save undo info
-if !isdirectory($HOME."/.vim")
-    call mkdir($HOME."/.vim", "", 0770)
+if has('nvim')
+	if !isdirectory($HOME."/.config/nvim")
+		call mkdir($HOME."/.config/nvim", "", 0770)
+	endif
+	if !isdirectory($HOME."/.config/nvim/undo-dir")
+		call mkdir($HOME."/.config/nvim/undo-dir", "", 0700)
+	endif
+	set undodir=~/.config/nvim/undo-dir
+	set undofile
+else
+	if !isdirectory($HOME."/.vim")
+		call mkdir($HOME."/.vim", "", 0770)
+	endif
+	if !isdirectory($HOME."/.vim/undo-dir")
+		call mkdir($HOME."/.vim/undo-dir", "", 0700)
+	endif
+	set undodir=~/.vim/undo-dir
+	set undofile
 endif
-if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
-endif
-set undodir=~/.vim/undo-dir
-set undofile
 
 " leader key mapping
 let mapleader = ","
@@ -220,6 +246,9 @@ noremap <Tab> :bn<CR>
 noremap <S-Tab> :bp<CR>
 noremap <C-t> :tabnew split<CR>
 
+" Save shortcut
+noremap <C-s> :w<CR>
+
 " 셀렉션에 paste 하더라도 기존 텍스트 유지
 vnoremap <leader>p "_dP
 
@@ -228,9 +257,6 @@ vnoremap <leader>p "_dP
 "-------------------------Vim Plugins Settings-------------------------
 "----------------------------------------------------------------------
 "----------------------------------------------------------------------
-
-" vim-hardtime
-let g:hardtime_default_on = 0
 
 " vim-move
 let g:move_key_modifier = 'C'
@@ -283,16 +309,15 @@ let ayucolor="dark"
 colorscheme ayu
 
 " ctrlp.vim
-" This shortcut is 'moot' for being now
 let g:ctrlp_map = '<c-p>'
 " gitignore 내 파일들을 모두 무시하도록 함.
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-" YouCompleteMe
-let g:ycm_max_num_candidates = 5
-let g:ycm_max_num_identifier_candidates = 10
-let g:ycm_auto_trigger = 1
-let g:ycm_disable_for_files_larger_than_kb = 1000
+" " YouCompleteMe
+" let g:ycm_max_num_candidates = 5
+" let g:ycm_max_num_identifier_candidates = 10
+" let g:ycm_auto_trigger = 1
+" let g:ycm_disable_for_files_larger_than_kb = 1000
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>f :YcmCompleter FixIt<CR>
@@ -413,3 +438,101 @@ let g:ctrlsf_auto_close = {
 	\ "normal" : 1,
 	\ "compact": 1
 	\}
+
+"----------------------------------------------------------------------
+"----------------------------------------------------------------------
+"-------------------------Neovim Settings------------------------------
+"----------------------------------------------------------------------
+"----------------------------------------------------------------------
+
+if has('nvim')
+" nvim-treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+	ensure_installed = {"c", "javascript", "typescript"},
+	ignore_install = { "" },
+	highlight = {
+		enable = true,
+		disable = { "" },
+		additional_vim_regex_highlighting = false,
+	},
+}
+EOF
+
+"----------------------------------------------------------------------
+"----------------------------------------------------------------------
+"-----------------------CoC.nvim Settings------------------------------
+"----------------------------------------------------------------------
+"----------------------------------------------------------------------
+
+" coc.nvim extensions
+" :CocInstall coc-json coc-tsserver
+" let g:coc_suggest_disable = 1
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocActionAsync('format')
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+endif

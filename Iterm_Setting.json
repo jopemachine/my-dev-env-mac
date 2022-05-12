@@ -1,6 +1,7 @@
 {
-  "ASCII Ligatures" : false,
-  "Working Directory" : "\/Users\/igyubong",
+  "Badge Text" : "",
+  "Set Local Environment Vars" : true,
+  "Working Directory" : "\/Users\/igyubong\/Desktop",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Green Component" : 0,
@@ -36,6 +37,7 @@
   },
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
+  "Badge Font" : "Helvetica-Bold",
   "Disable Window Resizing" : true,
   "Description" : "Default",
   "Close Sessions On End" : true,
@@ -48,6 +50,7 @@
   "Non-ASCII Ligatures" : false,
   "Scrollback Lines" : 0,
   "Scrollback in Alternate Screen" : false,
+  "Scrollback With Status Bar" : false,
   "Draw Powerline Glyphs" : false,
   "Status Bar Layout" : {
     "components" : [
@@ -127,9 +130,10 @@
     "Alpha Component" : 0.25,
     "Green Component" : 0.92681378126144409
   },
-  "Right Option Key Changeable" : true,
+  "Right Option Key Changeable" : false,
   "BM Growl" : true,
   "Icon" : 1,
+  "AWDS Window Directory" : "",
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -137,8 +141,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.35915297269821167
   },
-  "Use Non-ASCII Font" : false,
   "Shortcut" : "",
+  "Use Non-ASCII Font" : false,
   "Ansi 3 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0,
@@ -151,6 +155,7 @@
   },
   "Unlimited Scrollback" : true,
   "Custom Command" : "No",
+  "AWDS Tab Option" : "Recycle",
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Text" : "[1;6A",
@@ -326,14 +331,14 @@
   "Send Code When Idle" : false,
   "ASCII Anti Aliased" : true,
   "Tags" : [
-    "Mac",
-    "Vim"
+    "Vim env"
   ],
   "Ansi 9 Color" : {
     "Green Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408,
     "Red Component" : 1
   },
+  "Badge Right Margin" : 10,
   "Use Bold Font" : true,
   "Silence Bell" : true,
   "Ansi 12 Color" : {
@@ -362,17 +367,18 @@
   "Name" : "My Iterms Setting",
   "Blinking Cursor" : true,
   "Guid" : "A863CD11-3B15-4A31-A848-F1D3E6AD1631",
-  "Idle Code" : 0,
-  "Ansi 10 Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408
-  },
+  "Badge Max Width" : 0.5,
   "Ansi 8 Color" : {
     "Green Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408,
     "Red Component" : 0.3333333432674408
   },
+  "Ansi 10 Color" : {
+    "Green Component" : 1,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408
+  },
+  "Idle Code" : 0,
   "Badge Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -381,6 +387,7 @@
     "Green Component" : 0.14910027384757996
   },
   "Ambiguous Double Width" : false,
+  "Badge Max Height" : 0.20000000000000001,
   "Background Image Mode" : 2,
   "Cursor Type" : 2,
   "Ansi 0 Color" : {
@@ -388,14 +395,18 @@
     "Blue Component" : 0,
     "Red Component" : 0
   },
-  "Blur" : false,
+  "AWDS Pane Directory" : "",
+  "Left Option Key Changeable" : false,
   "Normal Font" : "NotoMonoNerdFontCompleteM- 14",
   "Vertical Spacing" : 1.1000000000000001,
+  "Blur" : false,
   "Ansi 7 Color" : {
     "Green Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
+  "AWDS Tab Directory" : "",
+  "AWDS Pane Option" : "Recycle",
   "Command" : "",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
@@ -412,13 +423,15 @@
     "Red Component" : 0
   },
   "Transparency" : 0,
-  "Initial Text" : "",
+  "Initial Text" : "tmux",
   "Background Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
     "Red Component" : 0
   },
+  "Badge Top Margin" : 10,
   "Screen" : -1,
+  "AWDS Window Option" : "Recycle",
   "Non Ascii Font" : "NanumGothicCoding 16",
   "Ansi 13 Color" : {
     "Green Component" : 0.3333333432674408,
@@ -428,11 +441,11 @@
   "Columns" : 80,
   "Unicode Normalization" : 1,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
+  "ASCII Ligatures" : false,
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Set Local Environment Vars" : true
+  "Custom Directory" : "Yes"
 }
