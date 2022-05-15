@@ -81,7 +81,7 @@ vim.cmd([[
 ------------------------------------------------------------------------------------------
 
 -- *
--- Telescope
+-- telescope.nvim
 -- *
 lvim.builtin.telescope.active = true
 lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
@@ -93,7 +93,7 @@ lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 
 -- *
--- Nvimtree
+-- nvimtree.lua
 -- *
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 1
@@ -109,7 +109,7 @@ lvim.builtin.terminal.active = true
 lvim.builtin.notify.active = true
 
 -- *
--- Treesitter
+-- treesitter
 -- *
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -220,24 +220,46 @@ lvim.lsp.automatic_servers_installation = false
 
 -- Additional Plugins
 lvim.plugins = {
-  { "tpope/vim-eunuch" },
-  { "edkolev/tmuxline.vim" },
-  { "johngrib/vim-f-hangul" },
-  { "tpope/vim-obsession" },
-  { "tpope/vim-repeat" },
-  { "psliwka/vim-smoothie" },
-  { "andrewradev/splitjoin.vim" },
-  { "junegunn/gv.vim" },
-  { "mg979/vim-visual-multi" },
+	-- Code display (format, indent, highlights)
+	{ "ntpeters/vim-better-whitespace" },
   { "ap/vim-css-color" },
+	{ "luochen1990/rainbow" },
+
+	-- Unix command utils
+  { "tpope/vim-eunuch" },
+
+	-- Window Management (including tmux)
+  { "edkolev/tmuxline.vim" },
+
+	-- Hangul
+  { "johngrib/vim-f-hangul" },
+
+	-- Session Management
+  { "tpope/vim-obsession" },
+
+	-- Animation
+  { "psliwka/vim-smoothie" },
+
+	-- Extend Vim featues
   { "wellle/targets.vim" },
-  { "tacahiroy/ctrlp-funky" },
+  { "tpope/vim-repeat" },
+  {
+    "easymotion/vim-easymotion",
+    config = function()
+      vim.cmd("map ,, <Plug>(easymotion-prefix)")
+    end,
+  },
+
+	-- Utility
+  { "andrewradev/splitjoin.vim" },
   {
     "mbbill/undotree",
     cmd = {
       "UndotreeToggle"
     }
   },
+
+	-- Argument wrapping
   {
     "tpope/vim-surround",
     keys = { "c", "d", "y" },
@@ -245,12 +267,18 @@ lvim.plugins = {
       vim.o.timeoutlen = 500
     end
   },
+
+	-- Cursor
   {
-    "easymotion/vim-easymotion",
+    "matze/vim-move",
     config = function()
-      vim.cmd("map ,, <Plug>(easymotion-prefix)")
+      vim.cmd("let g:move_key_modifier = 'C'");
     end,
   },
+  { "mg979/vim-visual-multi" },
+
+	-- File, project searching, string replacing
+  { "tacahiroy/ctrlp-funky" },
   {
     "kien/ctrlp.vim",
     config = function()
@@ -260,12 +288,9 @@ lvim.plugins = {
       ]])
     end,
   },
-  {
-    "matze/vim-move",
-    config = function()
-      vim.cmd("let g:move_key_modifier = 'C'");
-    end,
-  },
+
+	-- Git
+  { "junegunn/gv.vim" },
   {
     "tpope/vim-fugitive",
     cmd = {
