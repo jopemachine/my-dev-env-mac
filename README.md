@@ -23,10 +23,11 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 - [ripgrep]: 모던 `grep` replacement
 - [fd]: 모던 `find` replacement
 - [navi]
+- [lazygit]
 - Nerd font file
 
 ```
-$ brew install ripgrep && brew install mcfly && brew install zplug && brew install autojump && brew install k && brew install git-delta && brew install --HEAD universal-ctags/universal-ctags/universal-ctags && brew install neovim && brew install navi
+$ brew install ripgrep && brew install mcfly && brew install zplug && brew install autojump && brew install k && brew install git-delta && brew install --HEAD universal-ctags/universal-ctags/universal-ctags && brew install neovim && brew install navi && brew install lazy-git
 ```
 
 ## `zplug` 설치
