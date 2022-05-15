@@ -1,26 +1,144 @@
---[[
-lvim is the global options object
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------General Setting---------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
-Linters should be
-filled in as strings with either
-a global executable or a path to
-an executable
-]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
-
--- general
 lvim.log.level = "warn"
-lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
 
+-- *
+-- Lint
+-- *
+lvim.lint_on_save = false
+
+-- *
+-- Format
+-- *
+lvim.format_on_save = false
+
+-- *
+-- Leader Key
+-- *
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
--- add your own keymapping
+
+vim.cmd([[
+	set autoindent
+	set noexpandtab
+	set tabstop=2
+	set shiftwidth=2
+]])
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+--------------------------------Key Mapping-----------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+
+-- Better window movement
+-- 다른 키들과 충돌해서 사용 불가능. 어떻게든 키를 할당하고 싶다.
+-- lvim.keys.normal_mode["<C-h>"] = "<C-w>h"
+-- lvim.keys.normal_mode["<C-j>"] = "<C-w>j"
+-- lvim.keys.normal_mode["<C-k>"] = "<C-w>k"
+-- lvim.keys.normal_mode["<C-l>"] = "<C-w>l"
+
+-- Resize with arrows
+lvim.keys.normal_mode["<Up>"] = ":resize -2<CR>"
+lvim.keys.normal_mode["<Down>"] = ":resize +2<CR>"
+lvim.keys.normal_mode["<Left>"] = ":vertical resize +2<CR>"
+lvim.keys.normal_mode["<Right>"] = ":vertical resize -2<CR>"
+
+-- QuickFix
+lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
+
+-- Better indenting
+lvim.keys.visual_mode["<"] = "<gv";
+lvim.keys.visual_mode[">"] = ">gv";
+
+-- Paste most recent yank
+lvim.keys.visual_mode["p"] = '"0p';
+lvim.keys.visual_mode["P"] = '"0P';
+
+-- Tab management shortcuts
+vim.cmd([[
+	nnoremap <Tab> :bn<CR>
+	nnoremap <S-Tab> :bp<CR>
+]])
+
+-- 셀렉션에 paste 하더라도 기존 텍스트 유지
+vim.cmd([[
+	vnoremap <leader>p "_dP
+]])
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+----------------------------Core Plugin Settings------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+-- *
+-- Telescope
+-- *
+lvim.builtin.telescope.active = true
+lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
+
+-- *
+-- Dashboard
+-- *
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
+
+-- *
+-- Nvimtree
+-- *
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.show_icons.git = 1
+
+-- *
+-- Terminal
+-- *
+lvim.builtin.terminal.active = true
+
+-- *
+-- nvim-notify
+-- *
+lvim.builtin.notify.active = true
+
+-- *
+-- Treesitter
+-- *
+-- if you don't want all the parsers change this to a table of the ones you want
+lvim.builtin.treesitter.ensure_installed = {
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "java",
+  "yaml",
+}
+
+lvim.builtin.treesitter.ignore_install = { "haskell" }
+lvim.builtin.treesitter.highlight.enabled = true
+
+-- *
+-- LSP
+-- *
+-- @usage disable automatic installation of servers
+lvim.lsp.automatic_servers_installation = false
+
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
--- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -52,39 +170,6 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 --   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
 -- }
 
--- TODO: User Config for predefined plugins
--- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.notify.active = true
-lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.show_icons.git = 0
-
--- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
-}
-
-lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.highlight.enabled = true
-
--- generic LSP settings
-
--- ---@usage disable automatic installation of servers
-lvim.lsp.automatic_servers_installation = false
-
 -- ---configure a server manually. !!Requires `:LvimCacheReset` to take effect!!
 -- ---see the full default list `:lua print(vim.inspect(lvim.lsp.automatic_configuration.skipped_servers))`
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
@@ -108,24 +193,30 @@ lvim.lsp.automatic_servers_installation = false
 -- end
 
 -- set a formatter, this will override the language server formatting capabilities (if it exists)
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
-  {
-    command = "prettier",
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-  },
-}
+-- local formatters = require "lvim.lsp.null-ls.formatters"
+-- formatters.setup {
+--   {
+--     command = "prettier",
+--     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+--     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+--   },
+-- }
 
 -- set additional linters
-local linters = require "lvim.lsp.null-ls.linters"
-linters.setup {
-  {
-    command = "xo",
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-  },
-}
+-- local linters = require "lvim.lsp.null-ls.linters"
+-- linters.setup {
+--   {
+--     command = "xo",
+--     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+--     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+--   },
+-- }
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+----------------------------User Plugin Settings------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 -- Additional Plugins
 lvim.plugins = {
@@ -262,13 +353,4 @@ lvim.plugins = {
 --   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 -- }
 
--- Tab management shortcuts
-vim.cmd([[
-	nnoremap <Tab> :bn<CR>
-	nnoremap <S-Tab> :bp<CR>
-]])
 
--- 셀렉션에 paste 하더라도 기존 텍스트 유지
-vim.cmd([[
-	vnoremap <leader>p "_dP
-]])

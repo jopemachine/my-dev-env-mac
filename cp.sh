@@ -9,5 +9,5 @@ cp ~/.config/starship.toml ./.config/starship.toml
 cp ~/.tmux.conf ./.tmux.conf
 cp ~/.gitconfig ./.gitconfig
 
-git reset --soft HEAD^1 && git add . && git commit -m "🔨 Update configs" && git push origin master --force
+git add . && git commit -m "🔨 Update configs" && git push origin master --force
 
