@@ -1,3 +1,5 @@
+#!/usr/local/bin/zsh
+
 # installing packages
 brew install ripgrep
 brew install mcfly

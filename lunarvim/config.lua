@@ -25,10 +25,10 @@ lvim.leader = "space"
 
 -- Use Tab instead of space
 vim.cmd([[
-	set autoindent
-	set noexpandtab
-	set tabstop=2
-	set shiftwidth=2
+  set autoindent
+  set noexpandtab
+  set tabstop=4
+  set shiftwidth=4
 ]])
 
 ------------------------------------------------------------------------------------------
@@ -66,13 +66,13 @@ lvim.keys.visual_mode["P"] = '"0P';
 
 -- Tab management shortcuts
 vim.cmd([[
-	nnoremap <Tab> :bn<CR>
-	nnoremap <S-Tab> :bp<CR>
+  nnoremap <Tab> :bn<CR>
+  nnoremap <S-Tab> :bp<CR>
 ]])
 
 -- 셀렉션에 paste 하더라도 기존 텍스트 유지
 vim.cmd([[
-	vnoremap <leader>p "_dP
+  vnoremap <leader>p "_dP
 ]])
 
 ------------------------------------------------------------------------------------------
@@ -221,56 +221,56 @@ lvim.lsp.automatic_servers_installation = false
 
 -- Additional Plugins
 lvim.plugins = {
-	-- Code display (format, indent, highlights)
-	{ "ntpeters/vim-better-whitespace" },
+  -- Code display (format, indent, highlights)
+  { "ntpeters/vim-better-whitespace" },
   { "ap/vim-css-color" },
   { "p00f/nvim-ts-rainbow" },
-	{ "nathanaelkane/vim-indent-guides" },
+  { "nathanaelkane/vim-indent-guides" },
 
-	-- Code formatter
-	{ "junegunn/vim-easy-align" },
+  -- Code formatter
+  { "junegunn/vim-easy-align" },
 
-	-- Unix command utils
+  -- Unix command utils
   { "tpope/vim-eunuch" },
 
-	-- Window Management (including tmux)
+  -- Window management (including tmux)
   { "edkolev/tmuxline.vim" },
 
-	-- Hangul
+  -- Hangul
   { "johngrib/vim-f-hangul" },
 
-	-- Session Management
+  -- Session management
   { "tpope/vim-obsession" },
 
-	-- Animation
-	{
-		"karb94/neoscroll.nvim",
-		config = function()
-			require('neoscroll').setup({
-					-- All these keys will be mapped to their corresponding default scrolling animation
-					mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
-											'<C-y>', '<C-e>', 'zt', 'zz', 'zb'},
-					hide_cursor = true,          -- Hide cursor while scrolling
-					stop_eof = true,             -- Stop at <EOF> when scrolling downwards
-					use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
-					respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
-					cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
-					easing_function = nil,       -- Default easing function
-					pre_hook = nil,              -- Function to run before the scrolling animation starts
-					post_hook = nil,             -- Function to run after the scrolling animation ends
-					performance_mode = false,    -- Disable "Performance Mode" on all buffers.
-			})
-		end,
-	},
+  -- Animation
+  {
+    "karb94/neoscroll.nvim",
+    config = function()
+      require('neoscroll').setup({
+          -- All these keys will be mapped to their corresponding default scrolling animation
+          mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
+                      '<C-y>', '<C-e>', 'zt', 'zz', 'zb'},
+          hide_cursor = true,          -- Hide cursor while scrolling
+          stop_eof = true,             -- Stop at <EOF> when scrolling downwards
+          use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+          respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+          cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+          easing_function = nil,       -- Default easing function
+          pre_hook = nil,              -- Function to run before the scrolling animation starts
+          post_hook = nil,             -- Function to run after the scrolling animation ends
+          performance_mode = false,    -- Disable "Performance Mode" on all buffers.
+      })
+    end,
+  },
 
-	-- Extend vim featues
+  -- Extend vim featues
   { "wellle/targets.vim" },
   { "tpope/vim-repeat" },
-	{ "ggandor/lightspeed.nvim" },
+  { "ggandor/lightspeed.nvim" },
 
-	-- Utility
-	{ "ellisonleao/glow.nvim" },
-	{ "windwp/nvim-ts-autotag" },
+  -- Utility
+  { "ellisonleao/glow.nvim" },
+  { "windwp/nvim-ts-autotag" },
   { "andrewradev/splitjoin.vim" },
   {
     "mbbill/undotree",
@@ -279,7 +279,7 @@ lvim.plugins = {
     }
   },
 
-	-- Argument wrapping
+  -- Argument wrapping
   {
     "tpope/vim-surround",
     keys = { "c", "d", "y" },
@@ -288,7 +288,7 @@ lvim.plugins = {
     end
   },
 
-	-- Cursor
+  -- Cursor
   { "mg979/vim-visual-multi" },
   {
     "matze/vim-move",
@@ -297,7 +297,7 @@ lvim.plugins = {
     end,
   },
 
-	-- File, project searching, string replacing
+  -- File, project searching, string replacing
   { "tacahiroy/ctrlp-funky" },
   {
     "kien/ctrlp.vim",
@@ -309,7 +309,7 @@ lvim.plugins = {
     end,
   },
 
-  -- Search String
+  -- Search string
   {
     "dyng/ctrlsf.vim",
     config = function()
@@ -332,10 +332,10 @@ lvim.plugins = {
     end,
   },
 
-	-- Git
+  -- Git
   { "junegunn/gv.vim" },
-	{ "kdheepak/lazygit.nvim" },
-	{ "f-person/git-blame.nvim" },
+  { "kdheepak/lazygit.nvim" },
+  { "f-person/git-blame.nvim" },
   {
     "tpope/vim-fugitive",
     cmd = {
@@ -356,10 +356,10 @@ lvim.plugins = {
     ft = { "fugitive" }
   },
 
-	-- Github
-	{ "pwntester/octo.nvim" },
+  -- Github
+  { "pwntester/octo.nvim" },
 
-	-- Show error window
+  -- Show error window
   {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
