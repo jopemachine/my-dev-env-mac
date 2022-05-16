@@ -41,9 +41,9 @@ $ brew install zplug
 
 [참고](https://github.com/zplug/zplug/tree/c4dea766566b168a32dbfa8d10335e525ce39fcc#using-homebrew-os-x)
 
-### [zplug] dependencies
+### [zplug] extensions
 
-#### [oh-my-zsh]
+#### [oh-my-zsh] plugins
 
 - [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 - [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
@@ -138,6 +138,7 @@ $ python3 -m pip install --user --upgrade pynvim
 [lazygit]: https://github.com/jesseduffield/lazygit
 [navi]: https://github.com/denisidoro/navi
 [vim-plug]: https://github.com/junegunn/vim-plug
+[zsh]: https://www.zsh.org/
 [zplug]: https://github.com/zplug/zplug
 [packer]: https://github.com/wbthomason/packer.nvim
 [vs code]: https://code.visualstudio.com/
