@@ -73,6 +73,14 @@ $ zplug install
 
 [zshrc 열기](./zshrc)
 
+## [tmux] 설정
+
+### [tpm] 설치
+
+```
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 ## [vim] 에디터 설치 및 설정
 
 ### [lunarvim]
@@ -116,6 +124,14 @@ $ python3 -m pip install --user --upgrade pynvim
 
 - [NotoMonoNerdFontCompleteM](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto/Mono)
 
+## [chrome] extensions
+
+[리스트](./chrome/chrome-extensions.html)
+
+## [vscode] extensions
+
+[리스트](./vscode/vscode-extensions)
+
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme
 [starship]: https://github.com/starship/starship
@@ -148,4 +164,6 @@ $ python3 -m pip install --user --upgrade pynvim
 [glow]: https://github.com/ellisonleao/glow.nvim
 [rust]: https://github.com/rust-lang/rust
 [node]: https://github.com/nodejs/node
-[k]: localhost
+[k]: https://github.com/supercrabtree/k
+[tpm]: https://github.com/tmux-plugins/tpm
+[chrome]: https://www.google.com/intl/en/chrome/

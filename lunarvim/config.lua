@@ -227,6 +227,9 @@ lvim.plugins = {
   { "p00f/nvim-ts-rainbow" },
 	{ "nathanaelkane/vim-indent-guides" },
 
+	-- Code formatter
+	{ "junegunn/vim-easy-align" },
+
 	-- Unix command utils
   { "tpope/vim-eunuch" },
 
@@ -260,7 +263,7 @@ lvim.plugins = {
 		end,
 	},
 
-	-- Extend Vim featues
+	-- Extend vim featues
   { "wellle/targets.vim" },
   { "tpope/vim-repeat" },
 	{ "ggandor/lightspeed.nvim" },
