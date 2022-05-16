@@ -50,7 +50,7 @@ $ brew install zplug
 - [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 - [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 
-#### thirdparth
+#### thirdparty
 
 - [djui/alias-tips](https://github.com/djui/alias-tips)
 - [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion)
@@ -73,11 +73,13 @@ $ zplug install
 
 [zshrc 열기](./zshrc)
 
-## `vim` 에디터 설치 및 설정
+## [vim] 에디터 설치 및 설정
 
 ### [lunarvim]
 
-- `neovim`, `rust`, `node` 설치 필요
+- [config.lua](./config.lua)
+
+- [neovim], [rust], [node] 설치 필요
 
 - [설치](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
 
@@ -102,9 +104,9 @@ $ python3 -m pip install --user --upgrade pynvim
 
 [vimrc 열기](./vimrc)
 
-### [vim-plug] (또는 [packer]) 를 통해 플러그인 설치
+### [vim-plug] (또는 [packer])를 통해 플러그인 설치
 
-- 아래 vim 명령어로 플러그인 설치
+- 명령 모드에서 아래 명령어로 플러그인 설치
 
 ```
 :PlugInstall
@@ -143,4 +145,6 @@ $ python3 -m pip install --user --upgrade pynvim
 [nerd font]: https://github.com/ryanoasis/nerd-fonts
 [git]: https://git-scm.com/
 [glow]: https://github.com/ellisonleao/glow.nvim
+[rust]: https://github.com/rust-lang/rust
+[node]: https://github.com/nodejs/node
 [k]: localhost
