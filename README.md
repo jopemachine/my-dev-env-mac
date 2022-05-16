@@ -2,35 +2,38 @@
 
 Just personal development configs on macOS
 
-## `homebrew` 설치
+## [homebrew] 설치
 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## `homebrew` dependencies
+## [homebrew] dependencies
 
 - [vim], [neovim], [lunarvim]: 소스 코드 편집기
-- [tmux]
+- [tmux]: 콘솔 다중화
 - [homebrew]: mac 패키지 관리자
-- [oh-my-zsh]
+- [mas]: mac 앱 스토어 애플리케이션 설치 관리자
+- [oh-my-zsh]: [zsh] 기반의 설정 프레임워크
 - [mcfly]: 명령어 히스토리 fuzzy search
-- [ranger]: `vim` 기반 TUI 파일 탐색기
+- [ranger]: [vim] 기반 TUI 파일 탐색기
 - [iTerm2]
-- [forgit]: `git` 명령어 축약 및 향상
-- [delta]: `git` 변경사항 (diff) 하이라이팅
-- [agnoster] or [starship]: `zsh` 테마
+- [forgit]: [git] 명령어 축약 및 향상
+- [delta]: [git] 변경사항 (diff) 하이라이팅
+- [agnoster] or [starship]: [zsh] 테마
 - [ripgrep]: 모던 `grep` replacement
 - [fd]: 모던 `find` replacement
 - [navi]
 - [lazygit]
-- Nerd font file
+- [vs code]
+- [nerd font]
+- [glow]: CLI 마크다운 프리뷰
 
 ```
-$ brew install ripgrep && brew install mcfly && brew install zplug && brew install autojump && brew install k && brew install git-delta && brew install --HEAD universal-ctags/universal-ctags/universal-ctags && brew install neovim && brew install navi && brew install lazy-git
+$ ./install-homebrew-dependencies.sh
 ```
 
-## `zplug` 설치
+## [zplug] 설치
 
 ```
 $ brew install zplug
@@ -38,12 +41,17 @@ $ brew install zplug
 
 [참고](https://github.com/zplug/zplug/tree/c4dea766566b168a32dbfa8d10335e525ce39fcc#using-homebrew-os-x)
 
-### `zplug` dependencies
+### [zplug] dependencies
 
-- [plugins/git](https://github.com/plugins/git)
-- [lib/complete](https://github.com/lib/complete)
-- [lib/key-bindings](https://github.com/lib/key-bindings)
-- [lib/directories](https://github.com/lib/directories)
+#### [oh-my-zsh]
+
+- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+
+#### thirdparth
+
 - [djui/alias-tips](https://github.com/djui/alias-tips)
 - [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion)
 - [junegunn/fzf](https://github.com/junegunn/fzf)
@@ -56,6 +64,7 @@ $ brew install zplug
 - [ogham/exa](https://github.com/ogham/exa): 모던 `ls` replacement
 
 아래 명령어를 통해 플러그인 설치
+
 ```
 $ zplug install
 ```
@@ -64,34 +73,36 @@ $ zplug install
 
 [zshrc 열기](./zshrc)
 
-## `vim` 설치 및 설정
+## `vim` 에디터 설치 및 설정
 
-### LunarVim
+### [lunarvim]
 
-- `Neovim`, `rust`, `node` 설치 필요
+- `neovim`, `rust`, `node` 설치 필요
 
 - [설치](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
 
-### Neovim
+### [neovim]
 
-- `VimPlug` 설치
+- [vim-plug] 설치
 
 ```
 $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-- Python 3 provider 설치
+- python 3 provider 설치
 
-``` $ python3 -m pip install --user --upgrade pynvim ```
+```
+$ python3 -m pip install --user --upgrade pynvim
+```
 
-### Vim
+### [vim]
 
 ### `.vimrc` 설정
 
 [vimrc 열기](./vimrc)
 
-### `vim-plug` (또는 `packer`) 를 통해 플러그인 설치
+### [vim-plug] (또는 [packer]) 를 통해 플러그인 설치
 
 - 아래 vim 명령어로 플러그인 설치
 
@@ -122,5 +133,14 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 [fd]: https://github.com/sharkdp/fd
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [homebrew]: https://github.com/Homebrew/brew
+[lazygit]: https://github.com/jesseduffield/lazygit
 [navi]: https://github.com/denisidoro/navi
+[vim-plug]: https://github.com/junegunn/vim-plug
+[zplug]: https://github.com/zplug/zplug
+[packer]: https://github.com/wbthomason/packer.nvim
+[vs code]: https://code.visualstudio.com/
+[mas]: https://github.com/mas-cli/mas
+[nerd font]: https://github.com/ryanoasis/nerd-fonts
+[git]: https://git-scm.com/
+[glow]: https://github.com/ellisonleao/glow.nvim
 [k]: localhost

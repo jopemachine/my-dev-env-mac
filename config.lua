@@ -23,6 +23,7 @@ lvim.format_on_save = false
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
+-- Use Tab instead of space
 vim.cmd([[
 	set autoindent
 	set noexpandtab
@@ -47,10 +48,10 @@ lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 -- lvim.keys.normal_mode["<C-l>"] = "<C-w>l"
 
 -- Resize with arrows
-lvim.keys.normal_mode["<Up>"] = ":resize -2<CR>"
-lvim.keys.normal_mode["<Down>"] = ":resize +2<CR>"
-lvim.keys.normal_mode["<Left>"] = ":vertical resize +2<CR>"
-lvim.keys.normal_mode["<Right>"] = ":vertical resize -2<CR>"
+lvim.keys.normal_mode["<Up>"] = ":resize -1<CR>"
+lvim.keys.normal_mode["<Down>"] = ":resize +1<CR>"
+lvim.keys.normal_mode["<Left>"] = ":vertical resize +1<CR>"
+lvim.keys.normal_mode["<Right>"] = ":vertical resize -1<CR>"
 
 -- QuickFix
 lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
@@ -87,19 +88,19 @@ lvim.builtin.telescope.active = true
 lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
 
 -- *
--- Dashboard
+-- alpha.nvim
 -- *
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 
 -- *
--- nvimtree.lua
+-- nvimtree
 -- *
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 1
 
 -- *
--- Terminal
+-- terminal
 -- *
 lvim.builtin.terminal.active = true
 
@@ -223,7 +224,8 @@ lvim.plugins = {
 	-- Code display (format, indent, highlights)
 	{ "ntpeters/vim-better-whitespace" },
   { "ap/vim-css-color" },
-	{ "luochen1990/rainbow" },
+  { "p00f/nvim-ts-rainbow" },
+	{ "nathanaelkane/vim-indent-guides" },
 
 	-- Unix command utils
   { "tpope/vim-eunuch" },
@@ -238,19 +240,34 @@ lvim.plugins = {
   { "tpope/vim-obsession" },
 
 	-- Animation
-  { "psliwka/vim-smoothie" },
+	{
+		"karb94/neoscroll.nvim",
+		config = function()
+			require('neoscroll').setup({
+					-- All these keys will be mapped to their corresponding default scrolling animation
+					mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
+											'<C-y>', '<C-e>', 'zt', 'zz', 'zb'},
+					hide_cursor = true,          -- Hide cursor while scrolling
+					stop_eof = true,             -- Stop at <EOF> when scrolling downwards
+					use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+					respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+					cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+					easing_function = nil,       -- Default easing function
+					pre_hook = nil,              -- Function to run before the scrolling animation starts
+					post_hook = nil,             -- Function to run after the scrolling animation ends
+					performance_mode = false,    -- Disable "Performance Mode" on all buffers.
+			})
+		end,
+	},
 
 	-- Extend Vim featues
   { "wellle/targets.vim" },
   { "tpope/vim-repeat" },
-  {
-    "easymotion/vim-easymotion",
-    config = function()
-      vim.cmd("map ,, <Plug>(easymotion-prefix)")
-    end,
-  },
+	{ "ggandor/lightspeed.nvim" },
 
 	-- Utility
+	{ "ellisonleao/glow.nvim" },
+	{ "windwp/nvim-ts-autotag" },
   { "andrewradev/splitjoin.vim" },
   {
     "mbbill/undotree",
@@ -269,13 +286,13 @@ lvim.plugins = {
   },
 
 	-- Cursor
+  { "mg979/vim-visual-multi" },
   {
     "matze/vim-move",
     config = function()
       vim.cmd("let g:move_key_modifier = 'C'");
     end,
   },
-  { "mg979/vim-visual-multi" },
 
 	-- File, project searching, string replacing
   { "tacahiroy/ctrlp-funky" },
@@ -289,27 +306,7 @@ lvim.plugins = {
     end,
   },
 
-	-- Git
-  { "junegunn/gv.vim" },
-  {
-    "tpope/vim-fugitive",
-    cmd = {
-      "G",
-      "Git",
-      "Gdiffsplit",
-      "Gread",
-      "Gwrite",
-      "Ggrep",
-      "GMove",
-      "GDelete",
-      "GBrowse",
-      "GRemove",
-      "GRename",
-      "Glgrep",
-      "Gedit"
-    },
-    ft = { "fugitive" }
-  },
+  -- Search String
   {
     "dyng/ctrlsf.vim",
     config = function()
@@ -331,6 +328,35 @@ lvim.plugins = {
       ]])
     end,
   },
+
+	-- Git
+  { "junegunn/gv.vim" },
+	{ "kdheepak/lazygit.nvim" },
+	{ "f-person/git-blame.nvim" },
+  {
+    "tpope/vim-fugitive",
+    cmd = {
+      "G",
+      "Git",
+      "Gdiffsplit",
+      "Gread",
+      "Gwrite",
+      "Ggrep",
+      "GMove",
+      "GDelete",
+      "GBrowse",
+      "GRemove",
+      "GRename",
+      "Glgrep",
+      "Gedit"
+    },
+    ft = { "fugitive" }
+  },
+
+	-- Github
+	{ "pwntester/octo.nvim" },
+
+	-- Show error window
   {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
