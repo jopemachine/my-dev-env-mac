@@ -2,13 +2,38 @@
 
 Just personal development configs on macOS
 
-## [homebrew] 설치
+**Table of Contents**
+
+- [1. homebrew 설정](#homebrew-설정)
+    - [1.1 homebrew 설치](#homebrew-설치)
+    - [1.2 homebrew dependencies](#homebrew-dependencies)
+- [2. zsh 설정](#zsh-설정)
+    - [2.1 zplug 설치](#zplug-설치)
+	- [2.2 zplug extensions](#zplug-extensions)
+    - [2.3 oh-my-zsh extensions](#oh-my-zsh-extensions)
+    - [2.4 zshrc](#zshrc)
+- [3. tmux 설정](#tmux-설정)
+    - [3.1 tpm 설치](#tpm-설정)
+    - [3.2 tmux extensions](#tmux-extensions)
+- [4. mas extensions](#mas-extensions)
+- [5. npm extensions](#npm-extensions)
+- [6. vim 에디터 설치 및 설정](#vim-에디터-설치-및-설정)
+    - [6.1 lunarvim](#lunarvim)
+    - [6.2 neovim](#neovim)
+    - [6.3 vim](#vim)
+- [7. nerd-font 설치](#nerd-font-설치)
+- [8. chrome extensions](#chrome-extensions)
+- [9. vs code extensions](#vs-code-extensions)
+
+## [homebrew] 설정
+
+### [homebrew] 설치
 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## [homebrew] dependencies
+### [homebrew] dependencies
 
 - [vim], [neovim], [lunarvim]: 소스 코드 편집기
 - [tmux]: 콘솔 다중화
@@ -33,7 +58,9 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ ./install-homebrew-dependencies.sh
 ```
 
-## [zplug] 설치
+## [zsh] 설정
+
+### [zplug] 설치
 
 ```
 $ brew install zplug
@@ -42,15 +69,6 @@ $ brew install zplug
 [참고](https://github.com/zplug/zplug/tree/c4dea766566b168a32dbfa8d10335e525ce39fcc#using-homebrew-os-x)
 
 ### [zplug] extensions
-
-#### [oh-my-zsh] plugins
-
-- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-- [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-- [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-- [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-
-#### thirdparty
 
 - [djui/alias-tips](https://github.com/djui/alias-tips)
 - [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion)
@@ -63,13 +81,20 @@ $ brew install zplug
 - [supercrabtree/k](https://github.com/supercrabtree/k): 모던 `ls` replacement
 - [ogham/exa](https://github.com/ogham/exa): 모던 `ls` replacement
 
+### [oh-my-zsh] plugins
+
+- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+
 아래 명령어를 통해 플러그인 설치
 
 ```
 $ zplug install
 ```
 
-## `.zshrc` 설정
+### `.zshrc` 설정
 
 [zshrc 열기](./zshrc)
 
@@ -80,6 +105,8 @@ $ zplug install
 ```
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
+### [tmux] extensions
 
 ## [mas] extensions
 
@@ -106,7 +133,7 @@ $ ./mas/install-mas-dependencies.sh
 
 ### [lunarvim]
 
-- [config.lua](./config.lua)
+- [config.lua](./lunarvim/config.lua)
 
 - [neovim], [rust], [node] 설치 필요
 
@@ -129,19 +156,9 @@ $ python3 -m pip install --user --upgrade pynvim
 
 ### [vim]
 
-### `.vimrc` 설정
+[.vimrc](./vim/.vimrc)
 
-[vimrc 열기](./vimrc)
-
-### [vim-plug] (또는 [packer])를 통해 플러그인 설치
-
-- 명령 모드에서 아래 명령어로 플러그인 설치
-
-```
-:PlugInstall
-```
-
-## Nerdfont 설치
+## nerd-font 설치
 
 - [NotoMonoNerdFontCompleteM](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto/Mono)
 
