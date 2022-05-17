@@ -81,6 +81,27 @@ $ zplug install
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+## [mas] extensions
+
+```
+$ ./mas/install-mas-dependencies.sh
+```
+
+## [npm] extensions
+
+- [np](https://github.com/sindresorhus/np)
+- [npm-name-cli](https://github.com/sindresorhus/npm-name-cli)
+- [open-cli](https://github.com/sindresorhus/open-cli)
+- [fkill-cli](https://github.com/sindresorhus/fkill-cli)
+- [@squash.cli](https://github.com/GoogleChromeLabs/squoosh)
+- [broken-line-checker](https://github.com/stevenvachon/broken-link-checker)
+- [case-cli](https://github.com/jopemachine/case-cli)
+- [tldr](https://github.com/tldr-pages/tldr)
+- [trash-cli](https://github.com/sindresorhus/trash-cli)
+- [pageres-cli](https://github.com/sindresorhus/pageres-cli)
+- [yo](https://github.com/yeoman/yo)
+- [n](https://github.com/tj/n)
+
 ## [vim] 에디터 설치 및 설정
 
 ### [lunarvim]
@@ -128,7 +149,7 @@ $ python3 -m pip install --user --upgrade pynvim
 
 [리스트](./chrome/chrome-extensions.html)
 
-## [vscode] extensions
+## [vs code] extensions
 
 [리스트](./vscode/vscode-extensions)
 
@@ -166,4 +187,5 @@ $ python3 -m pip install --user --upgrade pynvim
 [node]: https://github.com/nodejs/node
 [k]: https://github.com/supercrabtree/k
 [tpm]: https://github.com/tmux-plugins/tpm
+[npm]: https://github.com/npm/cli
 [chrome]: https://www.google.com/intl/en/chrome/
