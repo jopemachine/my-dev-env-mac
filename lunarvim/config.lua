@@ -40,29 +40,16 @@ vim.cmd([[
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
--- Better window movement
--- 다른 키들과 충돌해서 사용 불가능. 어떻게든 키를 할당하고 싶다.
--- lvim.keys.normal_mode["<C-h>"] = "<C-w>h"
--- lvim.keys.normal_mode["<C-j>"] = "<C-w>j"
--- lvim.keys.normal_mode["<C-k>"] = "<C-w>k"
--- lvim.keys.normal_mode["<C-l>"] = "<C-w>l"
-
--- Resize with arrows
-lvim.keys.normal_mode["<Up>"] = ":resize -1<CR>"
-lvim.keys.normal_mode["<Down>"] = ":resize +1<CR>"
-lvim.keys.normal_mode["<Left>"] = ":vertical resize +1<CR>"
-lvim.keys.normal_mode["<Right>"] = ":vertical resize -1<CR>"
-
 -- QuickFix
 lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
 
 -- Better indenting
-lvim.keys.visual_mode["<"] = "<gv";
-lvim.keys.visual_mode[">"] = ">gv";
+lvim.keys.visual_mode["<"] = "<gv"
+lvim.keys.visual_mode[">"] = ">gv"
 
 -- Paste most recent yank
-lvim.keys.visual_mode["p"] = '"0p';
-lvim.keys.visual_mode["P"] = '"0P';
+lvim.keys.visual_mode["p"] = '"0p'
+lvim.keys.visual_mode["P"] = '"0P'
 
 -- Tab management shortcuts
 vim.cmd([[
@@ -130,6 +117,17 @@ lvim.builtin.treesitter.ensure_installed = {
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
+
+-- *
+-- which-key.nvim
+-- *
+lvim.builtin.which_key.mappings["W"] = {
+	name = "Window",
+	k = {":resize -1<CR>", "Resize Up"},
+	j = {":resize +1<CR>", "Resize Down"},
+	h = {":vertical resize +1<CR>", "Resize Left"},
+	l = {":vertical resize -1<CR>", "Resize Right"},
+}
 
 -- *
 -- LSP
@@ -236,11 +234,17 @@ lvim.plugins = {
 		end
 	},
 	{
-		"nathanaelkane/vim-indent-guides",
+		"lukas-reineke/indent-blankline.nvim",
 		config = function ()
-			vim.cmd([[
-				let g:indent_guides_enable_on_vim_startup = 1
-			]])
+			vim.opt.list = true
+			vim.opt.listchars:append("space:⋅")
+			vim.opt.listchars:append("eol:↴")
+
+			require("indent_blankline").setup {
+				space_char_blackline = " ",
+				show_current_context = true,
+				show_current_context_start = true,
+			}
 		end
 	},
 
@@ -297,8 +301,23 @@ lvim.plugins = {
 
 	-- Utility
 	{ "ellisonleao/glow.nvim" },
-	{ "windwp/nvim-ts-autotag" },
 	{ "andrewradev/splitjoin.vim" },
+	{
+		"nacro90/numb.nvim",
+		config = function ()
+			require('numb').setup{
+				show_cursorline = true, -- Enable 'cursorline' for the window while peeking
+				number_only = false, -- Peek only when the command is only a number instead of when it starts with a number
+				centered_peeking = true, -- Peeked line will be centered relative to window
+			}
+		end
+	},
+	{
+		"windwp/nvim-ts-autotag",
+		config = function ()
+			require('nvim-ts-autotag').setup()
+		end
+	},
 	{
 		"mbbill/undotree",
 		cmd = {
@@ -320,7 +339,7 @@ lvim.plugins = {
 	{
 		"matze/vim-move",
 		config = function()
-			vim.cmd("let g:move_key_modifier = 'C'");
+			vim.cmd("let g:move_key_modifier = 'C'")
 		end,
 	},
 
