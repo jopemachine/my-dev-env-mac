@@ -20,7 +20,7 @@ Just personal development configs on macOS
     - [6.1 lunarvim](#lunarvim)
     - [6.2 neovim](#neovim)
     - [6.3 vim](#vim)
-- [6. nerd-font](#nerd-font)
+- [6. nerd-fonts](#nerd-fonts)
 - [7. vs code extensions](#vs-code-extensions)
 - [8. chrome extensions](#chrome-extensions)
 
@@ -34,25 +34,28 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ### [homebrew] dependencies
 
-- [vim], [neovim], [lunarvim]
+- [vim]
+- [neovim]: Vim-fork focused on extensibility and usability
+- [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [tmux]
-- [homebrew]
-- [mas]
-- [oh-my-zsh]
-- [mcfly]
-- [ranger]
-- [iTerm2]
-- [forgit]
-- [delta]
-- [agnoster] or [starship]
-- [ripgrep]
-- [fd]
-- [navi]
-- [lazygit]
+- [homebrew]: 🍻 Default formulae for the missing package manager for macOS (or Linux)
+- [mas]: 📦 Mac App Store command line interface
+- [oh-my-zsh]: 🙃 A delightful community-driven (with 2,000+ contributors) framework for managing your zsh configuration.
+- [mcfly]: Fly through your shell history. Great Scott!
+- [ranger]: A VIM-inspired filemanager for the console
+- [iTerm2]: iTerm2 is a terminal emulator for Mac OS X that does amazing things.
+- [forgit]: 💤 A utility tool powered by fzf for using git interactively.
+- [delta]: A syntax-highlighting pager for git, diff, and grep output
+- [agnoster]: A ZSH theme designed to disclose information contextually, with a powerline aesthetic
+- [starship]: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+- [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- [fd]: A simple, fast and user-friendly alternative to 'find'
+- [navi]: An interactive cheatsheet tool for the command-line
+- [lazygit]: Simple terminal UI for git commands
 - [autojump]: A cd command that learns - easily navigate directories from the command line
-- [vs code]
-- [nerd font]
-- [glow]
+- [vs code]: Visual Studio Code
+- [nerd fonts]: Iconic font aggregator, collection, & patcher
+- [glow]: Render markdown on the CLI, with pizzazz! 💅
 - [hub]: A command-line tool that makes git easier to use with GitHub.
 
 ```
@@ -157,7 +160,7 @@ $ python3 -m pip install --user --upgrade pynvim
 
 [.vimrc](./vim/.vimrc)
 
-## nerd-font 설치
+## nerd-fonts 설치
 
 - [NotoMonoNerdFontCompleteM](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto/Mono)
 
@@ -172,9 +175,17 @@ $ python3 -m pip install --user --upgrade pynvim
 
 ## [vs code] extensions
 
-- [Codelens]
-
 [리스트](./vscode/vscode-extensions)
+
+- [codelens]
+
+## [alfred] workflows
+
+- [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill)
+- [alfred-chrome-workflow](https://github.com/jopemachine/alfred-chrome-workflow)
+- [chrome control](https://github.com/bit2pixel/chrome-control)
+- [alfred-xcode](https://github.com/sindresorhus/alfred-xcode)
+- [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow)
 
 ## Related
 
@@ -208,7 +219,7 @@ $ python3 -m pip install --user --upgrade pynvim
 [packer]: https://github.com/wbthomason/packer.nvim
 [vs code]: https://code.visualstudio.com/
 [mas]: https://github.com/mas-cli/mas
-[nerd font]: https://github.com/ryanoasis/nerd-fonts
+[nerd fonts]: https://github.com/ryanoasis/nerd-fonts
 [git]: https://git-scm.com/
 [glow]: https://github.com/ellisonleao/glow.nvim
 [rust]: https://github.com/rust-lang/rust
@@ -218,3 +229,5 @@ $ python3 -m pip install --user --upgrade pynvim
 [npm]: https://github.com/npm/cli
 [chrome]: https://www.google.com/intl/en/chrome/
 [hub]: https://github.com/github/hub
+[alfred]: https://www.alfredapp.com/
+
