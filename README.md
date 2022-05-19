@@ -4,28 +4,27 @@ Just personal development configs on macOS
 
 **Table of Contents**
 
-- [1. homebrew 설정](#homebrew-설정)
+- [1. homebrew](#homebrew)
     - [1.1 homebrew 설치](#homebrew-설치)
     - [1.2 homebrew dependencies](#homebrew-dependencies)
-- [2. zsh 설정](#zsh-설정)
+- [2. zsh](#zsh)
     - [2.1 zplug 설치](#zplug-설치)
 	- [2.2 zplug extensions](#zplug-extensions)
     - [2.3 oh-my-zsh extensions](#oh-my-zsh-extensions)
     - [2.4 zshrc](#zshrc)
-- [3. tmux 설정](#tmux-설정)
+- [3. tmux](#tmux)
     - [3.1 tpm 설치](#tpm-설정)
     - [3.2 tmux extensions](#tmux-extensions)
-- [4. mas extensions](#mas-extensions)
-- [5. npm extensions](#npm-extensions)
-- [6. vim 에디터 설치 및 설정](#vim-에디터-설치-및-설정)
+- [4. npm extensions](#npm-extensions)
+- [5. vim 에디터 설치 및 설정](#vim-에디터-설치-및-설정)
     - [6.1 lunarvim](#lunarvim)
     - [6.2 neovim](#neovim)
     - [6.3 vim](#vim)
-- [7. nerd-font 설치](#nerd-font-설치)
+- [6. nerd-font](#nerd-font)
+- [7. vs code extensions](#vs-code-extensions)
 - [8. chrome extensions](#chrome-extensions)
-- [9. vs code extensions](#vs-code-extensions)
 
-## [homebrew] 설정
+## [homebrew]
 
 ### [homebrew] 설치
 
@@ -35,38 +34,38 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ### [homebrew] dependencies
 
-- [vim], [neovim], [lunarvim]: 소스 코드 편집기
-- [tmux]: 콘솔 다중화
-- [homebrew]: mac 패키지 관리자
-- [mas]: mac 앱 스토어 애플리케이션 설치 관리자
-- [oh-my-zsh]: [zsh] 기반의 설정 프레임워크
-- [mcfly]: 명령어 히스토리 fuzzy search
-- [ranger]: [vim] 기반 TUI 파일 탐색기
+- [vim], [neovim], [lunarvim]
+- [tmux]
+- [homebrew]
+- [mas]
+- [oh-my-zsh]
+- [mcfly]
+- [ranger]
 - [iTerm2]
-- [forgit]: [git] 명령어 축약 및 향상
-- [delta]: [git] 변경사항 (diff) 하이라이팅
-- [agnoster] or [starship]: [zsh] 테마
-- [ripgrep]: 모던 `grep` replacement
-- [fd]: 모던 `find` replacement
+- [forgit]
+- [delta]
+- [agnoster] or [starship]
+- [ripgrep]
+- [fd]
 - [navi]
 - [lazygit]
+- [autojump]: A cd command that learns - easily navigate directories from the command line
 - [vs code]
 - [nerd font]
-- [glow]: CLI 마크다운 프리뷰
+- [glow]
+- [hub]: A command-line tool that makes git easier to use with GitHub.
 
 ```
 $ ./install-homebrew-dependencies.sh
 ```
 
-## [zsh] 설정
+## [zsh]
 
 ### [zplug] 설치
 
 ```
 $ brew install zplug
 ```
-
-[참고](https://github.com/zplug/zplug/tree/c4dea766566b168a32dbfa8d10335e525ce39fcc#using-homebrew-os-x)
 
 ### [zplug] extensions
 
@@ -76,25 +75,21 @@ $ brew install zplug
 - [mafredri/zsh-async](https://github.com/mafredri/zsh-async)
 - [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [plugins/autojump](https://github.com/plugins/autojump): 디렉토리 명 추론해 바로 이동
-- [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd): 모던 `cd` replacement
-- [supercrabtree/k](https://github.com/supercrabtree/k): 모던 `ls` replacement
-- [ogham/exa](https://github.com/ogham/exa): 모던 `ls` replacement
+- [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd)
+- [supercrabtree/k](https://github.com/supercrabtree/k)
+- [ogham/exa](https://github.com/ogham/exa)
 
 ### [oh-my-zsh] plugins
 
-- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+- [plugins/autojump](https://github.com/wting/autojump)
+- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+- [plugins/web-search](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search)
+- [plugins/node](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/node)
 - [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 - [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 - [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 
-아래 명령어를 통해 플러그인 설치
-
-```
-$ zplug install
-```
-
-### `.zshrc` 설정
+### `.zshrc`
 
 [zshrc 열기](./zshrc)
 
@@ -109,7 +104,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ### [tmux] extensions
 
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
-- [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat)
+- [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): A plugin that enhances tmux search
 - [tmux-plugins/tmux-open](https://github.com/tmux-plugins/tmux-open): Tmux key bindings for quick opening of a highlighted file or url
 - [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible): Basic tmux settings everyone can agree on
 - [tmux-plugins/tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight): Plugin that highlights when you press tmux prefix key
@@ -118,26 +113,20 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [nhdaly/tmux-better-mouse-mode](https://github.com/nhdaly/tmux-better-mouse-mode): A tmux plugin to better manage and configure the mouse.
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 
-## [mas] extensions
-
-```
-$ ./mas/install-mas-dependencies.sh
-```
-
 ## [npm] extensions
 
-- [np](https://github.com/sindresorhus/np)
-- [npm-name-cli](https://github.com/sindresorhus/npm-name-cli)
-- [open-cli](https://github.com/sindresorhus/open-cli)
-- [fkill-cli](https://github.com/sindresorhus/fkill-cli)
-- [@squash.cli](https://github.com/GoogleChromeLabs/squoosh)
-- [broken-line-checker](https://github.com/stevenvachon/broken-link-checker)
-- [case-cli](https://github.com/jopemachine/case-cli)
-- [tldr](https://github.com/tldr-pages/tldr)
-- [trash-cli](https://github.com/sindresorhus/trash-cli)
-- [pageres-cli](https://github.com/sindresorhus/pageres-cli)
-- [yo](https://github.com/yeoman/yo)
-- [n](https://github.com/tj/n)
+- [np](https://github.com/sindresorhus/np): A better `npm publish`
+- [npm-name-cli](https://github.com/sindresorhus/npm-name-cli): Check whether a package or organization name is available on npm
+- [open-cli](https://github.com/sindresorhus/open-cli): Open stuff like URLs, files, executables. Cross-platform.
+- [fkill-cli](https://github.com/sindresorhus/fkill-cli): Fabulously kill processes. Cross-platform.
+- [@squoosh.cli](https://github.com/GoogleChromeLabs/squoosh): 
+- [broken-link-checker](https://github.com/stevenvachon/broken-link-checker): Find broken links, missing images, etc in your HTML.
+- [case-cli](https://github.com/jopemachine/case-cli): Convert string case on your terminal as you want
+- [tldr](https://github.com/tldr-pages/tldr): Simplified and community-driven man pages
+- [trash-cli](https://github.com/sindresorhus/trash-cli): Move files and folders to the trash
+- [pageres-cli](https://github.com/sindresorhus/pageres-cli): Capture website screenshots
+- [yo](https://github.com/yeoman/yo): CLI tool for running Yeoman generators
+- [n](https://github.com/tj/n): Interactively Manage All Your Node Versions
 
 ## [vim] 에디터 설치 및 설정
 
@@ -174,11 +163,23 @@ $ python3 -m pip install --user --upgrade pynvim
 
 ## [chrome] extensions
 
-[리스트](./chrome/chrome-extensions.html)
+- [vimium-c](https://github.com/gdh1995/vimium-c)
+- [notifier-for-github](https://github.com/sindresorhus/notifier-for-github)
+- [refined-github](https://github.com/refined-github/refined-github)
+- [github-npm-stats](https://github.com/katranci/github-npm-stats)
+
+[전체 리스트](./chrome/chrome-extensions.html)
 
 ## [vs code] extensions
 
+- [Codelens]
+
 [리스트](./vscode/vscode-extensions)
+
+## Related
+
+- https://github.com/rdlester/dotfiles
+- https://github.com/gpakosz/.tmux
 
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme
@@ -216,3 +217,4 @@ $ python3 -m pip install --user --upgrade pynvim
 [tpm]: https://github.com/tmux-plugins/tpm
 [npm]: https://github.com/npm/cli
 [chrome]: https://www.google.com/intl/en/chrome/
+[hub]: https://github.com/github/hub

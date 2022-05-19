@@ -29,20 +29,24 @@ alias vim=lvim
 #----------------------------------------------------------------------
 #----------------------------------------------------------------------
 
-zplug "plugins/git",   from:oh-my-zsh
-zplug "lib/completion",   from:oh-my-zsh
+# oh-my-zshs plugins
+zplug 'plugins/git',   from:oh-my-zsh
+zplug 'plugins/autojump', from:oh-my-zsh, frozen:1
+zplug 'plugins/web-search', from:oh-my-zsh
+zplug 'plugins/node', from:oh-my-zsh
+zplug 'lib/completion',   from:oh-my-zsh
 zplug 'lib/key-bindings', from:oh-my-zsh
-zplug "lib/directories",  from:oh-my-zsh
-zplug "b4b4r07/enhancd", use:init.sh
-zplug "plugins/autojump", from:oh-my-zsh, frozen:1
-zplug "djui/alias-tips"
-zplug "supercrabtree/k"
-zplug "lukechilds/zsh-better-npm-completion", defer:2
-zplug "mafredri/zsh-async", from:"github", use:"async.zsh"
-zplug "junegunn/fzf", as:command, hook-build:"./install --bin", use:"bin/{fzf-tmux,fzf}"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "ogham/exa"
+zplug 'lib/directories',  from:oh-my-zsh
+
+zplug 'b4b4r07/enhancd', use:init.sh
+zplug 'djui/alias-tips'
+zplug 'supercrabtree/k'
+zplug 'lukechilds/zsh-better-npm-completion', defer:2
+zplug 'mafredri/zsh-async', from:'github', use:'async.zsh'
+zplug 'junegunn/fzf', as:command, hook-build:'./install --bin', use:'bin/{fzf-tmux,fzf}'
+zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'ogham/exa'
 
 # Unused zplugins
 # zplug "zsh-users/zsh-completions"
@@ -54,10 +58,10 @@ zplug "ogham/exa"
 
 # Plugins set up and load
 if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+	printf "Install? [y/N]: "
+	if read -q; then
+		echo; zplug install
+	fi
 fi
 
 zplug load
@@ -121,13 +125,13 @@ eval "$(mcfly init zsh)"
 
 # vim session setting
 function lvim() {
-  if test $# -gt 0; then
-    env lvim "$@"
-  elif test -f Session.vim; then
+	if test $# -gt 0; then
+		env lvim "$@"
+	elif test -f Session.vim; then
 	echo 'Open Existing Session..'
-    env lvim -S
-  else
-	echo 'Record New Session..'
-    env lvim -c Obsession
-  fi
+	env lvim -S
+	else
+		echo 'Record New Session..'
+	env lvim -c Obsession
+	fi
 }
