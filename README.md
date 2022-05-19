@@ -72,15 +72,15 @@ $ brew install zplug
 
 ### [zplug] extensions
 
-- [djui/alias-tips](https://github.com/djui/alias-tips)
-- [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion)
-- [junegunn/fzf](https://github.com/junegunn/fzf)
-- [mafredri/zsh-async](https://github.com/mafredri/zsh-async)
-- [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-- [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd)
-- [supercrabtree/k](https://github.com/supercrabtree/k)
-- [ogham/exa](https://github.com/ogham/exa)
+- [djui/alias-tips](https://github.com/djui/alias-tips): An oh-my-zsh plugin to help remembering those aliases you defined once
+- [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion): Better completion for npm
+- [junegunn/fzf](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder
+- [mafredri/zsh-async](https://github.com/mafredri/zsh-async): Because your terminal should be able to perform tasks asynchronously without external tools!
+- [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Fish-like autosuggestions for zsh
+- [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for Zsh.
+- [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd): 🚀 A next-generation cd command with your interactive filter
+- [supercrabtree/k](https://github.com/supercrabtree/k): k is the new l, yo
+- [ogham/exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
 
 ### [oh-my-zsh] plugins
 
@@ -122,7 +122,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [npm-name-cli](https://github.com/sindresorhus/npm-name-cli): Check whether a package or organization name is available on npm
 - [open-cli](https://github.com/sindresorhus/open-cli): Open stuff like URLs, files, executables. Cross-platform.
 - [fkill-cli](https://github.com/sindresorhus/fkill-cli): Fabulously kill processes. Cross-platform.
-- [@squoosh.cli](https://github.com/GoogleChromeLabs/squoosh): 
+- [@squoosh.cli](https://github.com/GoogleChromeLabs/squoosh): Make images smaller using best-in-class codecs, right in the browser.
 - [broken-link-checker](https://github.com/stevenvachon/broken-link-checker): Find broken links, missing images, etc in your HTML.
 - [case-cli](https://github.com/jopemachine/case-cli): Convert string case on your terminal as you want
 - [tldr](https://github.com/tldr-pages/tldr): Simplified and community-driven man pages
@@ -166,26 +166,26 @@ $ python3 -m pip install --user --upgrade pynvim
 
 ## [chrome] extensions
 
-- [vimium-c](https://github.com/gdh1995/vimium-c)
-- [notifier-for-github](https://github.com/sindresorhus/notifier-for-github)
-- [refined-github](https://github.com/refined-github/refined-github)
-- [github-npm-stats](https://github.com/katranci/github-npm-stats)
+- [vimium-c](https://github.com/gdh1995/vimium-c): A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar
+- [notifier-for-github](https://github.com/sindresorhus/notifier-for-github): Browser extension - Get notified about new GitHub notifications
+- [refined-github](https://github.com/refined-github/refined-github): Browser extension that simplifies the GitHub interface and adds useful features
+- [github-npm-stats](https://github.com/katranci/github-npm-stats): Chrome extension that displays npm download stats on GitHub
 
-[전체 리스트](./chrome/chrome-extensions.html)
+[All extensions](./chrome/chrome-extensions.html)
 
 ## [vs code] extensions
 
-[리스트](./vscode/vscode-extensions)
+[All extensions](./vscode/vscode-extensions)
 
 - [codelens]
 
 ## [alfred] workflows
 
-- [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill)
-- [alfred-chrome-workflow](https://github.com/jopemachine/alfred-chrome-workflow)
-- [chrome control](https://github.com/bit2pixel/chrome-control)
-- [alfred-xcode](https://github.com/sindresorhus/alfred-xcode)
-- [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow)
+- [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill): Alfred 3 workflow to fabulously search
+- [alfred-chrome-workflow](https://github.com/jopemachine/alfred-chrome-workflow): Chromium based browser workflow for Alfred 4
+- [chrome control](https://github.com/bit2pixel/chrome-control): A JXA script and an Alfred Workflow for controlling Google Chrome
+- [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
+- [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
 
 ## Related
 
