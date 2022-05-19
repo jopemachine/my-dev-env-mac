@@ -191,6 +191,7 @@ $ python3 -m pip install --user --upgrade pynvim
 
 - https://github.com/rdlester/dotfiles
 - https://github.com/gpakosz/.tmux
+- https://github.com/makccr/dot
 
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme

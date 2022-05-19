@@ -47,6 +47,8 @@ zplug 'junegunn/fzf', as:command, hook-build:'./install --bin', use:'bin/{fzf-tm
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'ogham/exa'
+zplug 'IngoMeyer441/zsh-easy-motion'
+zplug 'jeffreytse/zsh-vi-mode'
 
 # Unused zplugins
 # zplug "zsh-users/zsh-completions"
@@ -71,6 +73,14 @@ zplug load
 #----------------------Installed plug settings-------------------------
 #----------------------------------------------------------------------
 #----------------------------------------------------------------------
+
+# zsh-vi-mode
+# Only changing the escape key to `jk` in insert mode, we still
+# keep using the default keybindings `^[` in other modes
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
+
+# zsh-easy-motion
+bindkey -M vicmd ' ' vi-easy-motion
 
 # autojump setting
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
