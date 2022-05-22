@@ -131,9 +131,7 @@ export FZF_DEFAULT_COMMAND="fd --type d -H -d 3 -E .git -E node_modules"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 
-eval "$(mcfly init zsh)"
-
-# vim session setting
+# lunarvim vim-obsession setting
 function lvim() {
 	if test $# -gt 0; then
 		env lvim "$@"
@@ -145,3 +143,9 @@ function lvim() {
 	env lvim -c Obsession
 	fi
 }
+
+# mcfly setting
+eval "$(mcfly init zsh)"
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
+export MCFLY_RESULTS=20

@@ -1,20 +1,42 @@
 #!/usr/local/bin/zsh
 
+function install() {
+	echo "Install '$1'"
+	brew install $1
+}
+
 # installing packages
-brew install ripgrep
-brew install mcfly
-brew install zplug
-brew install autojump
-brew install k
-brew install git-delta
-brew install neovim
-brew install navi
-brew install lazy-git
-brew install tmux
-brew install mas
-brew install glow
+install ripgrep
+install mcfly
+install zplug
+install autojump
+install k
+install git-delta
+install neovim
+install navi
+install lazy-git
+install tmux
+install mas
+install glow
+install hub
+install docker-compose
+
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # install applications
-brew install iterm2
-brew install visual-studio-code
+install github
+install gitkraken
+install jetbrains-toolbox
+install discord
+install zoom
+install notion
+install notion-enhanced
+install iterm2
+install alacritty
+install google-chrome
+install visual-studio-code
+install runjs
+install simplenote
+install slack
+install alfred
+install telegram-desktop
