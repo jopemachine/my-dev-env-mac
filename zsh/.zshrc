@@ -127,7 +127,7 @@ export PATH=$GOPATH/bin:$PATH
 source $ZPLUG_HOME/repos/junegunn/fzf/shell/key-bindings.zsh
 source $ZPLUG_HOME/repos/junegunn/fzf/shell/completion.zsh
 
-export FZF_DEFAULT_COMMAND="fd --type d -H -d 3 -E .git -E node_modules"
+export FZF_DEFAULT_COMMAND="fd --type d -H -d 3 -E .git -E node_modules --follow"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 
@@ -149,3 +149,6 @@ eval "$(mcfly init zsh)"
 export MCFLY_KEY_SCHEME=vim
 export MCFLY_FUZZY=2
 export MCFLY_RESULTS=20
+
+# k setting
+alias k='k -ha'

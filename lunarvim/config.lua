@@ -39,6 +39,7 @@ vim.cmd([[
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+lvim.keys.normal_mode["<C-x>"] = ":bw<cr>"
 
 -- QuickFix
 lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
@@ -50,12 +51,6 @@ lvim.keys.visual_mode[">"] = ">gv"
 -- Paste most recent yank
 lvim.keys.visual_mode["p"] = '"0p'
 lvim.keys.visual_mode["P"] = '"0P'
-
--- Tab management shortcuts
-vim.cmd([[
-	nnoremap <Tab> :bn<CR>
-	nnoremap <S-Tab> :bp<CR>
-]])
 
 -- 셀렉션에 paste 하더라도 기존 텍스트 유지
 vim.cmd([[
@@ -133,7 +128,7 @@ lvim.builtin.which_key.mappings["W"] = {
 -- LSP
 -- *
 -- @usage disable automatic installation of servers
-lvim.lsp.automatic_servers_installation = false
+lvim.lsp.automatic_servers_installation = true
 
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = false
