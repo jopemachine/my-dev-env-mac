@@ -57,9 +57,6 @@ lvim.keys.visual_mode["P"] = '"0P'
 lvim.keys.insert_mode["kj"] = false
 lvim.keys.insert_mode["jk"] = false
 
--- Ref: https://stackoverflow.com/questions/69127875/lunarvim-excepts-to-insert-jj-so-fast
-vim.cmd("set timeoutlen=300")
-
 -- 셀렉션에 paste 하더라도 기존 텍스트 유지
 vim.cmd([[
 	vnoremap <leader>p "_dP
@@ -126,6 +123,22 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- *
 -- which-key.nvim
 -- *
+
+-- Trouble key settings
+lvim.builtin.which_key.mappings["t"] = {
+	name = "+Trouble",
+	r = { "<cmd>Trouble lsp_references<cr>", "References" },
+	f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
+	d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
+	q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+	l = { "<cmd>Trouble loclist<cr>", "LocationList" },
+	w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
+}
+
+-- Telescope key settings
+lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+
+-- Custom key settings
 lvim.builtin.which_key.mappings["W"] = {
   name = "Window",
   k = { ":resize -1<CR>", "Resize Up" },
@@ -140,8 +153,6 @@ lvim.builtin.which_key.mappings["W"] = {
 -- @usage disable automatic installation of servers
 lvim.lsp.automatic_servers_installation = true
 
--- unmap a default keymapping
--- lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
@@ -160,18 +171,6 @@ lvim.lsp.automatic_servers_installation = true
 --		 ["<C-j>"] = actions.move_selection_next,
 --		 ["<C-k>"] = actions.move_selection_previous,
 --	 },
--- }
-
--- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---	 name = "+Trouble",
---	 r = { "<cmd>Trouble lsp_references<cr>", "References" },
---	 f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---	 d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
---	 q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---	 l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---	 w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
 -- }
 
 -- ---configure a server manually. !!Requires `:LvimCacheReset` to take effect!!
@@ -253,7 +252,7 @@ lvim.plugins = {
     end
   },
 
-  -- Code formatter
+  -- Code align
   { "junegunn/vim-easy-align" },
 
   -- Unix command utils
