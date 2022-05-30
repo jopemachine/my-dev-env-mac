@@ -40,6 +40,7 @@ vim.cmd([[
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 lvim.keys.normal_mode["<C-x>"] = ":bw<cr>"
+lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
 
 -- QuickFix
 lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
@@ -319,6 +320,9 @@ lvim.plugins = {
 			"UndotreeToggle"
 		}
 	},
+	{
+		"wakatime/vim-wakatime"
+	},
 
 	-- Argument wrapping
 	{
@@ -338,25 +342,13 @@ lvim.plugins = {
 		end,
 	},
 
-	-- File, project searching, string replacing
-	{ "tacahiroy/ctrlp-funky" },
-	{
-		"kien/ctrlp.vim",
-		config = function()
-			vim.cmd([[
-				let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-				let g:ctrlp_map = '<c-p>'
-			]])
-		end,
-	},
-
 	-- Search string
 	{
 		"dyng/ctrlsf.vim",
 		config = function()
 			vim.cmd([[
 				nnoremap <C-F> :CtrlSF<space>
-				let g:ctrlsf_case_sensitive = 'no'
+				let g:ctrlsf_case_sensitive = 'yes'
 				let g:ctrlsf_regex_pattern = 0
 				let g:ctrlsf_default_root = 'project'
 				let g:ctrlsf_default_view_mode = 'compact'
