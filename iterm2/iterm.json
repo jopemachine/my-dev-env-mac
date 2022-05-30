@@ -423,7 +423,7 @@
     "Red Component" : 0
   },
   "Transparency" : 0,
-  "Initial Text" : "tmux",
+  "Initial Text" : "tmux attach -t base || tmux new -s base",
   "Background Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
@@ -441,11 +441,11 @@
   "Columns" : 80,
   "Unicode Normalization" : 1,
   "Visual Bell" : true,
-  "ASCII Ligatures" : false,
+  "Custom Directory" : "Yes",
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Custom Directory" : "Yes"
+  "ASCII Ligatures" : false
 }

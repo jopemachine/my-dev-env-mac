@@ -53,6 +53,13 @@ lvim.keys.visual_mode[">"] = ">gv"
 lvim.keys.visual_mode["p"] = '"0p'
 lvim.keys.visual_mode["P"] = '"0P'
 
+-- Remove unused key mapping
+lvim.keys.insert_mode["kj"] = false
+lvim.keys.insert_mode["jk"] = false
+
+-- Ref: https://stackoverflow.com/questions/69127875/lunarvim-excepts-to-insert-jj-so-fast
+vim.cmd("set timeoutlen=300")
+
 -- 셀렉션에 paste 하더라도 기존 텍스트 유지
 vim.cmd([[
 	vnoremap <leader>p "_dP
@@ -82,6 +89,7 @@ lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 1
 lvim.builtin.nvimtree.setup.open_on_setup = true
+lvim.builtin.nvimtree.setup.open_on_setup = false
 
 -- *
 -- terminal
@@ -98,18 +106,18 @@ lvim.builtin.notify.active = true
 -- *
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-	"bash",
-	"c",
-	"javascript",
-	"json",
-	"lua",
-	"python",
-	"typescript",
-	"tsx",
-	"css",
-	"rust",
-	"java",
-	"yaml",
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "java",
+  "yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -119,11 +127,11 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- which-key.nvim
 -- *
 lvim.builtin.which_key.mappings["W"] = {
-	name = "Window",
-	k = {":resize -1<CR>", "Resize Up"},
-	j = {":resize +1<CR>", "Resize Down"},
-	h = {":vertical resize +1<CR>", "Resize Left"},
-	l = {":vertical resize -1<CR>", "Resize Right"},
+  name = "Window",
+  k = { ":resize -1<CR>", "Resize Up" },
+  j = { ":resize +1<CR>", "Resize Down" },
+  h = { ":vertical resize +1<CR>", "Resize Left" },
+  l = { ":vertical resize -1<CR>", "Resize Right" },
 }
 
 -- *
@@ -216,138 +224,138 @@ lvim.lsp.automatic_servers_installation = true
 
 -- Additional Plugins
 lvim.plugins = {
-	-- Code display (format, indent, highlights)
-	{ "ntpeters/vim-better-whitespace" },
-	{ "ap/vim-css-color" },
-	{
-		"p00f/nvim-ts-rainbow",
-		config = function ()
-			require('nvim-treesitter.configs').setup({
-				rainbow = {
-					enable = true,
-					extended_mode = true,
-				},
-			})
-		end
-	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		config = function ()
-			vim.opt.list = true
-			vim.opt.listchars:append("space:⋅")
-			vim.opt.listchars:append("eol:↴")
+  -- Code display (format, indent, highlights)
+  { "ntpeters/vim-better-whitespace" },
+  { "ap/vim-css-color" },
+  {
+    "p00f/nvim-ts-rainbow",
+    config = function()
+      require('nvim-treesitter.configs').setup({
+        rainbow = {
+          enable = true,
+          extended_mode = true,
+        },
+      })
+    end
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      vim.opt.list = true
+      vim.opt.listchars:append("space:⋅")
+      vim.opt.listchars:append("eol:↴")
 
-			require("indent_blankline").setup {
-				space_char_blackline = " ",
-				show_current_context = true,
-				show_current_context_start = true,
-			}
-		end
-	},
+      require("indent_blankline").setup {
+        space_char_blackline = " ",
+        show_current_context = true,
+        show_current_context_start = true,
+      }
+    end
+  },
 
-	-- Code formatter
-	{ "junegunn/vim-easy-align" },
+  -- Code formatter
+  { "junegunn/vim-easy-align" },
 
-	-- Unix command utils
-	{ "tpope/vim-eunuch" },
+  -- Unix command utils
+  { "tpope/vim-eunuch" },
 
-	-- Window management (including tmux)
-	{ "edkolev/tmuxline.vim" },
+  -- Window management (including tmux)
+  { "edkolev/tmuxline.vim" },
 
-	-- Hangul
-	{ "johngrib/vim-f-hangul" },
+  -- Hangul
+  { "johngrib/vim-f-hangul" },
 
-	-- Session management
-	{ "tpope/vim-obsession" },
+  -- Session management
+  { "tpope/vim-obsession" },
 
-	-- Animation
-	{
-		"karb94/neoscroll.nvim",
-		config = function()
-			require('neoscroll').setup({
-					-- All these keys will be mapped to their corresponding default scrolling animation
-					mappings = {'<C-u>', '<C-d>', '<C-y>', '<C-e>', 'zt', 'zz', 'zb'},
-					hide_cursor = true,					-- Hide cursor while scrolling
-					stop_eof = true,						 -- Stop at <EOF> when scrolling downwards
-					use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
-					respect_scrolloff = false,	 -- Stop scrolling when the cursor reaches the scrolloff margin of the file
-					cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
-					easing_function = nil,			 -- Default easing function
-					pre_hook = nil,							-- Function to run before the scrolling animation starts
-					post_hook = nil,						 -- Function to run after the scrolling animation ends
-					performance_mode = false,		-- Disable "Performance Mode" on all buffers.
-			})
-		end,
-	},
+  -- Animation
+  {
+    "karb94/neoscroll.nvim",
+    config = function()
+      require('neoscroll').setup({
+        -- All these keys will be mapped to their corresponding default scrolling animation
+        mappings = { '<C-u>', '<C-d>', '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+        hide_cursor = true, -- Hide cursor while scrolling
+        stop_eof = true, -- Stop at <EOF> when scrolling downwards
+        use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+        respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+        cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+        easing_function = nil, -- Default easing function
+        pre_hook = nil, -- Function to run before the scrolling animation starts
+        post_hook = nil, -- Function to run after the scrolling animation ends
+        performance_mode = false, -- Disable "Performance Mode" on all buffers.
+      })
+    end,
+  },
 
-	-- Extend vim featues
-	{ "wellle/targets.vim" },
-	{ "tpope/vim-repeat" },
-	{
-		"ggandor/lightspeed.nvim",
-		event = "BufRead",
-	},
-	{
-	  "phaazon/hop.nvim",
-	  event = "BufRead",
-	  config = function()
-		require("hop").setup()
-		vim.api.nvim_set_keymap("n", ",,", ":HopLine<cr>", { silent = true })
-	  end,
-	},
+  -- Extend vim featues
+  { "wellle/targets.vim" },
+  { "tpope/vim-repeat" },
+  {
+    "ggandor/lightspeed.nvim",
+    event = "BufRead",
+  },
+  {
+    "phaazon/hop.nvim",
+    event = "BufRead",
+    config = function()
+      require("hop").setup()
+      vim.api.nvim_set_keymap("n", ",,", ":HopLine<cr>", { silent = true })
+    end,
+  },
 
-	-- Utility
-	{ "ellisonleao/glow.nvim" },
-	{ "andrewradev/splitjoin.vim" },
-	{
-		"nacro90/numb.nvim",
-		config = function ()
-			require('numb').setup{
-				show_cursorline = true, -- Enable 'cursorline' for the window while peeking
-				number_only = false, -- Peek only when the command is only a number instead of when it starts with a number
-				centered_peeking = true, -- Peeked line will be centered relative to window
-			}
-		end
-	},
-	{
-		"windwp/nvim-ts-autotag",
-		config = function ()
-			require('nvim-ts-autotag').setup()
-		end
-	},
-	{
-		"mbbill/undotree",
-		cmd = {
-			"UndotreeToggle"
-		}
-	},
-	{
-		"wakatime/vim-wakatime"
-	},
+  -- Utility
+  { "ellisonleao/glow.nvim" },
+  { "andrewradev/splitjoin.vim" },
+  {
+    "nacro90/numb.nvim",
+    config = function()
+      require('numb').setup {
+        show_cursorline = true, -- Enable 'cursorline' for the window while peeking
+        number_only = false, -- Peek only when the command is only a number instead of when it starts with a number
+        centered_peeking = true, -- Peeked line will be centered relative to window
+      }
+    end
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  },
+  {
+    "mbbill/undotree",
+    cmd = {
+      "UndotreeToggle"
+    }
+  },
+  {
+    "wakatime/vim-wakatime"
+  },
 
-	-- Argument wrapping
-	{
-		"tpope/vim-surround",
-		keys = { "c", "d", "y" },
-		setup = function()
-			vim.o.timeoutlen = 500
-		end
-	},
+  -- Argument wrapping
+  {
+    "tpope/vim-surround",
+    keys = { "c", "d", "y" },
+    setup = function()
+      vim.o.timeoutlen = 500
+    end
+  },
 
-	-- Cursor
-	{ "mg979/vim-visual-multi" },
-	{
-		"matze/vim-move",
-		config = function()
-			vim.cmd("let g:move_key_modifier = 'C'")
-		end,
-	},
+  -- Cursor
+  { "mg979/vim-visual-multi" },
+  {
+    "matze/vim-move",
+    config = function()
+      vim.cmd("let g:move_key_modifier = 'C'")
+    end,
+  },
 
-	-- Search string
-	{
-		"dyng/ctrlsf.vim",
-		config = function()
-			vim.cmd([[
+  -- Search string
+  {
+    "dyng/ctrlsf.vim",
+    config = function()
+      vim.cmd([[
 				nnoremap <C-F> :CtrlSF<space>
 				let g:ctrlsf_case_sensitive = 'yes'
 				let g:ctrlsf_regex_pattern = 0
@@ -362,82 +370,81 @@ lvim.plugins = {
 					\ "normal" : 1,
 					\ "compact": 1
 					\}
-			]])
-		end,
-	},
+			]]  )
+    end,
+  },
 
-	-- Git
-	{ "junegunn/gv.vim" },
-	{ "kdheepak/lazygit.nvim" },
-	{ "f-person/git-blame.nvim" },
-	{
-		"tpope/vim-fugitive",
-		cmd = {
-			"G",
-			"Git",
-			"Gdiffsplit",
-			"Gread",
-			"Gwrite",
-			"Ggrep",
-			"GMove",
-			"GDelete",
-			"GBrowse",
-			"GRemove",
-			"GRename",
-			"Glgrep",
-			"Gedit"
-		},
-		ft = { "fugitive" }
-	},
+  -- Git
+  { "junegunn/gv.vim" },
+  { "kdheepak/lazygit.nvim" },
+  { "f-person/git-blame.nvim" },
+  {
+    "tpope/vim-fugitive",
+    cmd = {
+      "G",
+      "Git",
+      "Gdiffsplit",
+      "Gread",
+      "Gwrite",
+      "Ggrep",
+      "GMove",
+      "GDelete",
+      "GBrowse",
+      "GRemove",
+      "GRename",
+      "Glgrep",
+      "Gedit"
+    },
+    ft = { "fugitive" }
+  },
 
-	-- Github
-	{ "pwntester/octo.nvim" },
+  -- Github
+  { "pwntester/octo.nvim" },
 
-	-- Show error window
-	{
-		"folke/trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons",
-		config = function()
-			require("trouble").setup({
-				position = "bottom", -- position of the list can be: bottom, top, left, right
-				height = 10, -- height of the trouble list when position is top or bottom
-				width = 50, -- width of the list when position is left or right
-				icons = true, -- use devicons for filenames
-				mode = "document_diagnostics",
-				action_keys = { -- key mappings for actions in the trouble list
-					-- map to {} to remove a mapping, for example:
-					-- close = {},
-					close = "q", -- close the list
-					cancel = "<esc>", -- cancel the preview and get back to your last window / buffer / cursor
-					refresh = "r", -- manually refresh
-					jump = { "<cr>", "<tab>" }, -- jump to the diagnostic or open / close folds
-					open_split = { "<c-x>" }, -- open buffer in new split
-					open_vsplit = { "<c-v>" }, -- open buffer in new vsplit
-					open_tab = { "<c-t>" }, -- open buffer in new tab
-					jump_close = { "o" }, -- jump to the diagnostic and close the list
-					toggle_mode = "m", -- toggle between "workspace" and "document" diagnostics mode
-					toggle_preview = "P", -- toggle auto_preview
-					hover = "K", -- opens a small popup with the full multiline message
-					preview = "p", -- preview the diagnostic location
-					close_folds = { "zM", "zm" }, -- close all folds
-					open_folds = { "zR", "zr" }, -- open all folds
-					toggle_fold = { "zA", "za" }, -- toggle fold of current file
-					previous = "k", -- preview item
-					next = "j", -- next item
-				},
-				indent_lines = true, -- add an indent guide below the fold icons
-				auto_open = false, -- automatically open the list when you have diagnostics
-				auto_close = true, -- automatically close the list when you have no diagnostics
-				auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
-				auto_fold = false, -- automatically fold a file trouble list at creation
-				use_diagnostic_signs = true, -- enabling this will use the signs defined in your lsp client
-			})
-		end,
-	},
+  -- Show error window
+  {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup({
+        position = "bottom", -- position of the list can be: bottom, top, left, right
+        height = 10, -- height of the trouble list when position is top or bottom
+        width = 50, -- width of the list when position is left or right
+        icons = true, -- use devicons for filenames
+        mode = "document_diagnostics",
+        action_keys = { -- key mappings for actions in the trouble list
+          -- map to {} to remove a mapping, for example:
+          -- close = {},
+          close = "q", -- close the list
+          cancel = "<esc>", -- cancel the preview and get back to your last window / buffer / cursor
+          refresh = "r", -- manually refresh
+          jump = { "<cr>", "<tab>" }, -- jump to the diagnostic or open / close folds
+          open_split = { "<c-x>" }, -- open buffer in new split
+          open_vsplit = { "<c-v>" }, -- open buffer in new vsplit
+          open_tab = { "<c-t>" }, -- open buffer in new tab
+          jump_close = { "o" }, -- jump to the diagnostic and close the list
+          toggle_mode = "m", -- toggle between "workspace" and "document" diagnostics mode
+          toggle_preview = "P", -- toggle auto_preview
+          hover = "K", -- opens a small popup with the full multiline message
+          preview = "p", -- preview the diagnostic location
+          close_folds = { "zM", "zm" }, -- close all folds
+          open_folds = { "zR", "zr" }, -- open all folds
+          toggle_fold = { "zA", "za" }, -- toggle fold of current file
+          previous = "k", -- preview item
+          next = "j", -- next item
+        },
+        indent_lines = true, -- add an indent guide below the fold icons
+        auto_open = false, -- automatically open the list when you have diagnostics
+        auto_close = true, -- automatically close the list when you have no diagnostics
+        auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
+        auto_fold = false, -- automatically fold a file trouble list at creation
+        use_diagnostic_signs = true, -- enabling this will use the signs defined in your lsp client
+      })
+    end,
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 lvim.autocommands.custom_groups = {
-    { "FileType", "markdown", "set nospell" },
+  { "FileType", "markdown", "set nospell" },
 }
-
