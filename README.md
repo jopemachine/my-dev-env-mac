@@ -5,18 +5,18 @@ Just personal development configs on macOS
 **Table of Contents**
 
 - [1. homebrew](#homebrew)
-    - [1.1 homebrew 설치](#homebrew-설치)
+    - [1.1 homebrew installation](#homebrew-installation)
     - [1.2 homebrew dependencies](#homebrew-dependencies)
 - [2. zsh](#zsh)
-    - [2.1 zplug 설치](#zplug-설치)
+    - [2.1 zplug installation](#zplug-installation)
 	- [2.2 zplug extensions](#zplug-extensions)
     - [2.3 oh-my-zsh extensions](#oh-my-zsh-extensions)
     - [2.4 zshrc](#zshrc)
 - [3. tmux](#tmux)
-    - [3.1 tpm 설치](#tpm-설정)
+    - [3.1 tpm installation](#tpm-installation)
     - [3.2 tmux extensions](#tmux-extensions)
 - [4. npm extensions](#npm-extensions)
-- [5. vim 에디터 설치 및 설정](#vim-에디터-설치-및-설정)
+- [5. vim installation, setting](#vim-installation-setting)
     - [6.1 lunarvim](#lunarvim)
     - [6.2 neovim](#neovim)
     - [6.3 vim](#vim)
@@ -26,7 +26,7 @@ Just personal development configs on macOS
 
 ## [homebrew]
 
-### [homebrew] 설치
+### [homebrew] installation
 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -64,7 +64,7 @@ $ ./install-homebrew-dependencies.sh
 
 ## [zsh]
 
-### [zplug] 설치
+### [zplug] installation
 
 ```
 $ brew install zplug
@@ -94,11 +94,11 @@ $ brew install zplug
 
 ### `.zshrc`
 
-[zshrc 열기](./zshrc)
+[Open .zshrc](./zshrc)
 
-## [tmux] 설정
+## [tmux] setting
 
-### [tpm] 설치
+### [tpm] installation
 
 ```
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -131,26 +131,26 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [yo](https://github.com/yeoman/yo): CLI tool for running Yeoman generators
 - [n](https://github.com/tj/n): Interactively Manage All Your Node Versions
 
-## [vim] 에디터 설치 및 설정
+## vim installation, setting
 
 ### [lunarvim]
 
 - [config.lua](./lunarvim/config.lua)
 
-- [neovim], [rust], [node] 설치 필요
+- Prerequisite: [neovim], [rust], [node]
 
-- [설치](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
+- [Installation](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
 
 ### [neovim]
 
-- [vim-plug] 설치
+- [vim-plug] installation
 
 ```
 $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-- python 3 provider 설치
+- python 3 provider installation
 
 ```
 $ python3 -m pip install --user --upgrade pynvim
@@ -160,7 +160,7 @@ $ python3 -m pip install --user --upgrade pynvim
 
 [.vimrc](./vim/.vimrc)
 
-## nerd-fonts 설치
+## nerd-fonts installation
 
 - [NotoMonoNerdFontCompleteM](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto/Mono)
 
@@ -202,10 +202,15 @@ $ python3 -m pip install --user --upgrade pynvim
 ## [alfred] workflows
 
 - [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill): Alfred 3 workflow to fabulously search
-- [alfred-chrome-workflow](https://github.com/jopemachine/alfred-chrome-workflow): Chromium based browser workflow for Alfred 4
+- [alfred-chromium-workflow](https://github.com/jopemachine/alfred-chromium-workflow): Chromium based browser workflow for Alfred 4
 - [chrome control](https://github.com/bit2pixel/chrome-control): A JXA script and an Alfred Workflow for controlling Google Chrome
 - [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
 - [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
+
+## Shortcut references
+
+- [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
+- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
 
 ## Related
 
