@@ -153,3 +153,7 @@ export MCFLY_RESULTS=20
 
 # k setting
 alias k='k -ha'
+
+# ranger setting
+export EDITOR="lvim"
+export VISUAL="lvim"

@@ -40,6 +40,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 lvim.keys.normal_mode["<C-x>"] = ":bw<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
+lvim.keys.normal_mode["q:"] = ":Telescope command_history<cr>"
 
 -- QuickFix
 lvim.keys.normal_mode["gR"] = "<cmd>Trouble lsp_references<CR>"
@@ -136,13 +137,21 @@ lvim.builtin.which_key.mappings["t"] = {
 -- Telescope key settings
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
--- Othre utilities key settings
+-- Other utilities key settings
 lvim.builtin.which_key.mappings["u"] = {
 	name = "Utility",
 	u = { ":UndotreeToggle<cr>:UndotreeFocus<cr>", "UndotreeToggle" },
 	s = { ":set spell!<cr>", "Toggle spell" },
 	g = { ":Glow<cr>", "Glow" },
 	b = { ":GitBlameToggle", "GitBlame Toggle" },
+	t = { ":Telescope vim_options<cr>", "View vim options" },
+	r = { ":Telescope grep_string<cr>", "Grep strings" },
+}
+
+lvim.builtin.which_key.mappings["C"] = {
+	name = "Code manipulate",
+	s = { ":SplitjoinSplit<cr>", "Switch function to multiline" },
+	j = { ":SplitjoinJoin<cr>", "Switch function to singleline" },
 }
 
 -- *
@@ -338,25 +347,10 @@ lvim.plugins = {
 
   -- Search string
   {
-    "dyng/ctrlsf.vim",
-    config = function()
-      vim.cmd([[
-				nnoremap <C-F> :CtrlSF<space>
-				let g:ctrlsf_case_sensitive = 'yes'
-				let g:ctrlsf_regex_pattern = 0
-				let g:ctrlsf_default_root = 'project'
-				let g:ctrlsf_default_view_mode = 'compact'
-				let g:ctrlsf_winsize = '30%'
-				let g:ctrlsf_position = 'right'
-				let g:ctrlsf_auto_focus = {
-						\ "at": "start"
-						\ }
-				let g:ctrlsf_auto_close = {
-					\ "normal" : 1,
-					\ "compact": 1
-					\}
-			]]  )
-    end,
+    "nvim-pack/nvim-spectre",
+    config = function ()
+      vim.cmd("nnoremap <C-F> :<cmd>lua require('spectre').open()<CR><CR>")
+    end
   },
 
   -- Git

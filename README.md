@@ -16,10 +16,9 @@ Just personal development configs on macOS
     - [3.1 tpm installation](#tpm-installation)
     - [3.2 tmux extensions](#tmux-extensions)
 - [4. npm extensions](#npm-extensions)
-- [5. vim installation, setting](#vim-installation-setting)
+- [5. editor](#editor)
     - [6.1 lunarvim](#lunarvim)
-    - [6.2 neovim](#neovim)
-    - [6.3 vim](#vim)
+    - [6.2 neovim plugins](#neovim-plugins)
 - [6. nerd-fonts](#nerd-fonts)
 - [7. vs code extensions](#vs-code-extensions)
 - [8. chrome extensions](#chrome-extensions)
@@ -112,15 +111,15 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible): Basic tmux settings everyone can agree on
 - [tmux-plugins/tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight): Plugin that highlights when you press tmux prefix key
 - [tmux-plugins/tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control): Standard pane key-bindings for tmux
-- [tmux-plugins/tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist)
-- [tmux-plugins/tmux-urlview](https://github.com/tmux-plugins/tmux-urlview)
-- [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-- [tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-plugins/tmux-continuum)
-- [spywhere/tmux-named-snapshot](https://github.com/spywhere/tmux-named-snapshot)
+- [tmux-plugins/tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist): Lightweight tmux utils for manipulating sessions
+- [tmux-plugins/tmux-urlview](https://github.com/tmux-plugins/tmux-urlview): Quickly open any url on your terminal window!
+- [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): Persists tmux environment across system restarts.
+- [tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-plugins/tmux-continuum): Continuous saving of tmux environment. Automatic restore when tmux is started. Automatic tmux start when computer is turned on.
+- [spywhere/tmux-named-snapshot](https://github.com/spywhere/tmux-named-snapshot): A tmux-resurrect extension for named snapshot support
 - [arcticicestudio/nord-tmux](https://github.com/arcticicestudio/nord-tmux): An arctic, north-bluish clean and elegant tmux color theme.
 - [nhdaly/tmux-better-mouse-mode](https://github.com/nhdaly/tmux-better-mouse-mode): A tmux plugin to better manage and configure the mouse.
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
-- [laktak/extrakto](https://github.com/laktak/extrakto)
+- [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
 
 ## [npm] extensions
 
@@ -141,30 +140,43 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### [lunarvim]
 
-- [config.lua](./lunarvim/config.lua)
+#### installation
+
+https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command
 
 - Prerequisite: [neovim], [rust], [node]
 
-- [Installation](https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command)
+#### config
 
-### [neovim]
+- [Open config.lua](./lunarvim/config.lua)
 
-- [vim-plug] installation
+### nvim plugins
 
-```
-$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-- python 3 provider installation
-
-```
-$ python3 -m pip install --user --upgrade pynvim
-```
-
-### [vim]
-
-[.vimrc](./vim/.vimrc)
+- [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): Better whitespace highlighting for Vim
+- [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim): Indent guides for Neovim
+- [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align): 🌻 A Vim alignment plugin
+- [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
+- [johngrib/vim-f-hangul](https://github.com/johngrib/vim-f-hangul): vim에서 f로 한글을 검색하자
+- [tpope/vim-obsession](https://github.com/tpope/vim-obsession): obsession.vim: continuously updated session files
+- [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim): Smooth scrolling neovim plugin written in lua
+- [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
+- [tpope/vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with "."
+- [easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion): Vim motions on speed!
+- [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): 🌌 Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
+- [ellisonleao/glow.nvim](https://github.com/ellisonleao/glow.nvim): A markdown preview directly in your neovim.
+- [andrewradev/splitjoin.vim](https://github.com/andrewradev/splitjoin.vim): Switch between single-line and multiline forms of code
+- [nacro90/numb.nvim](https://github.com/nacro90/numb.nvim): Peek lines just when you intend
+- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
+- [mbbill/undotree](https://github.com/mbbill/undotree): The undo history visualizer for VIM
+- [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime): Vim plugin for automatic time tracking and metrics generated from your programming activity.
+- [tpope/vim-surround](https://github.com/tpope/vim-surround): surround.vim: Delete/change/add parentheses/quotes/XML-tags/much more with ease
+- [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi): Multiple cursors plugin for vim/neovim
+- [nvim-pack/nvim-spectre](https://github.com/nvim-pack/nvim-spectre): Find the enemy and replace them with dark power.
+- [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
+- [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim): Git Blame plugin for Neovim written in Lua
+- [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim): Edit and review GitHub issues and pull requests from the comfort of your favorite editor
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim): 🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
 
 ## nerd-fonts installation
 
