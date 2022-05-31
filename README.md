@@ -15,13 +15,15 @@ Just personal development configs on macOS
 - [3. tmux](#tmux)
     - [3.1 tpm installation](#tpm-installation)
     - [3.2 tmux extensions](#tmux-extensions)
-- [4. npm extensions](#npm-extensions)
+- [4. node](#node)
 - [5. editor](#editor)
     - [6.1 lunarvim](#lunarvim)
     - [6.2 neovim plugins](#neovim-plugins)
 - [6. nerd-fonts](#nerd-fonts)
 - [7. vs code extensions](#vs-code-extensions)
 - [8. chrome extensions](#chrome-extensions)
+- [9. shortcut references](#shortcut-references)
+- [10. related](#related)
 
 ## [homebrew]
 
@@ -63,6 +65,8 @@ $ ./install-homebrew-dependencies.sh
 
 ## [zsh]
 
+[Open .zshrc](./zsh/.zshrc)
+
 ### [zplug] installation
 
 ```
@@ -91,11 +95,9 @@ $ brew install zplug
 - [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 - [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 
-### `.zshrc`
+## [tmux]
 
-[Open .zshrc](./zshrc)
-
-## [tmux] setting
+[Open .tmux.conf](./tmux/.tmux.conf)
 
 ### [tpm] installation
 
@@ -103,7 +105,7 @@ $ brew install zplug
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-### [tmux] extensions
+### [tmux] plugins
 
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
 - [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): A plugin that enhances tmux search
@@ -121,7 +123,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
 
-## [npm] extensions
+## [node]
 
 - [np](https://github.com/sindresorhus/np): A better `npm publish`
 - [npm-name-cli](https://github.com/sindresorhus/npm-name-cli): Check whether a package or organization name is available on npm
@@ -142,13 +144,17 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 #### installation
 
-https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command
-
 - Prerequisite: [neovim], [rust], [node]
+
+https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command
 
 #### config
 
 - [Open config.lua](./lunarvim/config.lua)
+
+### core extensions
+
+- [Lunarvim core extensions](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
 ### nvim plugins
 
@@ -184,14 +190,18 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 ## [chrome] extensions
 
+### favorites
+
 - [vimium-c](https://github.com/gdh1995/vimium-c): A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar
 - [notifier-for-github](https://github.com/sindresorhus/notifier-for-github): Browser extension - Get notified about new GitHub notifications
 - [refined-github](https://github.com/refined-github/refined-github): Browser extension that simplifies the GitHub interface and adds useful features
 - [github-npm-stats](https://github.com/katranci/github-npm-stats): Chrome extension that displays npm download stats on GitHub
 
-[All extensions](./chrome/chrome-extensions.html)
+*[All extensions](./chrome/chrome-extensions.html)*
 
 ## [vs code] extensions
+
+### favorites
 
 - [gitlens](https://github.com/gitkraken/vscode-gitlens): Visualize code authorship at a glance via Git blame annotations
 - [vscode-ava](https://github.com/SamVerschueren/vscode-ava): Snippets for AVA
@@ -215,9 +225,11 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [vscode-gitblame](https://github.com/Sertion/vscode-gitblame): Visual Studio Code Extension - See Git Blame info in status bar.
 - [path-autocomplete](https://github.com/ionutvmi/path-autocomplete): Path autocomplete for visual studio code.
 
-[All extensions](./vscode/vscode-extensions)
+*[All extensions](./vscode/vscode-extensions)*
 
 ## [alfred] workflows
+
+### favorites
 
 - [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill): Alfred 3 workflow to fabulously search
 - [alfred-chromium-workflow](https://github.com/jopemachine/alfred-chromium-workflow): Chromium based browser workflow for Alfred 4
