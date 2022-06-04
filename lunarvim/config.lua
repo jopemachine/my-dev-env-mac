@@ -38,7 +38,7 @@ vim.cmd([[
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-lvim.keys.normal_mode["<C-x>"] = ":bw<cr>"
+lvim.keys.normal_mode["<C-z>"] = ":bw<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
 lvim.keys.normal_mode["q:"] = ":Telescope command_history<cr>"
 

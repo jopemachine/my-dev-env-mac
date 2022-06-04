@@ -1,6 +1,8 @@
 # My Dev-Env for MacOS
 
-Just personal development configs on macOS
+Just personal development configs on macOS.
+
+I wrote this because of saving and sharing my configs.
 
 **Table of Contents**
 
@@ -9,21 +11,21 @@ Just personal development configs on macOS
     - [1.2 homebrew dependencies](#homebrew-dependencies)
 - [2. zsh](#zsh)
     - [2.1 zplug installation](#zplug-installation)
-	- [2.2 zplug extensions](#zplug-extensions)
-    - [2.3 oh-my-zsh extensions](#oh-my-zsh-extensions)
-    - [2.4 zshrc](#zshrc)
+	- [2.2 zplug plugins](#zplug-plugins)
+    - [2.3 oh-my-zsh plugins](#oh-my-zsh-plugins)
 - [3. tmux](#tmux)
     - [3.1 tpm installation](#tpm-installation)
     - [3.2 tmux extensions](#tmux-extensions)
 - [4. node](#node)
-- [5. editor](#editor)
+- [5. vim](#vim)
     - [6.1 lunarvim](#lunarvim)
     - [6.2 neovim plugins](#neovim-plugins)
-- [6. nerd-fonts](#nerd-fonts)
-- [7. vs code extensions](#vs-code-extensions)
-- [8. chrome extensions](#chrome-extensions)
-- [9. shortcut references](#shortcut-references)
-- [10. related](#related)
+- [6. vs code extensions](#vs-code-extensions)
+- [7. chrome extensions](#chrome-extensions)
+- [8. popclip](#popclip)
+- [9. related shortcut references](#related-shortcut-references)
+- [10. related config compilations](#related-config-compilations)
+- [11. related awesome list](#related-awesome-list)
 
 ## [homebrew]
 
@@ -35,7 +37,6 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ### [homebrew] dependencies
 
-- [vim]
 - [neovim]: Vim-fork focused on extensibility and usability
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [tmux]
@@ -58,10 +59,6 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 - [nerd fonts]: Iconic font aggregator, collection, & patcher
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
 - [hub]: A command-line tool that makes git easier to use with GitHub.
-
-```
-$ ./install-homebrew-dependencies.sh
-```
 
 ## [zsh]
 
@@ -138,7 +135,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [yo](https://github.com/yeoman/yo): CLI tool for running Yeoman generators
 - [n](https://github.com/tj/n): Interactively Manage All Your Node Versions
 
-## vim installation, setting
+## vim
 
 ### [lunarvim]
 
@@ -152,11 +149,11 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 - [Open config.lua](./lunarvim/config.lua)
 
-### core extensions
+#### core extensions
 
 - [Lunarvim core extensions](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
-### nvim plugins
+### neovim plugins
 
 - [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): Better whitespace highlighting for Vim
 - [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
@@ -183,10 +180,6 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim): Git Blame plugin for Neovim written in Lua
 - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim): Edit and review GitHub issues and pull requests from the comfort of your favorite editor
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): 🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
-
-## nerd-fonts installation
-
-- [NotoMonoNerdFontCompleteM](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto/Mono)
 
 ## [chrome] extensions
 
@@ -236,16 +229,31 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
 - [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
 
-## Shortcut references
+## [popclip]
+
+[popclip extensions](https://pilotmoon.com/popclip/extensions/)
+
+- [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
+- [popclip-npm](https://github.com/jopemachine/popclip-npm)
+
+## related shortcut references
 
 - [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
 
-## Related
+## related config compilations
 
 - https://github.com/rdlester/dotfiles
 - https://github.com/gpakosz/.tmux
 - https://github.com/makccr/dot
+
+## related awesome list
+
+- [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins)
+- [awesome-mac](https://github.com/jaywcjlove/awesome-mac)
+- [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
+- [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
+- [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme
@@ -285,3 +293,4 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 [chrome]: https://www.google.com/intl/en/chrome/
 [hub]: https://github.com/github/hub
 [alfred]: https://www.alfredapp.com/
+[popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12

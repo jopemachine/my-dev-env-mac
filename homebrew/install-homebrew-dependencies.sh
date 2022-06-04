@@ -20,6 +20,10 @@ install mas
 install glow
 install hub
 install docker-compose
+install python3
+install luarocks
+install go
+install rust
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
@@ -40,3 +44,4 @@ install simplenote
 install slack
 install alfred
 install telegram-desktop
+install font-fira-code-nerd-font
