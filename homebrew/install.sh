@@ -24,6 +24,9 @@ install python3
 install luarocks
 install go
 install rust
+install chruby
+install ruby-install
+install hyperfine
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 

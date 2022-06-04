@@ -11,7 +11,7 @@ I wrote this because of saving and sharing my configs.
     - [1.2 homebrew dependencies](#homebrew-dependencies)
 - [2. zsh](#zsh)
     - [2.1 zplug installation](#zplug-installation)
-	- [2.2 zplug plugins](#zplug-plugins)
+    - [2.2 zplug plugins](#zplug-plugins)
     - [2.3 oh-my-zsh plugins](#oh-my-zsh-plugins)
 - [3. tmux](#tmux)
     - [3.1 tpm installation](#tpm-installation)
@@ -62,8 +62,6 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ## [zsh]
 
-[Open .zshrc](./zsh/.zshrc)
-
 ### [zplug] installation
 
 ```
@@ -93,8 +91,6 @@ $ brew install zplug
 - [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
 
 ## [tmux]
-
-[Open .tmux.conf](./tmux/.tmux.conf)
 
 ### [tpm] installation
 
@@ -144,10 +140,6 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - Prerequisite: [neovim], [rust], [node]
 
 https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command
-
-#### config
-
-- [Open config.lua](./lunarvim/config.lua)
 
 #### core extensions
 
