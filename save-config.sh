@@ -15,6 +15,7 @@ function copyConfig() {
 	fi
 }
 
+copyConfig "alacritty"         ~/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
 copyConfig "vim"               ~/.vimrc ./vim/.vimrc
 copyConfig "neovim"            ~/.config/nvim/init.vim ./neovim/init.vim
 copyConfig "lunarvim"          ~/.config/lvim/config.lua ./lunarvim/config.lua
@@ -26,8 +27,7 @@ copyConfig "git"               ~/.gitconfig ./git/.gitconfig
 copyConfig "chrome extensions" ~/Downloads/extensions.html ./chrome/chrome-extensions.html
 copyConfig "ranger"            ~/.config/ranger/rc.conf ./ranger/rc.conf
 
-# vscode extensions
+# export vscode extensions
 code --list-extensions | xargs -L 1 > ./vscode/vscode-extensions
 
 git add . && git commit -m "🔨 Update configs" && git push origin master --force
-

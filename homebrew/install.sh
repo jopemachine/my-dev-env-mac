@@ -6,9 +6,9 @@ function install() {
 }
 
 # installing packages
+install zplug
 install ripgrep
 install mcfly
-install zplug
 install autojump
 install k
 install git-delta
@@ -23,11 +23,21 @@ install docker-compose
 install python3
 install luarocks
 install go
-install rust
 install chruby
 install ruby-install
 install hyperfine
 
+# install fish (need to insert more configurations)
+# install fish
+# curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+# omg install agnoster
+
+# install rust
+brew install rustup-init
+rustup-init
+source $HOME/.cargo/env
+
+# Install with other options
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # install applications

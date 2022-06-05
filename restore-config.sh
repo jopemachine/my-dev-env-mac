@@ -15,6 +15,7 @@ function copyConfig() {
 	fi
 }
 
+copyConfig "alacritty"         ~/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
 copyConfig "vim"               ~/.vimrc ./vim/.vimrc
 copyConfig "neovim"            ~/.config/nvim/init.vim ./neovim/init.vim
 copyConfig "lunarvim"          ~/.config/lvim/config.lua ./lunarvim/config.lua
