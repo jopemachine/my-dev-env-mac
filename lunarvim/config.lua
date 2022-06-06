@@ -332,9 +332,6 @@ lvim.plugins = {
   {
     "is0n/fm-nvim"
   },
-  {
-    "akinsho/toggleterm.nvim"
-  },
 
   -- Argument wrapping
   {
@@ -373,7 +370,7 @@ lvim.plugins = {
 
   -- Github
   {
-	"pwntester/octo.nvim",
+    "pwntester/octo.nvim",
   },
 
   -- Show error window
@@ -381,9 +378,6 @@ lvim.plugins = {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   },
-  {
-    "dag/vim-fish"
-  }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

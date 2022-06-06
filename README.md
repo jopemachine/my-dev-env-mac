@@ -174,24 +174,19 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 ### favorites
 
 - [gitlens](https://github.com/gitkraken/vscode-gitlens): Visualize code authorship at a glance via Git blame annotations
-- [vscode-ava](https://github.com/SamVerschueren/vscode-ava): Snippets for AVA
 - [live-server](https://github.com/ritwickdey/vscode-live-server): Launch a development local Server with live reload feature for static & dynamic pages.
 - [prettier-vscode](https://github.com/prettier/prettier-vscode): Visual Studio Code extension for Prettier
 - [vscode-material-icon-theme](https://github.com/PKief/vscode-material-icon-theme): Available on the VSCode Marketplace
 - [path-intellisense](https://github.com/ChristianKohler/PathIntellisense): Visual Studio Code plugin that autocompletes filenames
 - [vscode-pull-request-github](https://github.com/Microsoft/vscode-pull-request-github): GitHub Pull Requests for Visual Studio Code
-- [gitHistoryVSCode](https://github.com/DonJayamanne/gitHistoryVSCode): Git History for Visual Studio Code
 - [vscode-extensions-open-in-browser](https://github.com/SudoKillMe/vscode-extensions-open-in-browser): 
-- [OneDark-Pro](https://github.com/Binaryify/OneDark-Pro): Atom's iconic One Dark theme for Visual Studio Code
 - [vscode-npm-scripts](https://github.com/Microsoft/vscode-npm-scripts): VSCode extension for running npm-scripts and validating the package.json files.
 - [NpmIntellisense](https://github.com/ChristianKohler/NpmIntellisense): Visual Studio Code plugin that autocompletes npm modules in import statements
 - [vscode-ext-color-highlight](https://github.com/enyancc/vscode-ext-color-highlight): Extension adds colored border around css/web colors in the editor
-- [vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint): Markdown linting and style checking for Visual Studio Code
 - [better-comments](https://github.com/aaron-bond/better-comments)
 - [vscode-git-graph](https://github.com/mhutchie/vscode-git-graph): Project Manager Extension for Visual Studio Code
 - [vscode-project-manager](https://github.com/alefragnani/vscode-project-manager): Project Manager Extension for Visual Studio Code
 - [vscode-restclient](https://github.com/Huachao/vscode-restclient): REST Client Extension for Visual Studio Code
-- [vscode-gitignore](https://github.com/CodeZombieCH/vscode-gitignore): A simple extension for Visual Studio Code that lets you pull .gitignore files
 - [vscode-gitblame](https://github.com/Sertion/vscode-gitblame): Visual Studio Code Extension - See Git Blame info in status bar.
 - [path-autocomplete](https://github.com/ionutvmi/path-autocomplete): Path autocomplete for visual studio code.
 

@@ -9,7 +9,6 @@ function install() {
 install zplug
 install ripgrep
 install mcfly
-install autojump
 install git-delta
 install neovim
 install navi

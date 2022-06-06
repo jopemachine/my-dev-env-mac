@@ -1,7 +1,6 @@
 alias grep='grep --color=auto'
 alias cat='bat --style=plain --paging=never'
 alias python='python3'
-alias j='autojump'
 
 # vim
 alias vi='lvim'

@@ -9,6 +9,7 @@ source ~/.config/fish/alias.fish
 # Env Path
 
 fish_add_path ~/Library/Android/sdk
+fish_add_path ~/.local/bin
 
 # Prompt
 
@@ -22,3 +23,4 @@ end
 
 ## mcfly
 mcfly init fish | source
+

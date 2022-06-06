@@ -137,8 +137,15 @@ key_bindings:
 # Key binding for fzf
   - { key: C,        mods: Alt,     chars: "\x1bc"                       }
 
+# shell:
+#   program: /usr/local/bin/zsh
+#   args:
+#     - -l
+#     - -c
+#     - tmux attach -t base || tmux new -s base
+
 shell:
-  program: /usr/local/bin/zsh
+  program: /usr/local/bin/fish
   args:
     - -l
     - -c

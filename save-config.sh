@@ -27,6 +27,7 @@ copyConfig "tmux"              ~/.tmux.conf ./tmux/.tmux.conf
 copyConfig "ranger"            ~/.config/ranger/rc.conf ./ranger/rc.conf
 copyConfig "git"               ~/.gitconfig ./git/.gitconfig
 copyConfig "chrome extensions" ~/Downloads/extensions.html ./chrome/chrome-extensions.html
+copyConfig "vimium-c"          ~/Downloads/vimium_c* ./chrome/vimium-c/
 
 # legacy
 copyConfig "vim"               ~/.vimrc ./vim/.vimrc
