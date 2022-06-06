@@ -217,6 +217,7 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 - [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
+- [jethrokuan/fzf](https://github.com/jethrokuan/fzf)
 
 ## related config compilations
 
