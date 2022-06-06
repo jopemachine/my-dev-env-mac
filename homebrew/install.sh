@@ -10,7 +10,6 @@ install zplug
 install ripgrep
 install mcfly
 install autojump
-install k
 install git-delta
 install neovim
 install navi
@@ -28,12 +27,11 @@ install ruby-install
 install hyperfine
 
 # install fish (need to insert more configurations)
-# install fish
-# curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-# omg install agnoster
+install fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 # install rust
-brew install rustup-init
+install rustup-init
 rustup-init
 source $HOME/.cargo/env
 

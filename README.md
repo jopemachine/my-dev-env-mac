@@ -9,10 +9,10 @@ I wrote this because of saving and sharing my configs.
 - [1. homebrew](#homebrew)
     - [1.1 homebrew installation](#homebrew-installation)
     - [1.2 homebrew dependencies](#homebrew-dependencies)
-- [2. zsh](#zsh)
-    - [2.1 zplug installation](#zplug-installation)
-    - [2.2 zplug plugins](#zplug-plugins)
-    - [2.3 oh-my-zsh plugins](#oh-my-zsh-plugins)
+- [2. fish](#fish)
+    - [2.1 fish installation](#fish-installation)
+    - [2.2 oh-my-fish installation](#oh-my-fish-installation)
+    - [2.3 fisher installation](#fisher-installation)
 - [3. tmux](#tmux)
     - [3.1 tpm installation](#tpm-installation)
     - [3.2 tmux extensions](#tmux-extensions)
@@ -37,18 +37,13 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ### [homebrew] dependencies
 
-- [neovim]: Vim-fork focused on extensibility and usability
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [tmux]
-- [homebrew]: 🍻 Default formulae for the missing package manager for macOS (or Linux)
 - [mas]: 📦 Mac App Store command line interface
-- [oh-my-zsh]: 🙃 A delightful community-driven (with 2,000+ contributors) framework for managing your zsh configuration.
 - [mcfly]: Fly through your shell history. Great Scott!
 - [ranger]: A VIM-inspired filemanager for the console
-- [iTerm2]: iTerm2 is a terminal emulator for Mac OS X that does amazing things.
 - [forgit]: 💤 A utility tool powered by fzf for using git interactively.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
-- [agnoster]: A ZSH theme designed to disclose information contextually, with a powerline aesthetic
 - [starship]: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [fd]: A simple, fast and user-friendly alternative to 'find'
@@ -56,39 +51,29 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 - [lazygit]: Simple terminal UI for git commands
 - [autojump]: A cd command that learns - easily navigate directories from the command line
 - [vs code]: Visual Studio Code
-- [nerd fonts]: Iconic font aggregator, collection, & patcher
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
 - [hub]: A command-line tool that makes git easier to use with GitHub.
+- [alacritty]: A cross-platform, OpenGL terminal emulator.
 
-## [zsh]
+## [fish]
 
-### [zplug] installation
+### [fish] installation
 
 ```
-$ brew install zplug
+$ brew install fish
 ```
 
-### [zplug] extensions
+### [oh-my-fish] installation
 
-- [djui/alias-tips](https://github.com/djui/alias-tips): An oh-my-zsh plugin to help remembering those aliases you defined once
-- [lukechilds/zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion): Better completion for npm
-- [junegunn/fzf](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder
-- [mafredri/zsh-async](https://github.com/mafredri/zsh-async): Because your terminal should be able to perform tasks asynchronously without external tools!
-- [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Fish-like autosuggestions for zsh
-- [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for Zsh.
-- [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd): 🚀 A next-generation cd command with your interactive filter
-- [supercrabtree/k](https://github.com/supercrabtree/k): k is the new l, yo
-- [ogham/exa](https://github.com/ogham/exa): A modern replacement for ‘ls’.
+```
+$ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+```
 
-### [oh-my-zsh] plugins
+### [fisher] installation
 
-- [plugins/autojump](https://github.com/wting/autojump)
-- [plugins/git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-- [plugins/web-search](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search)
-- [plugins/node](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/node)
-- [lib/complete](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-- [lib/key-bindings](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
-- [lib/directories](https://github.com/ohmyzsh/ohmyzsh/tree/39b600e9e564db3dec265fcf2e3db4b5568dd93a/lib)
+```
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
 
 ## [tmux]
 
@@ -286,3 +271,6 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 [hub]: https://github.com/github/hub
 [alfred]: https://www.alfredapp.com/
 [popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12
+[fish]: https://github.com/fish-shell/fish-shell
+[omf]: https://github.com/oh-my-fish/oh-my-fish
+[alacritty]: https://github.com/alacritty/alacritty

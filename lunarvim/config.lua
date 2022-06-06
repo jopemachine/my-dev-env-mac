@@ -148,6 +148,7 @@ lvim.builtin.which_key.mappings["u"] = {
 	r = { ":Telescope grep_string<cr>", "Grep Strings" },
 	e = { ":set expandtab!<cr>", "Toggle Expandtab" },
 	a = { ":Ranger<cr>", "Ranger" },
+	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
 }
 
 lvim.builtin.which_key.mappings["C"] = {
@@ -331,6 +332,9 @@ lvim.plugins = {
   {
     "is0n/fm-nvim"
   },
+  {
+    "akinsho/toggleterm.nvim"
+  },
 
   -- Argument wrapping
   {
@@ -377,6 +381,9 @@ lvim.plugins = {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   },
+  {
+    "dag/vim-fish"
+  }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

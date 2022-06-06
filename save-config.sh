@@ -15,17 +15,24 @@ function copyConfig() {
 	fi
 }
 
-copyConfig "alacritty"         ~/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
-copyConfig "vim"               ~/.vimrc ./vim/.vimrc
-copyConfig "neovim"            ~/.config/nvim/init.vim ./neovim/init.vim
 copyConfig "lunarvim"          ~/.config/lvim/config.lua ./lunarvim/config.lua
-copyConfig "zsh"               ~/.zshrc ./zsh/.zshrc
-copyConfig "bash"              ~/.bashrc ./bash/.bashrc
+
+copyConfig "alacritty"         ~/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
+copyConfig "fish"              ~/.config/fish/config.fish ./fish/config.fish
+copyConfig "fish-variable"     ~/.config/fish/fish_variables ./fish/fish_variables
+copyConfig "fish-aliases"      ~/.config/fish/alias.fish ./fish/alias.fish
 copyConfig "starship"          ~/.config/starship.toml ./starship/starship.toml
+
 copyConfig "tmux"              ~/.tmux.conf ./tmux/.tmux.conf
+copyConfig "ranger"            ~/.config/ranger/rc.conf ./ranger/rc.conf
 copyConfig "git"               ~/.gitconfig ./git/.gitconfig
 copyConfig "chrome extensions" ~/Downloads/extensions.html ./chrome/chrome-extensions.html
-copyConfig "ranger"            ~/.config/ranger/rc.conf ./ranger/rc.conf
+
+# legacy
+copyConfig "vim"               ~/.vimrc ./vim/.vimrc
+copyConfig "neovim"            ~/.config/nvim/init.vim ./neovim/init.vim
+copyConfig "bash"              ~/.bashrc ./bash/.bashrc
+copyConfig "zsh"               ~/.zshrc ./zsh/.zshrc
 
 # export vscode extensions
 code --list-extensions | xargs -L 1 > ./vscode/vscode-extensions
