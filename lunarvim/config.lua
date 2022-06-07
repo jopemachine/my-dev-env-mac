@@ -140,17 +140,23 @@ lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Project
 -- Other utilities key settings
 lvim.builtin.which_key.mappings["u"] = {
 	name = "Utility",
-	u = { ":UndotreeToggle<cr>:UndotreeFocus<cr>", "Toggle Undotree" },
-	s = { ":set spell!<cr>", "Toggle Spell Check" },
-	g = { ":Glow<cr>", "Toggle Glow Window" },
+	u = { ":UndotreeToggle<cr>:UndotreeFocus<cr>", "Undotree" },
+	g = { ":Glow<cr>", "Glow Window" },
 	b = { ":GitBlameToggle<cr>", "Toggle GitBlame Plugin" },
-	o = { ":Telescope vim_options<cr>", "View Vim Options" },
 	r = { ":Telescope grep_string<cr>", "Grep Strings" },
-	e = { ":set expandtab!<cr>", "Toggle Expandtab" },
 	a = { ":Ranger<cr>", "Ranger" },
 	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
 }
 
+-- Vim options
+lvim.builtin.which_key.mappings["U"] = {
+	name = "Vim options",
+	s = { ":set spell!<cr>", "Toggle Spell Check" },
+	v = { ":Telescope vim_options<cr>", "View Vim Options" },
+	e = { ":set expandtab!<cr>", "Toggle Expandtab" },
+}
+
+-- Code manipulate
 lvim.builtin.which_key.mappings["C"] = {
 	name = "Code manipulate",
 	s = { ":SplitjoinSplit<cr>", "Switch Function to Multiline" },

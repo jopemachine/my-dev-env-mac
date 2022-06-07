@@ -1,5 +1,5 @@
 #!/usr/local/bin/zsh
 
 fisher install wfxr/forgit
-fisher install jethrokuan/fzf
+fisher install PatrickF1/fzf.fish
 fisher install jethrokuan/z
