@@ -208,6 +208,11 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
 - [popclip-npm](https://github.com/jopemachine/popclip-npm)
 
+## manual installations
+
+- [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
+- [AltTab](https://alt-tab-macos.netlify.app/)
+
 ## related shortcut references
 
 - [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)

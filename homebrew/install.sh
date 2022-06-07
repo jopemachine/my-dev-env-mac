@@ -5,53 +5,100 @@ function install() {
 	brew install $1
 }
 
-# installing packages
-install zplug
-install ripgrep
-install mcfly
-install git-delta
-install neovim
-install navi
-install lazy-git
-install tmux
-install mas
-install glow
-install hub
+# docker
 install docker-compose
-install python3
-install luarocks
-install go
-install chruby
-install ruby-install
+
+# package manager
+install mas
+
+# benchmarking
 install hyperfine
 
-# install fish (need to insert more configurations)
-install fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+# cli environment
+install neovim
+install xxh
+install ripgrep
+install mcfly
+install navi
+install glow
 
-# install rust
+# shell
+install fish
+install zplug
+
+# window management
+install tmux
+
+# golang
+install go
+
+# ruby
+install chruby
+install ruby-install
+
+# lua
+install luarocks
+
+# python
+install python3
+
+# rust
 install rustup-init
 rustup-init
 source $HOME/.cargo/env
 
-# Install with other options
+# installing with other options
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
-# install applications
+# git
+install hub
+install git-delta
+install lazy-git
 install github
 install gitkraken
-install jetbrains-toolbox
-install discord
-install zoom
-install notion
-install notion-enhanced
+
+# terminal
 install iterm2
 install alacritty
-install google-chrome
+
+# note
+install notion
+install notion-enhanced
+install simplenote
+
+# development
+install jetbrains-toolbox
 install visual-studio-code
 install runjs
-install simplenote
-install slack
+install openinterminal
+install responsively
+
+# productivity
 install alfred
+install hiddenbar
+install ndm
+
+# communication
+install slack
+install discord
+install zoom
 install telegram-desktop
+
+# others
+install google-chrome
 install font-fira-code-nerd-font
+
+# quicklook plugins
+# https://github.com/sindresorhus/quick-look-plugins
+install qlcolorcode
+install qlstephen
+install qlmarkdown
+install quicklook-json
+install qlimagesize
+install suspicious-package
+install apparency
+install quicklookase
+install qlvideo
+
+# others
+
