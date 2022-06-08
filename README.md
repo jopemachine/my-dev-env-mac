@@ -1,6 +1,6 @@
 # My Dev-Env for MacOS
 
-Just personal development configs on macOS.
+This is my miscellaneous config files and personal installation scripts.
 
 I wrote this because of saving and sharing my configs.
 
@@ -35,7 +35,7 @@ I wrote this because of saving and sharing my configs.
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### [homebrew] dependencies
+### Command Line Applications
 
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [tmux]
@@ -54,6 +54,8 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
 - [hub]: A command-line tool that makes git easier to use with GitHub.
 - [alacritty]: A cross-platform, OpenGL terminal emulator.
+- [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
+- [AltTab](https://alt-tab-macos.netlify.app/)
 
 ## [fish]
 
@@ -132,6 +134,8 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 ### neovim plugins
 
+### favorites
+
 - [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): Better whitespace highlighting for Vim
 - [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim): Indent guides for Neovim
@@ -207,11 +211,6 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 - [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
 - [popclip-npm](https://github.com/jopemachine/popclip-npm)
-
-## manual installations
-
-- [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
-- [AltTab](https://alt-tab-macos.netlify.app/)
 
 ## related shortcut references
 
