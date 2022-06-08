@@ -10,4 +10,6 @@ install_depedencies luarocks
 install_depedencies mas
 install_depedencies ruby
 install_depedencies pip
+install_depedencies npm
+install_depedencies fish
 

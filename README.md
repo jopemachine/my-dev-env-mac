@@ -1,42 +1,29 @@
 # My Dev-Env for MacOS
 
-This is my miscellaneous config files and personal installation scripts.
+These are my miscellaneous config files and personal installation scripts.
 
 I wrote this because of saving and sharing my configs.
 
 **Table of Contents**
 
-- [1. homebrew](#homebrew)
-    - [1.1 homebrew installation](#homebrew-installation)
-    - [1.2 homebrew dependencies](#homebrew-dependencies)
-- [2. fish](#fish)
-    - [2.1 fish installation](#fish-installation)
-    - [2.2 oh-my-fish installation](#oh-my-fish-installation)
-    - [2.3 fisher installation](#fisher-installation)
-- [3. tmux](#tmux)
-    - [3.1 tpm installation](#tpm-installation)
-    - [3.2 tmux extensions](#tmux-extensions)
-- [4. node](#node)
-- [5. vim](#vim)
-    - [6.1 lunarvim](#lunarvim)
-    - [6.2 neovim plugins](#neovim-plugins)
-- [6. vs code extensions](#vs-code-extensions)
-- [7. chrome extensions](#chrome-extensions)
-- [8. popclip](#popclip)
-- [9. related shortcut references](#related-shortcut-references)
-- [10. related config compilations](#related-config-compilations)
-- [11. related awesome list](#related-awesome-list)
+- [1. Command Line Applications](#command-line-applications)
+- [2. GUI Applications](#gui-applications)
+- [3. Fish Plugins](#fish-plugins)
+- [4. Tmux Plugins](#tmux-plugins)
+- [5. Vim Plugins](#vim-plugins)
+    - [5.1 Lunarvim Core Plugins](#lunarvim-core-plugins)
+    - [5.2 Neovim Plugins](#neovim-plugins)
+- [6. Vs Code Extensions](#vs-code-extensions)
+- [7. Chrome Extensions](#chrome-extensions)
+- [8. Alfred Workflows](#alfred-workflows)
+- [9. Popclip](#popclip)
+- [10. Related Shortcut References](#related-shortcut-references)
+- [11. Related Config Compilations](#related-config-compilations)
+- [12. Related Awesome List](#related-awesome-list)
 
-## [homebrew]
+## Command Line Applications
 
-### [homebrew] installation
-
-```
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-### Command Line Applications
-
+- [alacritty]: A cross-platform, OpenGL terminal emulator.
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [tmux]
 - [mas]: 📦 Mac App Store command line interface
@@ -50,42 +37,27 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 - [navi]: An interactive cheatsheet tool for the command-line
 - [lazygit]: Simple terminal UI for git commands
 - [autojump]: A cd command that learns - easily navigate directories from the command line
-- [vs code]: Visual Studio Code
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
 - [hub]: A command-line tool that makes git easier to use with GitHub.
-- [alacritty]: A cross-platform, OpenGL terminal emulator.
+- [np]: A better `npm publish`
+- [npm-name-cli]: Check whether a package or organization name is available on npm
+- [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
+- [fkill-cli]: Fabulously kill processes. Cross-platform.
+- [@squoosh.cli]: Make images smaller using best-in-class codecs, right in the browser.
+- [broken-link-checker]: Find broken links, missing images, etc in your HTML.
+- [case-cli]: Convert string case on your terminal as you want
+- [tldr]: Simplified and community-driven man pages
+- [trash-cli]: Move files and folders to the trash
+- [pageres-cli]: Capture website screenshots
+- [yo]: CLI tool for running Yeoman generators
+- [n]: Interactively Manage All Your Node Versions
+
+## GUI Applications
+
 - [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
 - [AltTab](https://alt-tab-macos.netlify.app/)
 
-## [fish]
-
-### [fish] installation
-
-```
-$ brew install fish
-```
-
-### [oh-my-fish] installation
-
-```
-$ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-```
-
-### [fisher] installation
-
-```
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-```
-
-## [tmux]
-
-### [tpm] installation
-
-```
-$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-
-### [tmux] plugins
+## [Tmux] Plugins
 
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
 - [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): A plugin that enhances tmux search
@@ -103,38 +75,13 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
 
-## [node]
+## Vim Plugins
 
-- [np](https://github.com/sindresorhus/np): A better `npm publish`
-- [npm-name-cli](https://github.com/sindresorhus/npm-name-cli): Check whether a package or organization name is available on npm
-- [open-cli](https://github.com/sindresorhus/open-cli): Open stuff like URLs, files, executables. Cross-platform.
-- [fkill-cli](https://github.com/sindresorhus/fkill-cli): Fabulously kill processes. Cross-platform.
-- [@squoosh.cli](https://github.com/GoogleChromeLabs/squoosh): Make images smaller using best-in-class codecs, right in the browser.
-- [broken-link-checker](https://github.com/stevenvachon/broken-link-checker): Find broken links, missing images, etc in your HTML.
-- [case-cli](https://github.com/jopemachine/case-cli): Convert string case on your terminal as you want
-- [tldr](https://github.com/tldr-pages/tldr): Simplified and community-driven man pages
-- [trash-cli](https://github.com/sindresorhus/trash-cli): Move files and folders to the trash
-- [pageres-cli](https://github.com/sindresorhus/pageres-cli): Capture website screenshots
-- [yo](https://github.com/yeoman/yo): CLI tool for running Yeoman generators
-- [n](https://github.com/tj/n): Interactively Manage All Your Node Versions
+### [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
-## vim
+### [Neovim] Plugins
 
-### [lunarvim]
-
-#### installation
-
-- Prerequisite: [neovim], [rust], [node]
-
-https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594a3#install-in-one-command
-
-#### core extensions
-
-- [Lunarvim core extensions](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
-
-### neovim plugins
-
-### favorites
+#### favorites
 
 - [ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): Better whitespace highlighting for Vim
 - [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
@@ -162,7 +109,7 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim): Edit and review GitHub issues and pull requests from the comfort of your favorite editor
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): 🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
 
-## [chrome] extensions
+## [Chrome] Extensions
 
 ### favorites
 
@@ -173,7 +120,7 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 *[All extensions](./chrome/chrome-extensions.html)*
 
-## [vs code] extensions
+## [Vs Code] Extensions
 
 ### favorites
 
@@ -196,7 +143,7 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 
 *[All extensions](./vscode/vscode-extensions)*
 
-## [alfred] workflows
+## [Alfred] Workflows
 
 ### favorites
 
@@ -205,26 +152,26 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 - [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
 - [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
 
-## [popclip]
+## [Popclip]
 
 [popclip extensions](https://pilotmoon.com/popclip/extensions/)
 
 - [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
 - [popclip-npm](https://github.com/jopemachine/popclip-npm)
 
-## related shortcut references
+## Related Shortcut References
 
 - [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
 - [jethrokuan/fzf](https://github.com/jethrokuan/fzf)
 
-## related config compilations
+## Related Config Compilations
 
 - https://github.com/rdlester/dotfiles
 - https://github.com/gpakosz/.tmux
 - https://github.com/makccr/dot
 
-## related awesome list
+## Related Awesome List
 
 - [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins)
 - [awesome-mac](https://github.com/jaywcjlove/awesome-mac)
@@ -273,4 +220,18 @@ https://github.com/LunarVim/LunarVim/tree/a2714c3c382a1b6c9d4390eead924cc48ac594
 [popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12
 [fish]: https://github.com/fish-shell/fish-shell
 [omf]: https://github.com/oh-my-fish/oh-my-fish
+[oh-my-fish]: https://github.com/oh-my-fish/oh-my-fish
 [alacritty]: https://github.com/alacritty/alacritty
+[fisher]: https://github.com/jorgebucaran/fisher
+[np]: https://github.com/sindresorhus/np
+[npm-name-cli]: https://github.com/sindresorhus/npm-name-cli
+[open-cli]: https://github.com/sindresorhus/open-cli
+[fkill-cli]: https://github.com/sindresorhus/fkill-cli
+[@squoosh.cli]: https://github.com/GoogleChromeLabs/squoosh
+[broken-link-checker]: https://github.com/stevenvachon/broken-link-checker
+[case-cli]: https://github.com/jopemachine/case-cli
+[tldr]: https://github.com/tldr-pages/tldr
+[trash-cli]: https://github.com/sindresorhus/trash-cli
+[pageres-cli]: https://github.com/sindresorhus/pageres-cli
+[yo]: https://github.com/yeoman/yo
+[n]: https://github.com/tj/n
