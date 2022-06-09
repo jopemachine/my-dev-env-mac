@@ -30,23 +30,23 @@ I wrote this because of saving and sharing my configs.
 - [alacritty]: A cross-platform, OpenGL terminal emulator.
 - [starship]: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 - [tmux]: Open-source terminal multiplexer for Unix-like operating systems.
-
-### Command Line Applications
-
-- [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
-- [mas]: 📦 Mac App Store command line interface
-- [mcfly]: Fly through your shell history. Great Scott!
-- [ranger]: A VIM-inspired filemanager for the console
 - [forgit]: 💤 A utility tool powered by fzf for using git interactively.
+- [hub]: A command-line tool that makes git easier to use with GitHub.
+- [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
+- [ranger]: A VIM-inspired filemanager for the console
+- [mcfly]: Fly through your shell history. Great Scott!
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [fd]: A simple, fast and user-friendly alternative to 'find'
-- [navi]: An interactive cheatsheet tool for the command-line
 - [lazygit]: Simple terminal UI for git commands
 - [autojump]: A cd command that learns - easily navigate directories from the command line
+
+### Command Line Applications
+
+- [mas]: 📦 Mac App Store command line interface
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
+- [navi]: An interactive cheatsheet tool for the command-line
 - [np]: A better `npm publish`
-- [hub]: A command-line tool that makes git easier to use with GitHub.
 - [npm-name-cli]: Check whether a package or organization name is available on npm
 - [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
 - [fkill-cli]: Fabulously kill processes. Cross-platform.
@@ -77,14 +77,10 @@ I wrote this because of saving and sharing my configs.
 - [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): A plugin that enhances tmux search
 - [tmux-plugins/tmux-open](https://github.com/tmux-plugins/tmux-open): Tmux key bindings for quick opening of a highlighted file or url
 - [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible): Basic tmux settings everyone can agree on
-- [tmux-plugins/tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight): Plugin that highlights when you press tmux prefix key
 - [tmux-plugins/tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control): Standard pane key-bindings for tmux
 - [tmux-plugins/tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist): Lightweight tmux utils for manipulating sessions
 - [tmux-plugins/tmux-urlview](https://github.com/tmux-plugins/tmux-urlview): Quickly open any url on your terminal window!
 - [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): Persists tmux environment across system restarts.
-- [tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-plugins/tmux-continuum): Continuous saving of tmux environment. Automatic restore when tmux is started. Automatic tmux start when computer is turned on.
-- [spywhere/tmux-named-snapshot](https://github.com/spywhere/tmux-named-snapshot): A tmux-resurrect extension for named snapshot support
-- [arcticicestudio/nord-tmux](https://github.com/arcticicestudio/nord-tmux): An arctic, north-bluish clean and elegant tmux color theme.
 - [nhdaly/tmux-better-mouse-mode](https://github.com/nhdaly/tmux-better-mouse-mode): A tmux plugin to better manage and configure the mouse.
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
@@ -101,17 +97,13 @@ I wrote this because of saving and sharing my configs.
 - [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim): Indent guides for Neovim
 - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align): 🌻 A Vim alignment plugin
-- [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim): Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 - [johngrib/vim-f-hangul](https://github.com/johngrib/vim-f-hangul): vim에서 f로 한글을 검색하자
 - [tpope/vim-obsession](https://github.com/tpope/vim-obsession): obsession.vim: continuously updated session files
 - [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim): Smooth scrolling neovim plugin written in lua
 - [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with "."
-- [easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion): Vim motions on speed!
 - [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): 🌌 Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
 - [ellisonleao/glow.nvim](https://github.com/ellisonleao/glow.nvim): A markdown preview directly in your neovim.
-- [andrewradev/splitjoin.vim](https://github.com/andrewradev/splitjoin.vim): Switch between single-line and multiline forms of code
-- [nacro90/numb.nvim](https://github.com/nacro90/numb.nvim): Peek lines just when you intend
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
 - [mbbill/undotree](https://github.com/mbbill/undotree): The undo history visualizer for VIM
 - [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime): Vim plugin for automatic time tracking and metrics generated from your programming activity.
@@ -119,7 +111,6 @@ I wrote this because of saving and sharing my configs.
 - [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi): Multiple cursors plugin for vim/neovim
 - [nvim-pack/nvim-spectre](https://github.com/nvim-pack/nvim-spectre): Find the enemy and replace them with dark power.
 - [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
-- [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim): Git Blame plugin for Neovim written in Lua
 - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim): Edit and review GitHub issues and pull requests from the comfort of your favorite editor
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): 🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
 
@@ -187,7 +178,6 @@ I wrote this because of saving and sharing my configs.
 
 ## Related Awesome List
 
-- [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins)
 - [awesome-mac](https://github.com/jaywcjlove/awesome-mac)
 - [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
 - [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
