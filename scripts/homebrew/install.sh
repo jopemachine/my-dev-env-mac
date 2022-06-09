@@ -42,6 +42,12 @@ install luarocks
 # python
 install python3
 
+# node
+install node
+
+# deno
+install deno
+
 # rust
 install rustup-init
 rustup-init
@@ -62,6 +68,7 @@ install iterm2
 install alacritty
 
 # note
+install evernote
 install notion
 install notion-enhanced
 install simplenote
@@ -72,21 +79,27 @@ install visual-studio-code
 install runjs
 install openinterminal
 install responsively
+install mysqlworkbench
+install jetbrains-toolbox
+install qt
+install arduino
+install db-browser-for-sqlite
+install postman
+install unity-hub
 
 # productivity
 install alfred
 install hiddenbar
 install ndm
+install alt-tab
+install kindavim
+install hex-fiend
 
 # communication
 install slack
 install discord
 install zoom
 install telegram-desktop
-
-# others
-install google-chrome
-install font-fira-code-nerd-font
 
 # quicklook plugins
 # https://github.com/sindresorhus/quick-look-plugins
@@ -101,4 +114,27 @@ install quicklookase
 install qlvideo
 
 # others
-
+install mackup
+install mounty
+install xbar
+install netnewswire
+install appcleaner
+install google-chrome
+install font-fira-code-nerd-font
+install mos
+install keyboard-lock
+install iina
+install figma
+install scroll-reverser
+install skitch
+install virtualbox
+install wireshark
+install drawio
+install clocker
+install imageoptim
+install transmission
+install pdfelement
+install noxappplayer
+install onedrive
+install airdroid
+install balenaetcher

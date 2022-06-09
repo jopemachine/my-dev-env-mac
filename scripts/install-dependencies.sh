@@ -6,10 +6,13 @@ function install_depedencies() {
 }
 
 install_depedencies homebrew
-install_depedencies luarocks
 install_depedencies mas
+
+install_depedencies mac-cli
+install_depedencies npm
+
 install_depedencies ruby
 install_depedencies pip
-install_depedencies npm
 install_depedencies fish
 
+install_depedencies luarocks

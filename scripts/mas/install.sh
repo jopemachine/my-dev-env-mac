@@ -21,7 +21,6 @@ install "Battery Indicator"   1206020918
 install "Giphy Capture"       668208984
 install "PopClip"             445189367
 install "isHUD"               484757536
-install "Skitch"              425955336
 install "Hangul Viewer"       416746898
 install "Folder Peek"         1615988943
 install "GrabIt"              450166997
@@ -30,4 +29,5 @@ install "PhotoScape"          929507092
 install "Magnet"              441258766
 install "Xcode"               497799835
 install "Actions"             1586435171
+install "HEIC Converter"      1294126402
 
