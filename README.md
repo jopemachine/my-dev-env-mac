@@ -34,12 +34,10 @@ I wrote this because of saving and sharing my configs.
 - [hub]: A command-line tool that makes git easier to use with GitHub.
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [ranger]: A VIM-inspired filemanager for the console
-- [mcfly]: Fly through your shell history. Great Scott!
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [lazygit]: Simple terminal UI for git commands
-- [autojump]: A cd command that learns - easily navigate directories from the command line
 
 ### Command Line Applications
 
@@ -122,8 +120,7 @@ I wrote this because of saving and sharing my configs.
 - [notifier-for-github](https://github.com/sindresorhus/notifier-for-github): Browser extension - Get notified about new GitHub notifications
 - [refined-github](https://github.com/refined-github/refined-github): Browser extension that simplifies the GitHub interface and adds useful features
 - [github-npm-stats](https://github.com/katranci/github-npm-stats): Chrome extension that displays npm download stats on GitHub
-
-*[All extensions](./chrome/chrome-extensions.html)*
+- [darkreader](https://github.com/darkreader/darkreader): Dark Reader Chrome and Firefox extension
 
 ## [Vs Code] Extensions
 
@@ -131,22 +128,14 @@ I wrote this because of saving and sharing my configs.
 
 - [gitlens](https://github.com/gitkraken/vscode-gitlens): Visualize code authorship at a glance via Git blame annotations
 - [live-server](https://github.com/ritwickdey/vscode-live-server): Launch a development local Server with live reload feature for static & dynamic pages.
-- [prettier-vscode](https://github.com/prettier/prettier-vscode): Visual Studio Code extension for Prettier
 - [vscode-material-icon-theme](https://github.com/PKief/vscode-material-icon-theme): Available on the VSCode Marketplace
-- [path-intellisense](https://github.com/ChristianKohler/PathIntellisense): Visual Studio Code plugin that autocompletes filenames
-- [vscode-pull-request-github](https://github.com/Microsoft/vscode-pull-request-github): GitHub Pull Requests for Visual Studio Code
 - [vscode-extensions-open-in-browser](https://github.com/SudoKillMe/vscode-extensions-open-in-browser): 
-- [vscode-npm-scripts](https://github.com/Microsoft/vscode-npm-scripts): VSCode extension for running npm-scripts and validating the package.json files.
 - [NpmIntellisense](https://github.com/ChristianKohler/NpmIntellisense): Visual Studio Code plugin that autocompletes npm modules in import statements
 - [vscode-ext-color-highlight](https://github.com/enyancc/vscode-ext-color-highlight): Extension adds colored border around css/web colors in the editor
-- [vscode-git-graph](https://github.com/mhutchie/vscode-git-graph): Project Manager Extension for Visual Studio Code
 - [better-comments](https://github.com/aaron-bond/better-comments)
 - [vscode-project-manager](https://github.com/alefragnani/vscode-project-manager): Project Manager Extension for Visual Studio Code
-- [vscode-restclient](https://github.com/Huachao/vscode-restclient): REST Client Extension for Visual Studio Code
 - [vscode-gitblame](https://github.com/Sertion/vscode-gitblame): Visual Studio Code Extension - See Git Blame info in status bar.
 - [path-autocomplete](https://github.com/ionutvmi/path-autocomplete): Path autocomplete for visual studio code.
-
-*[All extensions](./vscode/vscode-extensions)*
 
 ## [Alfred] Workflows
 
