@@ -6,8 +6,10 @@ I wrote this because of saving and sharing my configs.
 
 **Table of Contents**
 
-- [1. Command Line Applications](#command-line-applications)
-- [2. GUI Applications](#gui-applications)
+- [1. Command Line Environment](#command-line-environment)
+    - [1.1 Command Line Dev Environment](#command-line-dev-environment)
+    - [1.2 Command Line Applications](#command-line-applications)
+- [2. Graphical User Interface Applications](#graphical-user-interface-applications)
 - [3. Fish Plugins](#fish-plugins)
 - [4. Tmux Plugins](#tmux-plugins)
 - [5. Vim Plugins](#vim-plugins)
@@ -21,25 +23,30 @@ I wrote this because of saving and sharing my configs.
 - [11. Related Config Compilations](#related-config-compilations)
 - [12. Related Awesome List](#related-awesome-list)
 
-## Command Line Applications
+## Command Line Environment
+
+### Command Line Dev Environment
 
 - [alacritty]: A cross-platform, OpenGL terminal emulator.
+- [starship]: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+- [tmux]: Open-source terminal multiplexer for Unix-like operating systems.
+
+### Command Line Applications
+
 - [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
-- [tmux]
 - [mas]: 📦 Mac App Store command line interface
 - [mcfly]: Fly through your shell history. Great Scott!
 - [ranger]: A VIM-inspired filemanager for the console
 - [forgit]: 💤 A utility tool powered by fzf for using git interactively.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
-- [starship]: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [navi]: An interactive cheatsheet tool for the command-line
 - [lazygit]: Simple terminal UI for git commands
 - [autojump]: A cd command that learns - easily navigate directories from the command line
 - [glow]: Render markdown on the CLI, with pizzazz! 💅
-- [hub]: A command-line tool that makes git easier to use with GitHub.
 - [np]: A better `npm publish`
+- [hub]: A command-line tool that makes git easier to use with GitHub.
 - [npm-name-cli]: Check whether a package or organization name is available on npm
 - [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
 - [fkill-cli]: Fabulously kill processes. Cross-platform.
@@ -52,10 +59,17 @@ I wrote this because of saving and sharing my configs.
 - [yo]: CLI tool for running Yeoman generators
 - [n]: Interactively Manage All Your Node Versions
 
-## GUI Applications
+## Graphical User Interface Applications
 
-- [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
-- [AltTab](https://alt-tab-macos.netlify.app/)
+- [AltTab](https://alt-tab-macos.netlify.app/): Open source window switcher with window previews.
+- [xbar](https://github.com/matryer/xbar): Put the output from any script or program into your macOS Menu Bar (the BitBar reboot)
+- [netnewswire](https://netnewswire.com/): A free and open source RSS reader for Mac, iPhone, and iPad
+
+## [Fish] Plugins
+
+- [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
+- [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
+- [jethrokuan/z](https://github.com/jethrokuan/z): Pure-fish z directory jumping
 
 ## [Tmux] Plugins
 
@@ -134,8 +148,8 @@ I wrote this because of saving and sharing my configs.
 - [vscode-npm-scripts](https://github.com/Microsoft/vscode-npm-scripts): VSCode extension for running npm-scripts and validating the package.json files.
 - [NpmIntellisense](https://github.com/ChristianKohler/NpmIntellisense): Visual Studio Code plugin that autocompletes npm modules in import statements
 - [vscode-ext-color-highlight](https://github.com/enyancc/vscode-ext-color-highlight): Extension adds colored border around css/web colors in the editor
-- [better-comments](https://github.com/aaron-bond/better-comments)
 - [vscode-git-graph](https://github.com/mhutchie/vscode-git-graph): Project Manager Extension for Visual Studio Code
+- [better-comments](https://github.com/aaron-bond/better-comments)
 - [vscode-project-manager](https://github.com/alefragnani/vscode-project-manager): Project Manager Extension for Visual Studio Code
 - [vscode-restclient](https://github.com/Huachao/vscode-restclient): REST Client Extension for Visual Studio Code
 - [vscode-gitblame](https://github.com/Sertion/vscode-gitblame): Visual Studio Code Extension - See Git Blame info in status bar.
@@ -154,22 +168,22 @@ I wrote this because of saving and sharing my configs.
 
 ## [Popclip]
 
-[popclip extensions](https://pilotmoon.com/popclip/extensions/)
-
 - [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
 - [popclip-npm](https://github.com/jopemachine/popclip-npm)
 
+[popclip extensions](https://pilotmoon.com/popclip/extensions/)
+
 ## Related Shortcut References
 
-- [lazygit](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
+- [lazygit cheatsheet](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
 - [jethrokuan/fzf](https://github.com/jethrokuan/fzf)
 
 ## Related Config Compilations
 
-- https://github.com/rdlester/dotfiles
-- https://github.com/gpakosz/.tmux
-- https://github.com/makccr/dot
+- [rdlester/dotfiles](https://github.com/rdlester/dotfiles)
+- [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
+- [makccr/dot](https://github.com/makccr/dot)
 
 ## Related Awesome List
 
