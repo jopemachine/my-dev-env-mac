@@ -1,6 +1,6 @@
-# My Dev-Env for MacOS
+# My dev-env configs for MacOS
 
-These are my miscellaneous config files and personal installation scripts.
+These are my miscellaneous config files.
 
 I wrote this because of saving and sharing my configs.
 
@@ -69,10 +69,8 @@ I wrote this because of saving and sharing my configs.
 - [n]: Interactively Manage All Your Node Versions
 - [navi]: An interactive cheatsheet tool for the command-line
 - [np]: A better `npm publish`
-- [npm-name-cli]: Check whether a package or organization name is available on npm
 - [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
 - [pageres-cli]: Capture website screenshots
-- [tldr]: Simplified and community-driven man pages
 - [trash-cli]: Move files and folders to the trash
 - [yo]: CLI tool for running Yeoman generators
 
