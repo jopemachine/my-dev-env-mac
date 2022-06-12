@@ -40,9 +40,8 @@ This document is part of my awesome favorite tools.
 - [7. Chrome Extensions](#chrome-extensions)
 - [8. Alfred Workflows](#alfred-workflows)
 - [9. Popclip](#popclip)
-- [10. Related Shortcut References](#related-shortcut-references)
-- [11. Related Config Compilations](#related-config-compilations)
-- [12. Related Awesome List](#related-awesome-list)
+- [10. Related Config Compilations](#related-config-compilations)
+- [11. Related Awesome List](#related-awesome-list)
 
 ## Command Line Environment
 
@@ -54,14 +53,19 @@ This document is part of my awesome favorite tools.
 - [alacritty]: A cross-platform, OpenGL terminal emulator.
 - [tmux]: Open-source terminal multiplexer for Unix-like operating systems.
 
+<hr />
+
+- ⭐ [lazygit]: Simple terminal UI for git commands
+- ⭐ [ranger]: A VIM-inspired filemanager for the console
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [forgit]: A utility tool powered by fzf for using git interactively.
 - [hub]: A command-line tool that makes git easier to use with GitHub.
-- ⭐ [lazygit]: Simple terminal UI for git commands
-- ⭐ [ranger]: A VIM-inspired filemanager for the console
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+- [bat]: A cat(1) clone with wings.
+- [exa]: A modern replacement for ‘ls’.
+- [homebrew]: The missing package manager for macOS (or Linux)
 
 ### Command Line Applications
 
@@ -75,6 +79,7 @@ This document is part of my awesome favorite tools.
 - [pageres-cli]: Capture website screenshots
 - [trash-cli]: Move files and folders to the trash
 - [yo]: CLI tool for running Yeoman generators
+- [nativefier]: Make any web page a desktop application
 
 ## Graphical User Interface Applications
 
@@ -85,13 +90,14 @@ This document is part of my awesome favorite tools.
 - [netnewswire](https://netnewswire.com/): A free and open source RSS reader for Mac, iPhone, and iPad.
 - [popclip](https://pilotmoon.com/popclip/): Instantly copy & paste, and access actions like search, spelling, dictionary and many, many more.
 - [xbar](https://github.com/matryer/xbar): Put the output from any script or program into your macOS Menu Bar (the BitBar reboot).
+- [plash](https://github.com/sindresorhus/Plash): Make any website your Mac desktop wallpaper
 
 ## [Fish] Plugins
 
 ### favorites
 
-- [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
 - ⭐ [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
+- [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
 - [jethrokuan/z](https://github.com/jethrokuan/z): Pure-fish z directory jumping
 
 ## [Tmux] Plugins
@@ -114,13 +120,13 @@ This document is part of my awesome favorite tools.
 
 ### favorites
 
+- ⭐ [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
+- ⭐ [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
 - [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
 - [ellisonleao/glow.nvim](https://github.com/ellisonleao/glow.nvim): A markdown preview directly in your neovim.
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
-- [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
 - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align): A Vim alignment plugin
 - [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim): Smooth scrolling neovim plugin written in lua
-- [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim): Indent guides for Neovim
 - [mbbill/undotree](https://github.com/mbbill/undotree): The undo history visualizer for VIM
 - [mg979/vim-visual-multi](https://github.com/mg979/vim-visual-multi): Multiple cursors plugin for vim/neovim
@@ -134,13 +140,13 @@ This document is part of my awesome favorite tools.
 - [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
 
-#### [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
+### [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
 ## [Chrome] Extensions
 
 ### favorites
 
-- [vimium-c](https://github.com/gdh1995/vimium-c): A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar
+- ⭐ [vimium-c](https://github.com/gdh1995/vimium-c): A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar
 - [notifier-for-github](https://github.com/sindresorhus/notifier-for-github): Browser extension - Get notified about new GitHub notifications
 - [refined-github](https://github.com/refined-github/refined-github): Browser extension that simplifies the GitHub interface and adds useful features
 - [github-npm-stats](https://github.com/katranci/github-npm-stats): Chrome extension that displays npm download stats on GitHub
@@ -176,25 +182,21 @@ This document is part of my awesome favorite tools.
 
 [popclip extensions](https://pilotmoon.com/popclip/extensions/)
 
-## Related Shortcut References
-
-- [lazygit cheatsheet](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md)
-- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua#defaults)
-- [jethrokuan/fzf](https://github.com/jethrokuan/fzf)
-
 ## Related Config Compilations
 
 - [makccr/dot](https://github.com/makccr/dot)
 - [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 - [rdlester/dotfiles](https://github.com/rdlester/dotfiles)
 
-## Related Awesome List
+## References
 
-- [awesome-mac](https://github.com/jaywcjlove/awesome-mac)
-- [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
-- [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
-- [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
-- [awesome-fish](https://github.com/jorgebucaran/awsm.fish)
+- [jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)
+- [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
+- [serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
+- [nikitavoloboev/my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
+- [jorgebucaran/awesome-fish](https://github.com/jorgebucaran/awsm.fish)
+- [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix)
+- [my-awesome-stars](https://github.com/jopemachine/awesome-stars)
 
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme
@@ -252,3 +254,4 @@ This document is part of my awesome favorite tools.
 [pageres-cli]: https://github.com/sindresorhus/pageres-cli
 [yo]: https://github.com/yeoman/yo
 [n]: https://github.com/tj/n
+[bat]: https://github.com/sharkdp/bat
