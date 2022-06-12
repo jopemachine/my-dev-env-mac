@@ -4,6 +4,8 @@ These are my miscellaneous config files.
 
 I wrote this because of saving and sharing my configs.
 
+This document is part of my awesome favorite tools.
+
 ```
                     'c.          igyubong@igyubong-ui-MacBookPro.local
                  ,xNMM.          -------------------------------------
@@ -48,17 +50,18 @@ I wrote this because of saving and sharing my configs.
 
 [lunarVim] + [tmux] + [alacritty]
 
+- [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
 - [alacritty]: A cross-platform, OpenGL terminal emulator.
+- [tmux]: Open-source terminal multiplexer for Unix-like operating systems.
+
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [forgit]: A utility tool powered by fzf for using git interactively.
 - [hub]: A command-line tool that makes git easier to use with GitHub.
-- [lazygit]: Simple terminal UI for git commands
-- [lunarvim]: An IDE layer for Neovim with sane defaults. Completely free and community driven.
-- [ranger]: A VIM-inspired filemanager for the console
+- ⭐ [lazygit]: Simple terminal UI for git commands
+- ⭐ [ranger]: A VIM-inspired filemanager for the console
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-- [tmux]: Open-source terminal multiplexer for Unix-like operating systems.
 
 ### Command Line Applications
 
@@ -68,7 +71,6 @@ I wrote this because of saving and sharing my configs.
 - [mas]: Mac App Store command line interface
 - [n]: Interactively Manage All Your Node Versions
 - [navi]: An interactive cheatsheet tool for the command-line
-- [np]: A better `npm publish`
 - [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
 - [pageres-cli]: Capture website screenshots
 - [trash-cli]: Move files and folders to the trash
@@ -76,19 +78,25 @@ I wrote this because of saving and sharing my configs.
 
 ## Graphical User Interface Applications
 
-- [alfred](https://www.alfredapp.com/): Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
-- [altTab](https://alt-tab-macos.netlify.app/): Open source window switcher with window previews.
+### favorites
+
+- ⭐ [alfred](https://www.alfredapp.com/): Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
+- ⭐ [altTab](https://alt-tab-macos.netlify.app/): Open source window switcher with window previews.
 - [netnewswire](https://netnewswire.com/): A free and open source RSS reader for Mac, iPhone, and iPad.
 - [popclip](https://pilotmoon.com/popclip/): Instantly copy & paste, and access actions like search, spelling, dictionary and many, many more.
 - [xbar](https://github.com/matryer/xbar): Put the output from any script or program into your macOS Menu Bar (the BitBar reboot).
 
 ## [Fish] Plugins
 
+### favorites
+
 - [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
-- [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
+- ⭐ [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
 - [jethrokuan/z](https://github.com/jethrokuan/z): Pure-fish z directory jumping
 
 ## [Tmux] Plugins
+
+### favorites
 
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
@@ -110,7 +118,6 @@ I wrote this because of saving and sharing my configs.
 - [ellisonleao/glow.nvim](https://github.com/ellisonleao/glow.nvim): A markdown preview directly in your neovim.
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
 - [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
-- [johngrib/vim-f-hangul](https://github.com/johngrib/vim-f-hangul): vim에서 f로 한글을 검색하자
 - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align): A Vim alignment plugin
 - [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim): Smooth scrolling neovim plugin written in lua
 - [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
@@ -177,9 +184,9 @@ I wrote this because of saving and sharing my configs.
 
 ## Related Config Compilations
 
-- [rdlester/dotfiles](https://github.com/rdlester/dotfiles)
-- [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 - [makccr/dot](https://github.com/makccr/dot)
+- [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
+- [rdlester/dotfiles](https://github.com/rdlester/dotfiles)
 
 ## Related Awesome List
 
