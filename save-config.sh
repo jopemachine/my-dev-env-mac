@@ -30,10 +30,10 @@ copyConfig "chrome extensions" ~/Downloads/extensions.html       ./configs/chrom
 # copyConfig "vimium-c"          ~/Downloads/vimium_c*             ../configs/chrome/vimium-c/
 
 # legacy
-copyConfig "vim"               ~/.vimrc                          ./configs/vim/.vimrc
-copyConfig "neovim"            ~/.config/nvim/init.vim           ./configs/neovim/init.vim
-copyConfig "bash"              ~/.bashrc                         ./configs/bash/.bashrc
-copyConfig "zsh"               ~/.zshrc                          ./configs/zsh/.zshrc
+copyConfig "vim"               ~/.vimrc                          ./configs/legacy/vim/.vimrc
+copyConfig "neovim"            ~/.config/nvim/init.vim           ./configs/legacy/neovim/init.vim
+copyConfig "bash"              ~/.bashrc                         ./configs/legacy/bash/.bashrc
+copyConfig "zsh"               ~/.zshrc                          ./configs/legacy/zsh/.zshrc
 
 # export vscode extensions
 code --list-extensions | xargs -L 1 >                            ./configs/vscode/vscode-extensions

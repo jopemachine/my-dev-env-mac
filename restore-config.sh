@@ -28,9 +28,9 @@ copyConfig "ranger"            ~/.config/ranger/rc.conf          ./configs/range
 copyConfig "git"               ~/.gitconfig                      ./configs/git/.gitconfig
 
 # legacy
-copyConfig "vim"               ~/.vimrc                          ./configs/vim/.vimrc
-copyConfig "neovim"            ~/.config/nvim/init.vim           ./configs/neovim/init.vim
-copyConfig "bash"              ~/.bashrc                         ./configs/bash/.bashrc
-copyConfig "zsh"               ~/.zshrc                          ./configs/zsh/.zshrc
+copyConfig "vim"               ~/.vimrc                          ./configs/legacy/vim/.vimrc
+copyConfig "neovim"            ~/.config/nvim/init.vim           ./configs/legacy/neovim/init.vim
+copyConfig "bash"              ~/.bashrc                         ./configs/legacy/bash/.bashrc
+copyConfig "zsh"               ~/.zshrc                          ./configs/legacy/zsh/.zshrc
 
 echo "Jobs done"
