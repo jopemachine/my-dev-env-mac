@@ -35,13 +35,11 @@ This document is part of my awesome favorite tools.
 - [2. Graphical User Interface Applications](#graphical-user-interface-applications)
 - [3. Fish Plugins](#fish-plugins)
 - [4. Tmux Plugins](#tmux-plugins)
-- [5. NeoVim Plugins](#vim-plugins)
+- [5. Neovim Plugins](#vim-plugins)
 - [6. Vs Code Extensions](#vs-code-extensions)
 - [7. Chrome Extensions](#chrome-extensions)
 - [8. Alfred Workflows](#alfred-workflows)
-- [9. Popclip](#popclip)
-- [10. Related Config Compilations](#related-config-compilations)
-- [11. Related Awesome List](#related-awesome-list)
+- [9. References](#references)
 
 ## Command Line Environment
 
@@ -116,7 +114,7 @@ This document is part of my awesome favorite tools.
 - [tmux-plugins/tmux-urlview](https://github.com/tmux-plugins/tmux-urlview): Quickly open any url on your terminal window!
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
 
-## NeoVim Plugins
+## Neovim Plugins
 
 ### favorites
 
@@ -140,7 +138,7 @@ This document is part of my awesome favorite tools.
 - [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
 
-### [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
+### ⭐ [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
 ## [Chrome] Extensions
 
@@ -175,19 +173,6 @@ This document is part of my awesome favorite tools.
 - [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
 - [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
 
-## [Popclip]
-
-- [popclip-naver-dict](https://github.com/jopemachine/popclip-naver-dict)
-- [popclip-npm](https://github.com/jopemachine/popclip-npm)
-
-[popclip extensions](https://pilotmoon.com/popclip/extensions/)
-
-## Related Config Compilations
-
-- [makccr/dot](https://github.com/makccr/dot)
-- [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
-- [rdlester/dotfiles](https://github.com/rdlester/dotfiles)
-
 ## References
 
 - [jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)
@@ -196,6 +181,10 @@ This document is part of my awesome favorite tools.
 - [nikitavoloboev/my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 - [jorgebucaran/awesome-fish](https://github.com/jorgebucaran/awsm.fish)
 - [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix)
+- [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [makccr/dot](https://github.com/makccr/dot)
+- [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
+- [learn-anything/alfred-workflows](https://github.com/learn-anything/alfred-workflows)
 - [my-awesome-stars](https://github.com/jopemachine/awesome-stars)
 
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh

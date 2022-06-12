@@ -22,14 +22,6 @@ lvim.format_on_save = false
 -- *
 lvim.leader = "space"
 
--- Use Tab instead of space at default
-vim.cmd([[
-	set autoindent
-	set noexpandtab
-	set tabstop=4
-	set shiftwidth=4
-]])
-
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 --------------------------------Key Mapping-----------------------------------------------
@@ -146,6 +138,8 @@ lvim.builtin.which_key.mappings["u"] = {
 	r = { ":Telescope grep_string<cr>", "Grep Strings" },
 	a = { ":Ranger<cr>", "Ranger" },
 	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
+	n = { ":IncRename ", "Rename Variable" },
+	c = { ":!code %<cr>", "Open in Code" }
 }
 
 -- Vim options
@@ -242,6 +236,7 @@ lvim.plugins = {
   -- Code display (format, indent, highlights)
   { "ntpeters/vim-better-whitespace" },
   { "ap/vim-css-color" },
+  { "editorconfig/editorconfig-vim" },
   -- Not applied intermittently
   -- {
   --   "p00f/nvim-ts-rainbow",
@@ -269,8 +264,9 @@ lvim.plugins = {
     end
   },
 
-  -- Code align
+  -- Code manipulation
   { "junegunn/vim-easy-align" },
+  { "smjonas/inc-rename.nvim" },
 
   -- Window management (including tmux)
   { "edkolev/tmuxline.vim" },
