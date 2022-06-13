@@ -54,15 +54,16 @@ This document is part of my awesome favorite tools.
 
 - ⭐ [lazygit]: Simple terminal UI for git commands
 - ⭐ [ranger]: A VIM-inspired filemanager for the console
+
+- [bat]: A cat(1) clone with wings.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
+- [exa]: A modern replacement for ‘ls’.
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [forgit]: A utility tool powered by fzf for using git interactively.
 - [github-cli]: A command-line tool that makes git easier to use with GitHub.
+- [homebrew]: The missing package manager for macOS (or Linux)
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-- [bat]: A cat(1) clone with wings.
-- [exa]: A modern replacement for ‘ls’.
-- [homebrew]: The missing package manager for macOS (or Linux)
 
 ### Command Line Applications
 
@@ -85,11 +86,9 @@ This document is part of my awesome favorite tools.
 
 - ⭐ [alfred]: Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
 - ⭐ [altTab]: Open source window switcher with window previews.
-- [appcleaner]: Small application which allows you to thoroughly uninstall unwanted apps.
 - [better-touch-tool]: Great, feature-packed app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad, Magic Trackpad and also Mouse Gestures for normal mice.
 - [keyboard-lock]: Simple keyboard locker
 - [magnet]: Window manager that keeps your workspace organized.
-- [netnewswire]: A free and open source RSS reader for Mac, iPhone, and iPad.
 - [notion]: Notion is the all-in-one workspace. From notes, tasks, wikis, to database, Notion is all you need. Works great for teams and individuals.
 - [plash]: Make any website your Mac desktop wallpaper
 - [popclip]: Instantly copy & paste, and access actions like search, spelling, dictionary and many, many more.
@@ -218,7 +217,7 @@ This document is part of my awesome favorite tools.
 [git]: https://git-scm.com/
 [glow]: https://github.com/ellisonleao/glow.nvim
 [homebrew]: https://github.com/Homebrew/brew
-[hub]: https://github.com/github/hub
+[github-cli]: https://github.com/github/hub
 [iTerm2]: https://iterm2.com/
 [k]: https://github.com/supercrabtree/k
 [keyboard-lock]: https://keylock.io/
@@ -260,7 +259,7 @@ This document is part of my awesome favorite tools.
 [trash-cli]: https://github.com/sindresorhus/trash-cli
 [vim-plug]: https://github.com/junegunn/vim-plug
 [vim]: https://github.com/vim/vim
-[visual-studio-code]: https://code.visualstudio.com/
+[Visual Studio Code]: https://code.visualstudio.com/
 [xbar]: https://github.com/matryer/xbar
 [yo]: https://github.com/yeoman/yo
 [zplug]: https://github.com/zplug/zplug
