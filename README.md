@@ -36,7 +36,7 @@ This document is part of my awesome favorite tools.
 - [3. Fish Plugins](#fish-plugins)
 - [4. Tmux Plugins](#tmux-plugins)
 - [5. Neovim Plugins](#vim-plugins)
-- [6. Vs Code Extensions](#vs-code-extensions)
+- [6. Visual Studio Code Extensions](#visual-studio-code)
 - [7. Chrome Extensions](#chrome-extensions)
 - [8. Alfred Workflows](#alfred-workflows)
 - [9. References](#references)
@@ -58,7 +58,7 @@ This document is part of my awesome favorite tools.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [forgit]: A utility tool powered by fzf for using git interactively.
-- [hub]: A command-line tool that makes git easier to use with GitHub.
+- [github-cli]: A command-line tool that makes git easier to use with GitHub.
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 - [bat]: A cat(1) clone with wings.
@@ -67,28 +67,36 @@ This document is part of my awesome favorite tools.
 
 ### Command Line Applications
 
+- [ack]: A tool like grep, optimized for programmers.
 - [broken-link-checker]: Find broken links, missing images, etc in your HTML.
 - [fkill-cli]: Fabulously kill processes. Cross-platform.
 - [glow]: Render markdown on the CLI, with pizzazz!
 - [mas]: Mac App Store command line interface
 - [n]: Interactively Manage All Your Node Versions
+- [nativefier]: Make any web page a desktop application
 - [navi]: An interactive cheatsheet tool for the command-line
 - [open-cli]: Open stuff like URLs, files, executables. Cross-platform.
 - [pageres-cli]: Capture website screenshots
 - [trash-cli]: Move files and folders to the trash
 - [yo]: CLI tool for running Yeoman generators
-- [nativefier]: Make any web page a desktop application
 
 ## Graphical User Interface Applications
 
 ### favorites
 
-- ⭐ [alfred](https://www.alfredapp.com/): Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
-- ⭐ [altTab](https://alt-tab-macos.netlify.app/): Open source window switcher with window previews.
-- [netnewswire](https://netnewswire.com/): A free and open source RSS reader for Mac, iPhone, and iPad.
-- [popclip](https://pilotmoon.com/popclip/): Instantly copy & paste, and access actions like search, spelling, dictionary and many, many more.
-- [xbar](https://github.com/matryer/xbar): Put the output from any script or program into your macOS Menu Bar (the BitBar reboot).
-- [plash](https://github.com/sindresorhus/Plash): Make any website your Mac desktop wallpaper
+- ⭐ [alfred]: Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
+- ⭐ [altTab]: Open source window switcher with window previews.
+- [appcleaner]: Small application which allows you to thoroughly uninstall unwanted apps.
+- [better-touch-tool]: Great, feature-packed app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad, Magic Trackpad and also Mouse Gestures for normal mice.
+- [keyboard-lock]: Simple keyboard locker
+- [magnet]: Window manager that keeps your workspace organized.
+- [netnewswire]: A free and open source RSS reader for Mac, iPhone, and iPad.
+- [notion]: Notion is the all-in-one workspace. From notes, tasks, wikis, to database, Notion is all you need. Works great for teams and individuals.
+- [plash]: Make any website your Mac desktop wallpaper
+- [popclip]: Instantly copy & paste, and access actions like search, spelling, dictionary and many, many more.
+- [postman]: Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+- [quick-look-plugins]: List of useful Quick Look plugins for developers
+- [xbar]: Put the output from any script or program into your macOS Menu Bar (the BitBar reboot).
 
 ## [Fish] Plugins
 
@@ -150,7 +158,7 @@ This document is part of my awesome favorite tools.
 - [github-npm-stats](https://github.com/katranci/github-npm-stats): Chrome extension that displays npm download stats on GitHub
 - [darkreader](https://github.com/darkreader/darkreader): Dark Reader Chrome and Firefox extension
 
-## [Vs Code] Extensions
+## [Visual Studio Code] Extensions
 
 ### favorites
 
@@ -187,60 +195,67 @@ This document is part of my awesome favorite tools.
 - [learn-anything/alfred-workflows](https://github.com/learn-anything/alfred-workflows)
 - [my-awesome-stars](https://github.com/jopemachine/awesome-stars)
 
-[oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
-[agnoster]: https://github.com/agnoster/agnoster-zsh-theme
-[starship]: https://github.com/starship/starship
-[vim]: https://github.com/vim/vim
-[neovim]: https://github.com/neovim/neovim
-[lunarvim]: https://github.com/LunarVim/LunarVim
-[tmux]: https://github.com/tmux/tmux
-[mcfly]: https://github.com/cantino/mcfly
-[autojump]: https://github.com/wting/autojump
-[exa]: https://github.com/ogham/exa
-[lsd]: https://github.com/Peltoche/lsd
-[iTerm2]: https://iterm2.com/
-[forgit]: https://github.com/wfxr/forgit
-[delta]: https://github.com/dandavison/delta
-[ranger]: https://github.com/ranger/ranger
-[enhancd]: https://github.com/b4b4r07/enhancd
-[fd]: https://github.com/sharkdp/fd
-[ripgrep]: https://github.com/BurntSushi/ripgrep
-[homebrew]: https://github.com/Homebrew/brew
-[lazygit]: https://github.com/jesseduffield/lazygit
-[navi]: https://github.com/denisidoro/navi
-[vim-plug]: https://github.com/junegunn/vim-plug
-[zsh]: https://www.zsh.org/
-[zplug]: https://github.com/zplug/zplug
-[packer]: https://github.com/wbthomason/packer.nvim
-[vs code]: https://code.visualstudio.com/
-[mas]: https://github.com/mas-cli/mas
-[nerd fonts]: https://github.com/ryanoasis/nerd-fonts
-[git]: https://git-scm.com/
-[glow]: https://github.com/ellisonleao/glow.nvim
-[rust]: https://github.com/rust-lang/rust
-[node]: https://github.com/nodejs/node
-[k]: https://github.com/supercrabtree/k
-[tpm]: https://github.com/tmux-plugins/tpm
-[npm]: https://github.com/npm/cli
-[chrome]: https://www.google.com/intl/en/chrome/
-[hub]: https://github.com/github/hub
-[alfred]: https://www.alfredapp.com/
-[popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12
-[fish]: https://github.com/fish-shell/fish-shell
-[omf]: https://github.com/oh-my-fish/oh-my-fish
-[oh-my-fish]: https://github.com/oh-my-fish/oh-my-fish
-[alacritty]: https://github.com/alacritty/alacritty
-[fisher]: https://github.com/jorgebucaran/fisher
-[np]: https://github.com/sindresorhus/np
-[npm-name-cli]: https://github.com/sindresorhus/npm-name-cli
-[open-cli]: https://github.com/sindresorhus/open-cli
-[fkill-cli]: https://github.com/sindresorhus/fkill-cli
 [@squoosh.cli]: https://github.com/GoogleChromeLabs/squoosh
+[agnoster]: https://github.com/agnoster/agnoster-zsh-theme
+[alacritty]: https://github.com/alacritty/alacritty
+[alfred]: https://www.alfredapp.com/
+[altTab]: https://alt-tab-macos.netlify.app/
+[appcleaner]: https://freemacsoft.net/appcleaner/
+[autojump]: https://github.com/wting/autojump
+[bat]: https://github.com/sharkdp/bat
+[better-touch-tool]: https://folivora.ai/
 [broken-link-checker]: https://github.com/stevenvachon/broken-link-checker
 [case-cli]: https://github.com/jopemachine/case-cli
-[tldr]: https://github.com/tldr-pages/tldr
-[trash-cli]: https://github.com/sindresorhus/trash-cli
-[pageres-cli]: https://github.com/sindresorhus/pageres-cli
-[yo]: https://github.com/yeoman/yo
+[chrome]: https://www.google.com/intl/en/chrome/
+[delta]: https://github.com/dandavison/delta
+[enhancd]: https://github.com/b4b4r07/enhancd
+[exa]: https://github.com/ogham/exa
+[fd]: https://github.com/sharkdp/fd
+[fish]: https://github.com/fish-shell/fish-shell
+[fisher]: https://github.com/jorgebucaran/fisher
+[fkill-cli]: https://github.com/sindresorhus/fkill-cli
+[forgit]: https://github.com/wfxr/forgit
+[git]: https://git-scm.com/
+[glow]: https://github.com/ellisonleao/glow.nvim
+[homebrew]: https://github.com/Homebrew/brew
+[hub]: https://github.com/github/hub
+[iTerm2]: https://iterm2.com/
+[k]: https://github.com/supercrabtree/k
+[lazygit]: https://github.com/jesseduffield/lazygit
+[lsd]: https://github.com/Peltoche/lsd
+[lunarvim]: https://github.com/LunarVim/LunarVim
+[mas]: https://github.com/mas-cli/mas
+[mcfly]: https://github.com/cantino/mcfly
 [n]: https://github.com/tj/n
-[bat]: https://github.com/sharkdp/bat
+[navi]: https://github.com/denisidoro/navi
+[neovim]: https://github.com/neovim/neovim
+[nerd fonts]: https://github.com/ryanoasis/nerd-fonts
+[netnewswire]: https://netnewswire.com/
+[node]: https://github.com/nodejs/node
+[notion]: https://www.notion.so/
+[np]: https://github.com/sindresorhus/np
+[npm-name-cli]: https://github.com/sindresorhus/npm-name-cli
+[npm]: https://github.com/npm/cli
+[oh-my-fish]: https://github.com/oh-my-fish/oh-my-fish
+[oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
+[omf]: https://github.com/oh-my-fish/oh-my-fish
+[open-cli]: https://github.com/sindresorhus/open-cli
+[packer]: https://github.com/wbthomason/packer.nvim
+[pageres-cli]: https://github.com/sindresorhus/pageres-cli
+[popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12
+[popclip]: https://github.com/sindresorhus/Plash
+[ranger]: https://github.com/ranger/ranger
+[ripgrep]: https://github.com/BurntSushi/ripgrep
+[rust]: https://github.com/rust-lang/rust
+[starship]: https://github.com/starship/starship
+[tldr]: https://github.com/tldr-pages/tldr
+[tmux]: https://github.com/tmux/tmux
+[tpm]: https://github.com/tmux-plugins/tpm
+[trash-cli]: https://github.com/sindresorhus/trash-cli
+[vim-plug]: https://github.com/junegunn/vim-plug
+[vim]: https://github.com/vim/vim
+[vs code]: https://code.visualstudio.com/
+[xbar]: https://github.com/matryer/xbar
+[yo]: https://github.com/yeoman/yo
+[zplug]: https://github.com/zplug/zplug
+[zsh]: https://www.zsh.org/
