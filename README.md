@@ -1,10 +1,10 @@
 # My dev-env configs for MacOS
 
-These are my miscellaneous config files.
+There are my miscellaneous config files under the `configs` folder.
+
+This document is part of my favorite tools.
 
 I wrote this because of saving and sharing my configs.
-
-This document is part of my awesome favorite tools.
 
 ```
                     'c.          igyubong@igyubong-ui-MacBookPro.local
@@ -164,17 +164,15 @@ This document is part of my awesome favorite tools.
 
 ## References
 
-- [jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)
-- [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
-- [serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
-- [nikitavoloboev/my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
-- [jorgebucaran/awesome-fish](https://github.com/jorgebucaran/awsm.fish)
-- [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix)
-- [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
-- [makccr/dot](https://github.com/makccr/dot)
+- ⭐ [jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac)
+- ⭐ [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix)
+- ⭐ [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+- ⭐ [nikitavoloboev/my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
 - [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
+- [jorgebucaran/awesome-fish](https://github.com/jorgebucaran/awsm.fish)
 - [learn-anything/alfred-workflows](https://github.com/learn-anything/alfred-workflows)
-- [my-awesome-stars](https://github.com/jopemachine/awesome-stars)
+- [serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
+- [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
 
 [@squoosh.cli]: https://github.com/GoogleChromeLabs/squoosh
 [ack]: https://github.com/samaaron/ack
