@@ -95,6 +95,7 @@ This document is part of my awesome favorite tools.
 - ⭐ [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
 - [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
 - [jethrokuan/z](https://github.com/jethrokuan/z): Pure-fish z directory jumping
+- [gazorby/fish-abbreviation-tips](https://github.com/gazorby/fish-abbreviation-tips): Help you remembering your abbreviations
 
 ## [Tmux] Plugins
 

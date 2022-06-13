@@ -37,3 +37,16 @@ alias ra='ranger'
 # ssh
 # See https://github.com/alacritty/alacritty/issues/1208
 alias ssh='TERM=xterm-256color /usr/bin/ssh'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gcb='git checkout -b'
+alias gcmsg='git commit -m'
+alias gco='git checkout'
+alias gd='git diff'
+alias glo='git log --oneline --decorate'
+alias grb='git rebase'
+alias grh='git reset'
+alias gss='git stash show'
+alias grh1='git reset --hard HEAD~1'

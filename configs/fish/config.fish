@@ -11,6 +11,9 @@ fish_add_path ~/Library/Android/sdk
 fish_add_path ~/.local/bin
 fish_add_path ~/go/bin
 
+# Env Variable
+set -gx GOPATH ~/go
+
 # Prompt
 
 starship init fish | source
