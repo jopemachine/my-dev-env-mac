@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/bashrc.pre.bash"
 alias python='python3'
 alias pip='python3 -m pip'
 alias ls='exa'
@@ -18,3 +20,6 @@ export VISUAL=lvim;
 export EDITOR=lvim;
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/bashrc.post.bash"

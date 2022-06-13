@@ -1,9 +1,5 @@
 set fish_greeting ""
-
 fish_vi_key_bindings
-
-# Aliases
-
 source ~/.config/fish/alias.fish
 
 # Env Path
@@ -20,7 +16,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Thirdparty
+# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
+# ----------------------------------Third Party---------------------------------------------
+# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
 
 ## mcfly
 mcfly init fish | source
@@ -29,7 +29,7 @@ mcfly init fish | source
 set fzf_preview_dir_cmd exa --all --color=always
 set fzf_fd_opts --type=directory -H -d=3 --follow --exclude=.git --exclude=node_modules
 
-## vim-obsession
+## vim-obsession setting
 function vim
   if set -q argv[1]
     eval lvim $argv[1..-1]
@@ -40,4 +40,9 @@ function vim
     echo "Record New Session.."
     eval lvim -c Obsession
   end
+end
+
+## github
+function github
+  open "https://github.com/search?q=$argv[1..-1]"
 end

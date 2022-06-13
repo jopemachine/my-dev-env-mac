@@ -38,4 +38,4 @@ copyConfig "zsh"               ~/.zshrc                          ./configs/legac
 # export vscode extensions
 code --list-extensions | xargs -L 1 >                            ./configs/vscode/vscode-extensions
 
-git add . && git commit -m "🔨 Update configs" && git push origin master --force
+# git add . && git commit -m "🔨 Update configs" && git push origin master --force

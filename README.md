@@ -28,21 +28,18 @@ This document is part of my awesome favorite tools.
 
 **Table of Contents**
 
-- [1. Command Line Environment](#command-line-environment)
-    - [1.1 Command Line Dev Environment](#command-line-dev-environment)
-    - [1.2 Command Line Applications](#command-line-applications)
-- [2. Graphical User Interface Applications](#graphical-user-interface-applications)
-- [3. Fish Plugins](#fish-plugins)
-- [4. Tmux Plugins](#tmux-plugins)
-- [5. Neovim Plugins](#vim-plugins)
-- [6. Visual Studio Code Extensions](#visual-studio-code)
-- [7. Chrome Extensions](#chrome-extensions)
-- [8. Alfred Workflows](#alfred-workflows)
-- [9. References](#references)
+- [1. Command Line Dev Environment](#command-line-environment)
+- [2. Command Line Applications](#command-line-applications)
+- [3. Graphical User Interface Applications](#graphical-user-interface-applications)
+- [4. Fish Plugins](#fish-plugins)
+- [5. Tmux Plugins](#tmux-plugins)
+- [6. Neovim Plugins](#vim-plugins)
+- [7. Visual Studio Code Extensions](#visual-studio-code)
+- [8. Chrome Extensions](#chrome-extensions)
+- [9. Alfred Workflows](#alfred-workflows)
+- [10. References](#references)
 
-## Command Line Environment
-
-### Command Line Dev Environment
+## Command Line Dev Environment
 
 [lunarVim] + [tmux] + [alacritty]
 
@@ -54,7 +51,6 @@ This document is part of my awesome favorite tools.
 
 - ⭐ [lazygit]: Simple terminal UI for git commands
 - ⭐ [ranger]: A VIM-inspired filemanager for the console
-
 - [bat]: A cat(1) clone with wings.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [exa]: A modern replacement for ‘ls’.
@@ -65,7 +61,7 @@ This document is part of my awesome favorite tools.
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
-### Command Line Applications
+## Command Line Applications
 
 - [ack]: A tool like grep, optimized for programmers.
 - [broken-link-checker]: Find broken links, missing images, etc in your HTML.
@@ -82,8 +78,6 @@ This document is part of my awesome favorite tools.
 
 ## Graphical User Interface Applications
 
-### favorites
-
 - ⭐ [alfred]: Award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.
 - ⭐ [altTab]: Open source window switcher with window previews.
 - [better-touch-tool]: Great, feature-packed app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad, Magic Trackpad and also Mouse Gestures for normal mice.
@@ -98,15 +92,11 @@ This document is part of my awesome favorite tools.
 
 ## [Fish] Plugins
 
-### favorites
-
 - ⭐ [PatrickF1/fzf.fish](https://github.com/PatrickF1/fzf.fish): Augment your fish command line with fzf key bindings.
 - [wfxr/forgit](https://github.com/wfxr/forgit): A utility tool powered by fzf for using git interactively.
 - [jethrokuan/z](https://github.com/jethrokuan/z): Pure-fish z directory jumping
 
 ## [Tmux] Plugins
-
-### favorites
 
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
@@ -121,8 +111,6 @@ This document is part of my awesome favorite tools.
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
 
 ## Neovim Plugins
-
-### favorites
 
 - ⭐ [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
 - ⭐ [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
@@ -148,8 +136,6 @@ This document is part of my awesome favorite tools.
 
 ## [Chrome] Extensions
 
-### favorites
-
 - ⭐ [vimium-c](https://github.com/gdh1995/vimium-c): A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar
 - [notifier-for-github](https://github.com/sindresorhus/notifier-for-github): Browser extension - Get notified about new GitHub notifications
 - [refined-github](https://github.com/refined-github/refined-github): Browser extension that simplifies the GitHub interface and adds useful features
@@ -157,8 +143,6 @@ This document is part of my awesome favorite tools.
 - [darkreader](https://github.com/darkreader/darkreader): Dark Reader Chrome and Firefox extension
 
 ## [Visual Studio Code] Extensions
-
-### favorites
 
 - [better-comments](https://github.com/aaron-bond/better-comments): Improve your code commenting by annotating with alert, informational, TODOs, and more!
 - [gitlens](https://github.com/gitkraken/vscode-gitlens): Visualize code authorship at a glance via Git blame annotations
@@ -171,8 +155,6 @@ This document is part of my awesome favorite tools.
 - [vscode-remote](https://github.com/Microsoft/vscode-remote-release): Open any folder in WSL, in a Docker container, or on a remote machine using SSH and take advantage of VS Code's full feature set
 
 ## [Alfred] Workflows
-
-### favorites
 
 - [alfred-chromium-workflow](https://github.com/jopemachine/alfred-chromium-workflow): Chromium based browser workflow for Alfred 4
 - [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill): Alfred 3 workflow to fabulously search

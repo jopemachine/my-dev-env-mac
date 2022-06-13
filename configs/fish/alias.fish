@@ -23,3 +23,9 @@ alias reload='exec fish'
 # case-cli
 alias camel='case-cli -c=camel'
 alias title='case-cli -c=title'
+
+# lazygit
+alias lg='lazygit'
+
+# npm
+alias npr='npm run'

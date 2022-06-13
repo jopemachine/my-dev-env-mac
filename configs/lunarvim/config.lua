@@ -139,7 +139,7 @@ lvim.builtin.which_key.mappings["u"] = {
 	a = { ":Ranger<cr>", "Ranger" },
 	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
 	n = { ":IncRename ", "Rename Variable" },
-	c = { ":!code %<cr>", "Open in Code" }
+	c = { ":!code %<cr>", "Open in Code" },
 }
 
 -- Vim options
@@ -267,6 +267,7 @@ lvim.plugins = {
   -- Code manipulation
   { "junegunn/vim-easy-align" },
   { "smjonas/inc-rename.nvim" },
+  { "sQVe/sort.nvim" },
 
   -- Window management (including tmux)
   { "edkolev/tmuxline.vim" },
