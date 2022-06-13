@@ -24,7 +24,6 @@ This document is part of my awesome favorite tools.
     kMMMMMMMMMMMMMMMMMMMMMMd     GPU: Intel UHD Graphics 630, AMD Radeon Pro 5500M
      ;KMMMMMMMWXXWMMMMMMMk.      Memory: 9688MiB / 16384MiB
        .cooc,.    .,coo:.
-
 ```
 
 **Table of Contents**
@@ -196,6 +195,7 @@ This document is part of my awesome favorite tools.
 - [my-awesome-stars](https://github.com/jopemachine/awesome-stars)
 
 [@squoosh.cli]: https://github.com/GoogleChromeLabs/squoosh
+[ack]: https://github.com/samaaron/ack
 [agnoster]: https://github.com/agnoster/agnoster-zsh-theme
 [alacritty]: https://github.com/alacritty/alacritty
 [alfred]: https://www.alfredapp.com/
@@ -221,12 +221,15 @@ This document is part of my awesome favorite tools.
 [hub]: https://github.com/github/hub
 [iTerm2]: https://iterm2.com/
 [k]: https://github.com/supercrabtree/k
+[keyboard-lock]: https://keylock.io/
 [lazygit]: https://github.com/jesseduffield/lazygit
 [lsd]: https://github.com/Peltoche/lsd
 [lunarvim]: https://github.com/LunarVim/LunarVim
+[magnet]: https://magnet.crowdcafe.com/
 [mas]: https://github.com/mas-cli/mas
 [mcfly]: https://github.com/cantino/mcfly
 [n]: https://github.com/tj/n
+[nativefier]: https://github.com/nativefier/nativefier
 [navi]: https://github.com/denisidoro/navi
 [neovim]: https://github.com/neovim/neovim
 [nerd fonts]: https://github.com/ryanoasis/nerd-fonts
@@ -242,8 +245,11 @@ This document is part of my awesome favorite tools.
 [open-cli]: https://github.com/sindresorhus/open-cli
 [packer]: https://github.com/wbthomason/packer.nvim
 [pageres-cli]: https://github.com/sindresorhus/pageres-cli
+[plash]: https://github.com/sindresorhus/Plash
 [popclip]: https://apps.apple.com/kr/app/popclip/id445189367?mt=12
 [popclip]: https://github.com/sindresorhus/Plash
+[postman]: https://www.postman.com/
+[quick-look-plugins]: https://github.com/sindresorhus/quick-look-plugins
 [ranger]: https://github.com/ranger/ranger
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [rust]: https://github.com/rust-lang/rust
@@ -254,7 +260,7 @@ This document is part of my awesome favorite tools.
 [trash-cli]: https://github.com/sindresorhus/trash-cli
 [vim-plug]: https://github.com/junegunn/vim-plug
 [vim]: https://github.com/vim/vim
-[vs code]: https://code.visualstudio.com/
+[visual-studio-code]: https://code.visualstudio.com/
 [xbar]: https://github.com/matryer/xbar
 [yo]: https://github.com/yeoman/yo
 [zplug]: https://github.com/zplug/zplug
