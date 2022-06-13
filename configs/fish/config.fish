@@ -2,6 +2,9 @@ set fish_greeting ""
 fish_vi_key_bindings
 source ~/.config/fish/alias.fish
 
+# https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
+# set -gx TERM screen-256color-bce
+
 # Env Path
 
 fish_add_path ~/Library/Android/sdk

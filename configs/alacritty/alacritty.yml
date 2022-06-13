@@ -1,7 +1,8 @@
 # Note that some xterm terminfo databases don't declare support for italics.
 # You can verify this by checking for the presence of `smso` and `sitm` in
 # `infocmp xterm-256color`.
-TERM: xterm-256color
+
+# TERM: xterm-256color
 # TERM:"" nvim
 
 # Window Customization
@@ -24,7 +25,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized
 
 scrolling:
   history: 10000
@@ -57,13 +58,6 @@ font:
     persistent_logging: false
 
 draw_bold_text_with_bright_colors: true
-
-cursor:
-  style:
-    shape: Beam
-    blinking: off
-    blink-interval: 750
-    unfocused_hollow: true
 
 key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }
@@ -135,7 +129,7 @@ key_bindings:
   - { key: F,  mods: Alt,           chars: "\x1bf"                       }
   - { key: B,  mods: Alt,           chars: "\x1bb"                       }
 # Key binding for fzf
-  - { key: C,        mods: Alt,     chars: "\x1bc"                       }
+# - { key: C,        mods: Alt,     chars: "\x1bc"                       }
 
 # shell:
 #   program: /usr/local/bin/zsh

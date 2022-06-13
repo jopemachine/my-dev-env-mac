@@ -29,7 +29,6 @@ lvim.leader = "space"
 ------------------------------------------------------------------------------------------
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 lvim.keys.normal_mode["<C-z>"] = ":bw<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
 lvim.keys.normal_mode["q:"] = ":Telescope command_history<cr>"
@@ -129,13 +128,15 @@ lvim.builtin.which_key.mappings["t"] = {
 -- Telescope key settings
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
+lvim.builtin.which_key.mappings["q"] = { ":wqa<cr>", "Quit" }
+lvim.builtin.which_key.mappings["Q"] = { ":qa!<cr>", "Quit without saving" }
+
 -- Other utilities key settings
 lvim.builtin.which_key.mappings["u"] = {
 	name = "Utility",
 	u = { ":UndotreeToggle<cr>:UndotreeFocus<cr>", "Undotree" },
 	g = { ":Glow<cr>", "Glow Window" },
 	b = { ":GitBlameToggle<cr>", "Toggle GitBlame Plugin" },
-	r = { ":Telescope grep_string<cr>", "Grep Strings" },
 	a = { ":Ranger<cr>", "Ranger" },
 	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
 	n = { ":IncRename ", "Rename Variable" },
@@ -236,6 +237,7 @@ lvim.plugins = {
   -- Code display (format, indent, highlights)
   { "ntpeters/vim-better-whitespace" },
   { "ap/vim-css-color" },
+  { "danilamihailov/beacon.nvim" },
   { "editorconfig/editorconfig-vim" },
   -- Not applied intermittently
   -- {
@@ -345,7 +347,7 @@ lvim.plugins = {
     end
   },
 
-  -- Cursor
+  -- Cursor move
   { "mg979/vim-visual-multi" },
   {
     "matze/vim-move",

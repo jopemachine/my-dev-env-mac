@@ -1,5 +1,13 @@
+# overwrite default command
 alias grep='grep --color=auto'
 alias cat='bat --style=plain --paging=never'
+
+# overwrite ls command
+alias l='exa -l'
+alias la='exa -a'
+alias ls='exa -la'
+alias lt='exa --tree --level=2'
+alias k='exa --tree --level=2'
 
 # python
 alias python='python3'
@@ -9,13 +17,6 @@ alias pip='pip3'
 alias vi='lvim'
 alias vim='lvim'
 alias nvim='lvim'
-
-# ls
-alias l='exa -l'
-alias la='exa -a'
-alias ls='exa -la'
-alias lt='exa --tree --level=2'
-alias k='exa --tree --level=2'
 
 # misc
 alias reload='exec fish'
@@ -29,3 +30,10 @@ alias lg='lazygit'
 
 # npm
 alias npr='npm run'
+
+# ranger
+alias ra='ranger'
+
+# ssh
+# See https://github.com/alacritty/alacritty/issues/1208
+alias ssh='TERM=xterm-256color /usr/bin/ssh'
