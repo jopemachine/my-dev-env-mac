@@ -33,7 +33,8 @@ This document is just a personal compilation of my personal favorite tools for d
 - [7. Visual Studio Code Extensions](#visual-studio-code)
 - [8. Chrome Extensions](#chrome-extensions)
 - [9. Alfred Workflows](#alfred-workflows)
-- [10. References](#references)
+- [10. Web Applications](#web-applications)
+- [11. References](#references)
 
 ## Command Line Dev Environment
 
@@ -111,7 +112,6 @@ This document is just a personal compilation of my personal favorite tools for d
 
 - ⭐ [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim): Next-generation motion plugin using incremental input processing, allowing for unparalleled speed with minimal cognitive effort
 - ⭐ [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim): Plugin for calling lazygit from within neovim.
-- [ap/vim-css-color](https://github.com/ap/vim-css-color): Preview colours in source code while editing
 - [ellisonleao/glow.nvim](https://github.com/ellisonleao/glow.nvim): A markdown preview directly in your neovim.
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim): A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
 - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align): A Vim alignment plugin
@@ -125,7 +125,6 @@ This document is just a personal compilation of my personal favorite tools for d
 - [tpope/vim-obsession](https://github.com/tpope/vim-obsession): obsession.vim: continuously updated session files
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with "."
 - [tpope/vim-surround](https://github.com/tpope/vim-surround): surround.vim: Delete/change/add parentheses/quotes/XML-tags/much more with ease
-- [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime): Vim plugin for automatic time tracking and metrics generated from your programming activity.
 - [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
 
@@ -147,7 +146,6 @@ This document is just a personal compilation of my personal favorite tools for d
 - [path-autocomplete](https://github.com/ionutvmi/path-autocomplete): Path autocomplete for visual studio code.
 - [vscode-ext-color-highlight](https://github.com/enyancc/vscode-ext-color-highlight): Extension adds colored border around css/web colors in the editor
 - [vscode-gitblame](https://github.com/Sertion/vscode-gitblame): Visual Studio Code Extension - See Git Blame info in status bar.
-- [vscode-material-icon-theme](https://github.com/PKief/vscode-material-icon-theme): Available on the VSCode Marketplace
 - [vscode-project-manager](https://github.com/alefragnani/vscode-project-manager): Project Manager Extension for Visual Studio Code
 - [vscode-remote](https://github.com/Microsoft/vscode-remote-release): Open any folder in WSL, in a Docker container, or on a remote machine using SSH and take advantage of VS Code's full feature set
 
@@ -157,6 +155,12 @@ This document is just a personal compilation of my personal favorite tools for d
 - [alfred-fkill](https://github.com/SamVerschueren/alfred-fkill): Alfred 3 workflow to fabulously search
 - [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow): GitHub Workflow for Alfred 4
 - [alfred-xcode](https://github.com/sindresorhus/alfred-xcode): Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds
+
+## Web Applications
+
+- [lowlighter/metrics](https://github.com/lowlighter/metrics): An infographics generator with 30+ plugins and 200+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!
+- [wakatime.com](https://wakatime.com/): Dashboards for developers
+- [regex101.com](https://regex101.com/): Regular expression tester with syntax highlighting, explanation, cheat sheet for PHP/PCRE, Python, GO, JavaScript, Java, C#/.NET
 
 ## References
 
