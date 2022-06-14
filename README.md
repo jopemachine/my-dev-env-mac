@@ -1,8 +1,6 @@
 # My dev-env configs for MacOS
 
-This document is part of my favorite tools.
-
-I wrote this because of saving and sharing my configs.
+This document is just a personal compilation of my personal favorite tools for dev.
 
 ```
                     'c.          igyubong@igyubong-ui-MacBookPro.local
