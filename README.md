@@ -1,7 +1,5 @@
 # My dev-env configs for MacOS
 
-There are my miscellaneous config files under the `configs` folder.
-
 This document is part of my favorite tools.
 
 I wrote this because of saving and sharing my configs.
