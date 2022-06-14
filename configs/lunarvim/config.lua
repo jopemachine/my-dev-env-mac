@@ -27,9 +27,11 @@ lvim.leader = "space"
 --------------------------------Key Mapping-----------------------------------------------
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
+-- * See lunarvim keymap
+-- https://github.com/LunarVim/LunarVim/blob/rolling/lua/lvim/core/which-key.lua
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<C-z>"] = ":bw<cr>"
+lvim.keys.normal_mode["<C-z>"] = "<cmd>BufferKill<CR>"
 lvim.keys.normal_mode["<C-p>"] = ":Telescope find_files<cr>"
 lvim.keys.normal_mode["q:"] = ":Telescope command_history<cr>"
 
@@ -114,6 +116,12 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- which-key.nvim
 -- *
 
+lvim.builtin.which_key.mappings["q"] = { ":wqa<cr>", "Quit" }
+lvim.builtin.which_key.mappings["Q"] = { ":qa!<cr>", "Quit without saving" }
+
+-- Telescope key settings
+lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+
 -- Trouble key settings
 lvim.builtin.which_key.mappings["t"] = {
 	name = "+Trouble",
@@ -125,15 +133,9 @@ lvim.builtin.which_key.mappings["t"] = {
 	w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
 }
 
--- Telescope key settings
-lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
-
-lvim.builtin.which_key.mappings["q"] = { ":wqa<cr>", "Quit" }
-lvim.builtin.which_key.mappings["Q"] = { ":qa!<cr>", "Quit without saving" }
-
--- Other utilities key settings
+-- Other thirdparty utilities key settings
 lvim.builtin.which_key.mappings["u"] = {
-	name = "Utility",
+	name = "Thirdparty utilities",
 	u = { ":UndotreeToggle<cr>:UndotreeFocus<cr>", "Undotree" },
 	g = { ":Glow<cr>", "Glow Window" },
 	b = { ":GitBlameToggle<cr>", "Toggle GitBlame Plugin" },
@@ -141,10 +143,11 @@ lvim.builtin.which_key.mappings["u"] = {
 	t = { ":ToggleTerm size=10 direction=horizontal<cr>", "Toggle Horizontal Terminal" },
 	n = { ":IncRename ", "Rename Variable" },
 	c = { ":!code %<cr>", "Open in Code" },
+	m = { ":Telescope keymaps<cr>", "Open Keymap" },
 }
 
--- Vim options
-lvim.builtin.which_key.mappings["U"] = {
+-- Toggle vim options
+lvim.builtin.which_key.mappings["v"] = {
 	name = "Vim options",
 	s = { ":set spell!<cr>", "Toggle Spell Check" },
 	v = { ":Telescope vim_options<cr>", "View Vim Options" },

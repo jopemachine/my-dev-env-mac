@@ -49,3 +49,8 @@ end
 function github
   open "https://github.com/search?q=$argv[1..-1]"
 end
+
+## papago
+function papago
+  open "https://papago.naver.com/?st=$argv[1..-1]"
+end
