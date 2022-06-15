@@ -53,7 +53,7 @@ This document is just a personal compilation of my personal favorite tools for d
 - [exa]: A modern replacement for ‘ls’.
 - [fd]: A simple, fast and user-friendly alternative to 'find'
 - [forgit]: A utility tool powered by fzf for using git interactively.
-- [github-cli]: A command-line tool that makes git easier to use with GitHub.
+- [hub]: A command-line tool that makes git easier to use with GitHub.
 - [homebrew]: The missing package manager for macOS (or Linux)
 - [ripgrep]: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - [starship]: The minimal, blazing-fast, and infinitely customizable prompt for any shell!
@@ -99,13 +99,11 @@ This document is just a personal compilation of my personal favorite tools for d
 - [IngoMeyer441/tmux-easy-motion](https://github.com/IngoMeyer441/tmux-easy-motion): Vim's easy-motion for tmux
 - [laktak/extrakto](https://github.com/laktak/extrakto): extrakto for tmux - quickly select, copy/insert/complete text without a mouse
 - [nhdaly/tmux-better-mouse-mode](https://github.com/nhdaly/tmux-better-mouse-mode): A tmux plugin to better manage and configure the mouse.
-- [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): A plugin that enhances tmux search
 - [tmux-plugins/tmux-open](https://github.com/tmux-plugins/tmux-open): Tmux key bindings for quick opening of a highlighted file or url
 - [tmux-plugins/tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control): Standard pane key-bindings for tmux
 - [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): Persists tmux environment across system restarts.
 - [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible): Basic tmux settings everyone can agree on
 - [tmux-plugins/tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist): Lightweight tmux utils for manipulating sessions
-- [tmux-plugins/tmux-urlview](https://github.com/tmux-plugins/tmux-urlview): Quickly open any url on your terminal window!
 - [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): Tmux plugin for copying to system clipboard
 
 ## Neovim Plugins
@@ -126,7 +124,6 @@ This document is just a personal compilation of my personal favorite tools for d
 - [tpope/vim-repeat](https://github.com/tpope/vim-repeat): repeat.vim: enable repeating supported plugin maps with "."
 - [tpope/vim-surround](https://github.com/tpope/vim-surround): surround.vim: Delete/change/add parentheses/quotes/XML-tags/much more with ease
 - [wellle/targets.vim](https://github.com/wellle/targets.vim): Vim plugin that provides additional text objects
-- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): Use treesitter to auto close and auto rename html tag
 
 ### ⭐ [Lunarvim Core Plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
 
@@ -198,7 +195,7 @@ This document is just a personal compilation of my personal favorite tools for d
 [git]: https://git-scm.com/
 [glow]: https://github.com/ellisonleao/glow.nvim
 [homebrew]: https://github.com/Homebrew/brew
-[github-cli]: https://github.com/github/hub
+[hub]: https://github.com/github/hub
 [iTerm2]: https://iterm2.com/
 [k]: https://github.com/supercrabtree/k
 [keyboard-lock]: https://keylock.io/
