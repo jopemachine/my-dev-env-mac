@@ -185,6 +185,7 @@ This document is just a personal compilation of my personal favorite tools for d
 [enhancd]: https://github.com/b4b4r07/enhancd
 [exa]: https://github.com/ogham/exa
 [fd]: https://github.com/sharkdp/fd
+[fig]: https://fig.io/
 [fish]: https://github.com/fish-shell/fish-shell
 [fisher]: https://github.com/jorgebucaran/fisher
 [fkill-cli]: https://github.com/sindresorhus/fkill-cli
