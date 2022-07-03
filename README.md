@@ -48,11 +48,11 @@ This document is just a personal compilation of my personal favorite tools for d
 
 - ⭐ [lazygit]: Simple terminal UI for git commands
 - ⭐ [ranger]: A VIM-inspired filemanager for the console
+- ⭐ [fig]: Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig.
 - [bat]: A cat(1) clone with wings.
 - [delta]: A syntax-highlighting pager for git, diff, and grep output
 - [exa]: A modern replacement for ‘ls’.
 - [fd]: A simple, fast and user-friendly alternative to 'find'
-- [fig]: Fig adds IDE-style autocomplete to your existing terminal. Move faster with Fig.
 - [forgit]: A utility tool powered by fzf for using git interactively.
 - [hub]: A command-line tool that makes git easier to use with GitHub.
 - [homebrew]: The missing package manager for macOS (or Linux)
